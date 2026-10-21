@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 440" width="100%" height="100%">
+  <rect width="760" height="440" fill="#1b1d22" rx="8"/>
+  <rect x="20" y="20" width="720" height="400" fill="#14161a" stroke="#323640" stroke-width="1.5" rx="6"/>
+
+  <text x="380" y="55" fill="#e5c07b" font-family="sans-serif" font-size="18" font-weight="bold" text-anchor="middle">Thuộc tính Block (Block Attributes) với lệnh ATTDEF &amp; EATTEDIT</text>
+
+  <!-- Left: Tag definition -->
+  <g transform="translate(50, 90)">
+    <rect width="300" height="260" fill="#1e222b" stroke="#2d3340" stroke-width="1" rx="4"/>
+    <text x="150" y="30" fill="#61afef" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle">1. Khai báo thuộc tính (ATTDEF)</text>
+
+    <!-- Tag box -->
+    <rect x="40" y="60" width="220" height="110" fill="#282c34" stroke="#61afef" stroke-width="1.5" rx="4"/>
+    <text x="50" y="85" fill="#e5c07b" font-family="sans-serif" font-size="12" font-weight="bold">Tag: PHONG_TEN</text>
+    <text x="50" y="110" fill="#abb2bf" font-family="sans-serif" font-size="11">Prompt: Nhập tên phòng:</text>
+    <text x="50" y="135" fill="#98c379" font-family="sans-serif" font-size="11">Default: Phòng Khách</text>
+    <text x="50" y="155" fill="#e06c75" font-family="sans-serif" font-size="10">Mode: Invisible / Constant / Preset</text>
+
+    <text x="150" y="200" fill="#abb2bf" font-family="sans-serif" font-size="11" text-anchor="middle">Tag là biến đại diện, chưa có giá trị cụ thể</text>
+    <text x="150" y="225" fill="#61afef" font-family="sans-serif" font-size="11" text-anchor="middle">Gom Tag chung với hình vẽ khi tạo BLOCK</text>
+  </g>
+
+  <!-- Right: Instantiated blocks -->
+  <g transform="translate(390, 90)">
+    <rect width="320" height="260" fill="#1e222b" stroke="#2d3340" stroke-width="1" rx="4"/>
+    <text x="160" y="30" fill="#98c379" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle">2. Điền giá trị khi chèn (INSERT)</text>
+
+    <!-- Card 1 -->
+    <g transform="translate(25, 55)">
+      <rect width="270" height="70" fill="#282c34" stroke="#98c379" stroke-width="1.5" rx="4"/>
+      <circle cx="35" cy="35" r="18" fill="#98c379" fill-opacity="0.2" stroke="#98c379" stroke-width="1.5"/>
+      <text x="35" y="40" fill="#98c379" font-family="sans-serif" font-size="12" font-weight="bold" text-anchor="middle">P101</text>
+      <text x="70" y="30" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="bold">Phòng Khách</text>
+      <text x="70" y="52" fill="#abb2bf" font-family="sans-serif" font-size="11">Diện tích: 28.5 m²</text>
+    </g>
+
+    <!-- Card 2 -->
+    <g transform="translate(25, 140)">
+      <rect width="270" height="70" fill="#282c34" stroke="#61afef" stroke-width="1.5" rx="4"/>
+      <circle cx="35" cy="35" r="18" fill="#61afef" fill-opacity="0.2" stroke="#61afef" stroke-width="1.5"/>
+      <text x="35" y="40" fill="#61afef" font-family="sans-serif" font-size="12" font-weight="bold" text-anchor="middle">P102</text>
+      <text x="70" y="30" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="bold">Phòng Ngủ Master</text>
+      <text x="70" y="52" fill="#abb2bf" font-family="sans-serif" font-size="11">Diện tích: 19.2 m²</text>
+    </g>
+
+    <text x="160" y="240" fill="#e5c07b" font-family="sans-serif" font-size="11" text-anchor="middle">Sửa nội dung nhanh bằng nhấp đúp hoặc EATTEDIT</text>
+  </g>
+
+  <text x="380" y="390" fill="#abb2bf" font-family="sans-serif" font-size="12" text-anchor="middle">Dữ liệu thuộc tính có thể trích xuất ra bảng thống kê tự động qua DATAEXTRACTION</text>
+</svg>

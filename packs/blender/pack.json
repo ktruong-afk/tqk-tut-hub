@@ -1,0 +1,129 @@
+{
+  "id": "blender",
+  "name": "Blender",
+  "description": "Dựng hình, điêu khắc, rig, animation và xuất nhân vật sang Unity — 16 bài cho người mới, Blender 5.2 LTS.",
+  "icon": "box",
+  "version": "1.0.0",
+  "status": "ready",
+  "app": {
+    "name": "Blender",
+    "bridge": "blender",
+    "minVersion": "4.2"
+  },
+  "plugin": {
+    "file": "plugin/blender_companion-1.2.0.zip",
+    "type": "blender-extension",
+    "version": "1.2.0"
+  },
+  "languages": [
+    "vi"
+  ],
+  "lessonCount": 16,
+  "files": [
+    {
+      "path": "data/blender_tools.json",
+      "size": 10800,
+      "sha256": "1bb35ac5d4b6bdb1a3f21403661f2b5036448e0866ca75140528233889548ee7"
+    },
+    {
+      "path": "data/common_errors.json",
+      "size": 7616,
+      "sha256": "b8f20464f197209dd6e0e11d207731c4988d7dfd118960779373ee10fe0c1f50"
+    },
+    {
+      "path": "data/curated_guides.json",
+      "size": 7998,
+      "sha256": "cc5deba75495143d47e0230738735e722f6ef69e4e7369c61602c0b767bd0d09"
+    },
+    {
+      "path": "data/shortcuts.json",
+      "size": 9360,
+      "sha256": "53bdac50aadd47f4defeb26f0bd17eacd819cc566d314b6419f47784814330af"
+    },
+    {
+      "path": "lessons/vi/01_giao_dien_va_dieu_huong.md",
+      "size": 12911,
+      "sha256": "a31b6c3ba0cd2ccfeeb7a52a98e2febe72f5bcd47cec3d68a3d4c0b11dbd16bb"
+    },
+    {
+      "path": "lessons/vi/02_modeling_co_ban.md",
+      "size": 10201,
+      "sha256": "96b4100728261621dc4a906ff4d5f46ece4cf8ccaba7b9472b182dea67311c79"
+    },
+    {
+      "path": "lessons/vi/03_modifiers.md",
+      "size": 11540,
+      "sha256": "61c6cd9acdf43c39656c67ad4326fa523c338a2bad20f41dc1cb49d40a06df0e"
+    },
+    {
+      "path": "lessons/vi/04_hard_surface.md",
+      "size": 8363,
+      "sha256": "1c7a6837a042dff7330fc8e126891d92424030b1b649b84915d7c0f3986863b3"
+    },
+    {
+      "path": "lessons/vi/05_loi_thuong_gap_va_cach_sua.md",
+      "size": 10461,
+      "sha256": "dae28af1e3d729d5aefa9777bb263c671ee8b7190e26dcba50f2ddfa41ff461b"
+    },
+    {
+      "path": "lessons/vi/06_sculpt_co_ban.md",
+      "size": 9447,
+      "sha256": "3489f1b3ba5842bb88b6fa15fc9e7b24e3739eb6f2d70d177d6bda5a4ab79e33"
+    },
+    {
+      "path": "lessons/vi/07_sculpt_nhan_vat.md",
+      "size": 8535,
+      "sha256": "36d0826b5ce446094d8702e6dca744e1ecb31f5bd1c5bb00a3c2074e60f187b7"
+    },
+    {
+      "path": "lessons/vi/08_retopology.md",
+      "size": 7498,
+      "sha256": "bcc495bb41c166bd787b04c728700eaa0a818e5c5ea8a0db2ee828371ea83b3c"
+    },
+    {
+      "path": "lessons/vi/09_uv_unwrap.md",
+      "size": 8654,
+      "sha256": "35a29650b7eaf8e438b582518bb4d2f9fb26cc1266595d9abb7b295c82f6a161"
+    },
+    {
+      "path": "lessons/vi/10_vat_lieu_pbr_va_principled_bsdf.md",
+      "size": 11025,
+      "sha256": "cd90a9475d3d6e6089e807234ba814ae4030112bba653885a1aac341bd11f506"
+    },
+    {
+      "path": "lessons/vi/11_texture_painting_va_bake.md",
+      "size": 9162,
+      "sha256": "b575604092f72e736394d57c1c36858bca607ecf30cffe2578f4c3070e1ecf6b"
+    },
+    {
+      "path": "lessons/vi/12_rigging_co_ban.md",
+      "size": 10324,
+      "sha256": "4c430512feda794c05dca83b365c4b0cc746e7dd42dddcc243a55e4d14972c34"
+    },
+    {
+      "path": "lessons/vi/13_skinning_weight_paint.md",
+      "size": 8744,
+      "sha256": "348405f26bf51f329ac2d4d0ebf3a1f598a03d2625ccdbcc31fd9d99aa401fb8"
+    },
+    {
+      "path": "lessons/vi/14_animation_co_ban.md",
+      "size": 8945,
+      "sha256": "a3ddffe1ac6dda451fc14b68d50b662c3ce602d62e095b0db698eda32e412525"
+    },
+    {
+      "path": "lessons/vi/15_anh_sang_va_render.md",
+      "size": 8525,
+      "sha256": "9fa251feaabf0745858e62492e905b076b48f8d94de8511cf63acf68f3e5bc32"
+    },
+    {
+      "path": "lessons/vi/16_xuat_nhan_vat_sang_unity.md",
+      "size": 10175,
+      "sha256": "5355d04bf43197be4ceacdeb2c24e4f30cc83899552471440523eb529a1c5aec"
+    },
+    {
+      "path": "plugin/blender_companion-1.2.0.zip",
+      "size": 7604,
+      "sha256": "b439bcda15a3b805dc01b88d10c64cc703d585d4a017f486d7fb04406a242fe1"
+    }
+  ]
+}

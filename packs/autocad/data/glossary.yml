@@ -1,0 +1,554 @@
+- term: Vùng vẽ
+  aliases: [Drawing Area]
+  def: Khu vực làm việc chính hiển thị không gian vô hạn (Model space) nơi người dùng tạo lập và chỉnh sửa các đối tượng hình học kỹ thuật.
+  see: [Dải Ribbon, Dòng lệnh]
+
+- term: Dòng lệnh
+  aliases: [Command Line]
+  def: Cửa sổ nhập lệnh bằng bàn phím nằm ở dưới màn hình, hiển thị các chuỗi thông điệp hướng dẫn và tuỳ chọn lệnh của AutoCAD.
+  see: [Dynamic Input, Vùng vẽ]
+
+- term: Dải Ribbon
+  aliases: [Ribbon]
+  def: Thanh công cụ lớn phía trên màn hình gom các lệnh theo từng tab chức năng (Home, Insert, Annotate, View...).
+  see: [Thanh trạng thái, Quick Access Toolbar]
+
+- term: Thanh trạng thái
+  aliases: [Status Bar]
+  def: Dải công cụ nằm ở cạnh đáy màn hình hiển thị toạ độ con trỏ và các biểu tượng bật/tắt chế độ hỗ trợ vẽ như Grid, Snap, Ortho, Osnap.
+  see: [Chế độ Ortho, Điểm bắt]
+
+- term: ViewCube
+  aliases: [Khối lập phương điều hướng]
+  def: Khối điều hướng 3D ảo ở góc trên bên phải vùng vẽ, cho phép xoay hướng nhìn Top, Front, Right hoặc isometric nhanh chóng.
+  see: [Vùng vẽ]
+
+- term: Quick Access Toolbar
+  aliases: [Thanh truy cập nhanh, QAT]
+  def: Dải biểu tượng nhỏ ở đỉnh cửa sổ chứa các lệnh thông dụng như New, Open, Save, Plot, Undo, Redo.
+  see: [Dải Ribbon]
+
+- term: Định dạng DWG
+  aliases: [DWG]
+  def: Định dạng tệp nhị phân gốc và chuẩn mực của AutoCAD dùng để lưu trữ toàn bộ dữ liệu bản vẽ kỹ thuật 2D và mô hình 3D.
+  see: [Định dạng DXF, Mẫu bản vẽ]
+
+- term: Định dạng DXF
+  aliases: [Drawing Exchange Format, DXF]
+  def: Định dạng tệp trao đổi dữ liệu CAD dạng văn bản hoặc nhị phân, dùng để chia sẻ bản vẽ giữa các phần mềm CAD/CAM khác nhau.
+  see: [Định dạng DWG]
+
+- term: Mẫu bản vẽ
+  aliases: [Drawing Template, DWT]
+  def: Tệp bản vẽ mẫu có phần mở rộng .dwt chứa các cài đặt sẵn về đơn vị đo, kiểu chữ, kiểu kích thước, layer và khung tên tiêu chuẩn.
+  see: [Định dạng DWG, Đơn vị đo]
+
+- term: Tự động lưu
+  aliases: [Automatic Save, AutoSave]
+  def: Tính năng tự động tạo bản lưu dự phòng định kỳ (mặc định 10 phút một lần) với phần mở rộng .sv$ để phòng ngừa sự cố sập nguồn.
+  see: [File sao lưu]
+
+- term: File sao lưu
+  aliases: [Backup File, BAK]
+  def: Tệp dự phòng có đuôi .bak được AutoCAD tự động tạo ra mỗi khi người dùng thực hiện lưu bản vẽ đè lên file .dwg đã có.
+  see: [Định dạng DWG, Tự động lưu]
+
+- term: Điều hướng khung nhìn
+  aliases: [Pan and Zoom]
+  def: Các thao tác phóng to, thu nhỏ hoặc rê trượt vùng làm việc để quan sát chi tiết hoặc bao quát toàn bộ bản vẽ.
+  see: [Vùng vẽ]
+
+- term: Tái tạo màn hình
+  aliases: [Regen, REGEN]
+  def: Thao tác tính toán lại dữ liệu đồ hoạ vector và làm mịn lại các cung tròn, đường cong bị gãy khúc do bộ nhớ đệm màn hình.
+  see: [Điều hướng khung nhìn]
+
+- term: Đơn vị đo
+  aliases: [Drawing Units]
+  def: Hệ quy chiếu kích thước trong bản vẽ (như Millimeters, Meters, Inches) quy định ý nghĩa khoảng cách số học khi nhập lệnh.
+  see: [Mẫu bản vẽ]
+
+- term: Hệ toạ độ tuyệt đối
+  aliases: [Absolute Coordinates]
+  def: Phương pháp nhập toạ độ (X,Y) tính trực tiếp từ gốc toạ độ chuẩn (0,0) của hệ trục WCS.
+  see: [Hệ toạ độ tương đối, Toạ độ cực]
+
+- term: Hệ toạ độ tương đối
+  aliases: [Relative Coordinates]
+  def: Phương pháp nhập khoảng cách (@X,Y) tính từ điểm vừa chọn trước đó thay vì tính từ gốc toạ độ gốc (0,0).
+  see: [Hệ toạ độ tuyệt đối, Toạ độ cực]
+
+- term: Toạ độ cực
+  aliases: [Polar Coordinates]
+  def: Phương pháp nhập vị trí điểm dựa trên cự ly khoảng cách và góc nghiêng quy ước (@Khoảng_cách<Góc).
+  see: [Hệ toạ độ tương đối, Chế độ Polar Tracking]
+
+- term: Dynamic Input
+  aliases: [Nhập liệu động]
+  def: Chế độ hiển thị ô nhập toạ độ, chiều dài và góc trực tiếp ngay cạnh đầu con trỏ chuột trên màn hình vẽ (phím F12).
+  see: [Dòng lệnh, Toạ độ cực]
+
+- term: Chế độ Ortho
+  aliases: [Ortho Mode]
+  def: Chế độ hạn chế di chuyển của con trỏ chuột theo hai phương vuông góc (ngang 0°/180° hoặc đứng 90°/270°) khi vẽ (phím F8).
+  see: [Chế độ Polar Tracking]
+
+- term: Chế độ Polar Tracking
+  aliases: [Bắt góc định hướng]
+  def: Chế độ hỗ trợ gióng đường dẫn hướng theo các bước góc đặt trước (như 30°, 45°, 90°) khi di chuyển con trỏ chuột (phím F10).
+  see: [Chế độ Ortho]
+
+- term: Điểm bắt
+  aliases: [Object Snap, Osnap]
+  def: Tính năng tự động hút con trỏ chuột vào các điểm đặc trưng hình học chính xác như Endpoint, Midpoint, Center, Intersection (phím F3).
+  see: [Object Snap Tracking]
+
+- term: Object Snap Tracking
+  aliases: [Theo dõi điểm bắt, Otrack]
+  def: Tính năng gióng đường thẳng phụ trợ ảo từ các điểm bắt đối tượng đã nhận diện (phím F11).
+  see: [Điểm bắt, Chế độ Polar Tracking]
+
+- term: Hộp chọn bao quanh
+  aliases: [Window Selection]
+  def: Cách chọn đối tượng bằng cách quét chuột từ trái sang phải (khung viền xanh dương), chỉ chọn các đối tượng nằm trọn vẹn bên trong khung.
+  see: [Hộp chọn cắt qua]
+
+- term: Hộp chọn cắt qua
+  aliases: [Crossing Selection]
+  def: Cách chọn đối tượng bằng cách quét chuột từ phải sang trái (khung viền xanh lá nét đứt), chọn mọi đối tượng nằm trong hoặc chạm qua biên khung.
+  see: [Hộp chọn bao quanh]
+
+- term: Điểm kẹp
+  aliases: [Grip, Grips]
+  def: Các ô vuông nhỏ màu xanh xuất hiện trên đối tượng khi được bấm chọn không qua lệnh, dùng để kéo giãn, di chuyển hoặc xoay nhanh.
+  see: [Hộp chọn bao quanh]
+
+- term: Đoạn thẳng
+  aliases: [Line]
+  def: Đối tượng hình học cơ bản nhất gồm hai điểm đầu cuối độc lập tạo thành một phân đoạn thẳng trong không gian 2D/3D.
+  see: [Đường đa tuyến]
+
+- term: Đường đa tuyến
+  aliases: [Polyline, Pline]
+  def: Một đối tượng đơn nhất gồm chuỗi các đoạn thẳng và cung tròn liên kết nối tiếp nhau với chiều dày tuỳ biến.
+  see: [Đoạn thẳng, Cung tròn]
+
+- term: Đường tròn
+  aliases: [Circle]
+  def: Đối tượng hình học tròn khép kín xác định qua tâm và bán kính/đường kính hoặc qua 2 điểm, 3 điểm, tiếp tuyến.
+  see: [Bán kính, Đường kính]
+
+- term: Cung tròn
+  aliases: [Arc]
+  def: Một đoạn cong thuộc đường tròn được tạo qua 3 điểm chỉ định hoặc góc, tâm và độ dài dây cung.
+  see: [Đường tròn]
+
+- term: Hình chữ nhật
+  aliases: [Rectangle]
+  def: Đa tuyến khép kín gồm 4 đoạn thẳng vuông góc tạo thành từ hai điểm góc đối diện nhau trên mặt phẳng.
+  see: [Đường đa tuyến, Đa giác đều]
+
+- term: Đa giác đều
+  aliases: [Polygon]
+  def: Đa tuyến khép kín có các cạnh và góc bằng nhau, tạo ra theo bán kính đường tròn nội tiếp hoặc ngoại tiếp.
+  see: [Hình chữ nhật, Đường tròn]
+
+- term: Hình elip
+  aliases: [Ellipse]
+  def: Đối tượng hình học dạng bầu dục được xác định bằng trục lớn và trục nhỏ hoặc cung elip cắt khúc.
+  see: [Đường tròn]
+
+- term: Bán kính
+  aliases: [Radius]
+  def: Khoảng cách từ tâm đến bất kỳ điểm nào trên chu vi đường tròn hoặc cung tròn.
+  see: [Đường kính, Đường tròn]
+
+- term: Đường kính
+  aliases: [Diameter]
+  def: Đoạn thẳng đi qua tâm và nối hai điểm đối diện trên chu vi đường tròn, bằng hai lần bán kính.
+  see: [Bán kính, Đường tròn]
+
+- term: Đường cong Spline
+  aliases: [Spline, B-Spline]
+  def: Đường cong tham số mượt mà đi qua hoặc được khống chế bởi các điểm kiểm soát toán học (Fit Points / Control Vertices).
+  see: [Đường đa tuyến]
+
+- term: Mặt cắt
+  aliases: [Hatch]
+  def: Vùng đồ hoạ được tô phủ hoa văn lặp lại theo tiêu chuẩn kỹ thuật (mặt cắt kim loại, bê tông, gạch đá...).
+  see: [Gradient]
+
+- term: Gradient
+  aliases: [Tô màu chuyển sắc]
+  def: Hiệu ứng tô bề mặt chuyển tiếp mượt mà giữa một hoặc hai sắc thái màu trong một vùng bao kín.
+  see: [Mặt cắt]
+
+- term: Chữ đơn dòng
+  aliases: [Single-line Text, Dtext]
+  def: Đối tượng văn bản độc lập trên một dòng, mỗi dòng sau khi xuống dòng tạo thành một thực thể chữ riêng.
+  see: [Chữ đa dòng]
+
+- term: Chữ đa dòng
+  aliases: [Multiline Text, Mtext]
+  def: Khối văn bản đoạn văn phong phú hỗ trợ định dạng cột, căn lề, chèn ký hiệu đường kính Ø và độ ° như trình soạn thảo văn phòng.
+  see: [Chữ đơn dòng]
+
+- term: Điểm chuẩn
+  aliases: [Base Point]
+  def: Điểm mốc gốc toạ độ được chọn làm điểm neo khi thực hiện các phép biến hình như di chuyển (Move), sao chép (Copy), xoay (Rotate) hoặc thu phóng (Scale).
+  see: [Điểm bắt, Điểm kẹp]
+
+- term: Đối xứng
+  aliases: [Mirror]
+  def: Phép biến hình tạo ra bản sao đối xứng của đối tượng qua một trục thẳng xác định bởi hai điểm mốc.
+  see: [Điểm chuẩn]
+
+- term: Cắt tỉa
+  aliases: [Trim]
+  def: Thao tác xén bỏ các đoạn thừa của đối tượng hình học tại vị trí giao cắt với các đường biên cắt khác.
+  see: [Kéo dài]
+
+- term: Kéo dài
+  aliases: [Extend]
+  def: Thao tác phóng dài đầu mút của một đoạn thẳng hoặc cung cong cho đến khi chạm vào một đường biên giới hạn phía trước.
+  see: [Cắt tỉa]
+
+- term: Bo tròn góc
+  aliases: [Fillet]
+  def: Thao tác nối hai đường thẳng giao nhau bằng một cung tròn trơn mượt có bán kính xác định.
+  see: [Vát mép, Cung tròn]
+
+- term: Vát mép
+  aliases: [Chamfer]
+  def: Thao tác vát phẳng góc nhọn giữa hai đường thẳng theo khoảng cách hoặc góc nghiêng kỹ thuật.
+  see: [Bo tròn góc]
+
+- term: Sao chép mảng
+  aliases: [Array]
+  def: Tính năng nhân bản đối tượng thành một hệ thống hàng cột chữ nhật (Rectangular), xoay quanh tâm (Polar) hoặc rải theo đường cong (Path).
+  see: [Mảng tròn xoay, Mảng chữ nhật]
+
+- term: Mảng tròn xoay
+  aliases: [Polar Array]
+  def: Phép sao chép mảng phân bố đều các đối tượng quay quanh một điểm tâm với góc quét và số lượng xác định.
+  see: [Sao chép mảng, Đường tròn]
+
+- term: Mảng chữ nhật
+  aliases: [Rectangular Array]
+  def: Phép sao chép mảng phân bố các đối tượng theo lưới hàng (Rows) và cột (Columns) với cự ly đều đặn.
+  see: [Sao chép mảng]
+
+- term: Kéo giãn
+  aliases: [Stretch]
+  def: Thao tác kéo dài hoặc thu ngắn một phần hình học bằng cách di dời các đỉnh nằm trong khung chọn Crossing mà vẫn giữ nguyên liên kết các cạnh còn lại.
+  see: [Hộp chọn cắt qua]
+
+- term: Phá vỡ đối tượng
+  aliases: [Explode]
+  def: Lệnh rã các thực thể phức hợp (như Polyline, hình chữ nhật, mảng Array, khối Block) thành các đoạn Line và Arc đơn lẻ.
+  see: [Nối đối tượng, Đường đa tuyến]
+
+- term: Nối đối tượng
+  aliases: [Join]
+  def: Lệnh liên kết các đoạn thẳng, cung tròn tiếp giáp đầu mút nhau thành một đường đa tuyến Polyline duy nhất.
+  see: [Phá vỡ đối tượng, Đường đa tuyến]
+
+- term: Lớp bản vẽ
+  aliases: [Layer]
+  def: Công cụ tổ chức và phân loại các đối tượng trên bản vẽ theo nhóm chức năng (nét thấy, nét khuất, trục tâm, kích thước, chữ ghi chú...).
+  see: [Quản lý lớp, Thuộc tính ByLayer]
+
+- term: Quản lý lớp
+  aliases: [Layer Properties Manager]
+  def: Bảng điều khiển trung tâm cho phép tạo lớp mới, đổi màu, gán kiểu đường, đặt độ dày nét và kiểm soát trạng thái hiển thị của toàn bộ các layer.
+  see: [Lớp bản vẽ]
+
+- term: Kiểu đường nét
+  aliases: [Linetype]
+  def: Dạng hiển thị của đường nét trên bản vẽ (nét liền Continuous, nét đứt Hidden, nét gạch chấm Center...).
+  see: [Tỷ lệ kiểu đường, Lớp bản vẽ]
+
+- term: Độ dày nét
+  aliases: [Lineweight]
+  def: Chiều rộng thực tế của nét vẽ tính bằng milimet khi hiển thị trên màn hình và khi in ấn ra giấy (ví dụ 0.15mm, 0.35mm, 0.50mm).
+  see: [Lớp bản vẽ]
+
+- term: Thuộc tính ByLayer
+  aliases: [ByLayer]
+  def: Nguyên tắc thiết kế tiêu chuẩn trong CAD, quy định mọi thuộc tính màu sắc, kiểu đường và độ dày của đối tượng tự động tuân theo thiết lập của Layer chứa nó.
+  see: [Thuộc tính ByBlock, Lớp bản vẽ]
+
+- term: Thuộc tính ByBlock
+  aliases: [ByBlock]
+  def: Nguyên tắc gán thuộc tính cho phép đối tượng bên trong khối Block thừa hưởng màu sắc và kiểu đường của bản thân khối Block khi được chèn vào bản vẽ.
+  see: [Thuộc tính ByLayer]
+
+- term: Tỷ lệ kiểu đường
+  aliases: [LTSCALE]
+  def: Biến hệ thống quy định tỷ lệ phóng to thu nhỏ khoảng cách gạch chấm của các nét đứt trên toàn bộ bản vẽ.
+  see: [Kiểu đường nét]
+
+- term: Cô lập lớp
+  aliases: [Layer Isolate, LAYISO]
+  def: Thao tác khoá hoặc ẩn toàn bộ các layer khác, chỉ giữ lại duy nhất layer của đối tượng đang chọn để chỉnh sửa tập trung.
+  see: [Lớp bản vẽ]
+
+- term: Đóng băng lớp
+  aliases: [Layer Freeze, LAYFRZ]
+  def: Trạng thái tắt hiển thị layer đồng thời loại bỏ nó khỏi bộ nhớ tính toán đồ hoạ của AutoCAD, giúp tăng tốc bản vẽ dung lượng lớn.
+  see: [Lớp bản vẽ, Khoá lớp]
+
+- term: Khoá lớp
+  aliases: [Layer Lock]
+  def: Trạng thái bảo vệ layer, vẫn cho phép nhìn thấy đối tượng trên màn hình nhưng ngăn chặn mọi thao tác xoá, di chuyển hoặc chỉnh sửa nhầm.
+  see: [Lớp bản vẽ, Đóng băng lớp]
+
+- term: Bộ lọc lớp
+  aliases: [Layer Filter]
+  def: Công cụ nhóm các layer theo tên hoặc thuộc tính chung trong Layer Properties Manager để dễ quản lý trong các dự án hàng trăm layer.
+  see: [Quản lý lớp]
+
+- term: Trạng thái lớp
+  aliases: [Layer State]
+  def: Bản chụp lưu lại toàn bộ cấu hình bật/tắt, đóng băng, màu sắc của hệ thống layer tại một thời điểm để phục hồi nhanh khi cần.
+  see: [Quản lý lớp]
+
+- term: Hoàn tác
+  aliases: [Undo, Phục hồi thao tác]
+  def: Tính năng huỷ bỏ thao tác lệnh vừa thực hiện trước đó (phím tắt U hoặc Ctrl + Z), đưa bản vẽ quay về trạng thái liền kề trước.
+  see: [Tự động lưu, File sao lưu]
+
+- term: Kích thước thẳng
+  aliases: [Linear Dimension, DIMLINEAR]
+  def: Kiểu đo kích thước theo phương vuông góc nằm ngang hoặc thẳng đứng giữa hai điểm mốc.
+  see: [Kích thước nghiêng, Kiểu kích thước]
+
+- term: Kích thước nghiêng
+  aliases: [Aligned Dimension, DIMALIGNED]
+  def: Kiểu đo kích thước song song tuyệt đối theo phương nghiêng thực tế của đoạn thẳng giữa hai điểm mốc.
+  see: [Kích thước thẳng, Kiểu kích thước]
+
+- term: Kích thước song song
+  aliases: [Baseline Dimension, DIMBASELINE]
+  def: Chuỗi các đường kích thước xếp chồng song song cách đều nhau tính từ một đường gốc chuẩn chung (Baseline).
+  see: [Kích thước nối tiếp, Kích thước thẳng]
+
+- term: Kích thước nối tiếp
+  aliases: [Continue Dimension, DIMCONTINUE]
+  def: Chuỗi các đường kích thước nối tiếp liên tục đầu đuôi từ chân kích thước liền kề trước đó.
+  see: [Kích thước song song, Kích thước thẳng]
+
+- term: Kiểu kích thước
+  aliases: [Dimension Style, DIMSTYLE]
+  def: Bộ cấu hình định dạng chuẩn quy định kiểu dáng đường gióng, mũi tên, chiều cao chữ số, đơn vị đo và dung sai cho toàn bộ kích thước bản vẽ.
+  see: [Kiểu chữ, Chú thích Annotative]
+
+- term: Kiểu chữ
+  aliases: [Text Style, TextStyle]
+  def: Bộ cấu hình phông chữ (font), chiều cao, độ co giãn và góc nghiêng của các văn bản chữ trong bản vẽ.
+  see: [Kiểu kích thước]
+
+- term: Đường chỉ dẫn
+  aliases: [Multileader, MLEADER]
+  def: Đường mũi tên chỉ dẫn nối từ vị trí chi tiết kỹ thuật đến đoạn văn bản ghi chú hoặc bóng chú thích số hiệu.
+  see: [Kiểu kích thước, Chú thích Annotative]
+
+- term: Bảng biểu
+  aliases: [Table, TABLE]
+  def: Thực thể bảng dữ liệu gồm các hàng và cột dùng để lập danh mục bản vẽ, bảng thống kê cửa, bảng kê vật liệu Bill of Materials.
+  see: [Trích xuất dữ liệu]
+
+- term: Chú thích Annotative
+  aliases: [Annotative, Tính năng Annotative]
+  def: Tính năng tự động đồng bộ tỷ lệ kích thước của chữ và đường đo kích thước theo tỷ lệ khung nhìn Viewport của Layout, giúp chữ in ra giấy luôn có chiều cao cố định.
+  see: [Kiểu kích thước, Kiểu chữ]
+
+- term: Dung sai kích thước
+  aliases: [Dimension Tolerance, Dung sai]
+  def: Giới hạn sai số cho phép (+/-) của kích thước gia công cơ khí hiển thị cạnh chữ số danh nghĩa.
+  see: [Kiểu kích thước]
+
+- term: Khối
+  aliases: [Block, BLOCK]
+  def: Nhóm các đối tượng hình học được đóng gói thành một thực thể duy nhất, có thể chèn lại nhiều lần trong bản vẽ để tiết kiệm dung lượng.
+  see: [Khối ngoài, Dynamic Block]
+
+- term: Khối ngoài
+  aliases: [WBlock, Write Block, WBLOCK]
+  def: Khối được xuất ra thành một tệp bản vẽ độc lập có đuôi .dwg lưu trên ổ cứng để dùng chung cho mọi dự án.
+  see: [Khối, Thư viện Block]
+
+- term: Thuộc tính khối
+  aliases: [Block Attribute, ATTDEF]
+  def: Trường thông tin văn bản thông minh đi kèm khối Block, cho phép người dùng nhập giá trị biến đổi khác nhau ở mỗi lần chèn (số hiệu cửa, cao độ, tên bản vẽ).
+  see: [Khối, Trường dữ liệu]
+
+- term: Dynamic Block
+  aliases: [Khối động]
+  def: Khối Block thông minh tích hợp sẵn các tham số và hành động (Parameters & Actions), cho phép kéo giãn kích thước, lật đối xứng hoặc đổi kiểu dáng bằng các điểm kẹp Grip mà không cần vẽ khối mới.
+  see: [Khối, Trình biên tập khối]
+
+- term: Trình biên tập khối
+  aliases: [Block Editor, BEDIT]
+  def: Môi trường chuyên dụng nền xám trong AutoCAD cho phép can thiệp chỉnh sửa hình học và cấu hình các thuộc tính của khối Block.
+  see: [Khối, Dynamic Block]
+
+- term: Tham chiếu ngoài
+  aliases: [External Reference, Xref, XREF]
+  def: Liên kết động tham chiếu đến một tệp bản vẽ DWG, hình ảnh hoặc PDF nằm bên ngoài mà không làm tăng dung lượng file hiện hành.
+  see: [Khối]
+
+- term: Tool Palettes
+  aliases: [Bảng công cụ Tool Palettes]
+  def: Bảng nổi chứa các tab công cụ và kho thư viện ký hiệu kéo thả nhanh chóng vào vùng vẽ (phím tắt Ctrl + 3).
+  see: [DesignCenter, Khối]
+
+- term: DesignCenter
+  aliases: [AutoCAD DesignCenter, ADCENTER]
+  def: Cửa sổ trình duyệt cho phép duyệt cây thư mục và sao chép nhanh layer, block, text style, layout giữa các tệp bản vẽ khác nhau (phím tắt Ctrl + 2).
+  see: [Tool Palettes, Khối]
+
+- term: Trường dữ liệu
+  aliases: [Field, FIELD]
+  def: Đoạn văn bản tự động cập nhật dữ liệu từ hệ thống hoặc thuộc tính đối tượng (diện tích phòng, ngày in bản vẽ, tên file, số lượng).
+  see: [Thuộc tính khối, Bảng biểu]
+
+- term: Trích xuất dữ liệu
+  aliases: [Data Extraction, DATAEXTRACTION]
+  def: Trình hướng dẫn tự động quét và xuất toàn bộ số lượng thiết bị, thông số thuộc tính Block trong bản vẽ ra bảng Table hoặc tệp Microsoft Excel.
+  see: [Bảng biểu, Thuộc tính khối]
+
+- term: Dimension
+  aliases: [Kích thước, Ghi kích thước, Dimensions]
+  def: Đoạn kích thước hình học thể hiện thông số dài, rộng, bán kính, đường kính hoặc góc của chi tiết.
+  see: [Kiểu kích thước, Kích thước thẳng]
+
+- term: Baseline
+  aliases: [Mốc chuẩn, Đường gốc chuẩn, Baseline Dimension]
+  def: Điểm gốc hoặc đường chuẩn dùng làm mốc đo cho chuỗi các kích thước song song trong lệnh DIMBASELINE.
+  see: [Kích thước song song]
+
+- term: Properties
+  aliases: [Bảng thuộc tính, Thuộc tính đối tượng]
+  def: Bảng điều khiển hiển thị và hiệu chỉnh toàn bộ thông số hình học, màu sắc, layer và kiểu đường của đối tượng (phím tắt Ctrl + 1).
+  see: [Layer]
+
+- term: Attribute
+  aliases: [Thuộc tính, Thuộc tính Block, ATTDEF]
+  def: Trường thông tin văn bản động gắn liền với khối Block, cho phép nhập dữ liệu riêng biệt khi chèn.
+  see: [Khối, Thuộc tính khối]
+
+- term: Parameter
+  aliases: [Tham số, Tham số khối động]
+  def: Thông số định vị điểm hoặc khoảng cách hình học điều khiển các hành động Action trong Dynamic Block.
+  see: [Dynamic Block]
+
+- term: DynamicBlock
+  aliases: [Dynamic Block, Khối động, Dynamic Blocks]
+  def: Khối hình học thông minh có khả năng co giãn, lật hoặc đổi trạng thái hiển thị thông qua các điểm kẹp Grips.
+  see: [Khối]
+
+- term: Plot Style
+  aliases: [Bảng nét in, CTB, STB, Kiểu in]
+  def: "Bảng cấu hình quy định màu sắc, độ đậm nhạt và loại nét khi in bản vẽ ra giấy hoặc file PDF dựa trên màu sắc đối tượng (Color-dependent .ctb) hoặc theo tên kiểu (Named .stb)."
+  see: [Layout, Layer]
+
+- term: Sheet Set
+  aliases: [Sheet Set Manager, Bộ hồ sơ bản vẽ, SSM]
+  def: "Công cụ quản lý tập hợp toàn bộ các trang bản vẽ của một dự án lớn, hỗ trợ đồng bộ khung tên, đánh số trang tự động và in ấn hàng loạt."
+  see: [Layout]
+
+- term: Page Setup
+  aliases: [Thiết lập trang in, Cấu hình trang, PAGESETUP]
+  def: "Thiết lập cấu hình máy in, khổ giấy in (A0-A4), vùng in và bảng nét in gán cho từng tab Layout."
+  see: [Layout, Plot Style]
+
+- term: CAD Standards
+  aliases: [Tiêu chuẩn CAD, File DWS, Chuẩn bản vẽ]
+  def: "Hệ thống quy chuẩn công ty về tên layer, kiểu chữ, kiểu kích thước và linetype được lưu trong file .dws để kiểm tra tính đồng bộ của dự án."
+  see: [Layer, Template]
+
+- term: PGP
+  aliases: [acad.pgp, Phím tắt lệnh CAD, Command Aliases]
+  def: "Tệp tin văn bản định nghĩa toàn bộ phím tắt lệnh của AutoCAD (ví dụ L = LINE, C = CIRCLE), cho phép người dùng tự do tùy biến theo thói quen."
+  see: [Thanh dòng lệnh]
+
+- term: Action Recorder
+  aliases: [Bộ ghi thao tác, Macro CAD, ACTRECORD]
+  def: "Tính năng ghi lại chuỗi thao tác chuột và lệnh bàn phím để phát lại tự động cho các công việc có tính lặp đi lặp lại."
+  see: [Script]
+
+- term: Script
+  aliases: [Kịch bản lệnh, Tệp SCR, SCRIPT]
+  def: "Tệp văn bản đuôi .scr chứa danh sách các lệnh CAD tuần tự được phần mềm tự động đọc và thực thi mà không cần người dùng thao tác tay."
+  see: [Action Recorder]
+
+- term: CUI
+  aliases: [Tùy biến giao diện, Customize User Interface]
+  def: "Hộp thoại tùy chỉnh toàn diện giao diện AutoCAD: tạo nút Ribbon mới, gán phím tắt, sửa menu chuột phải và thanh Quick Access Toolbar."
+  see: [Dải Ribbon]
+
+- term: Model
+  aliases: [Model Space, Không gian mô hình]
+  def: "Không gian làm việc vô hạn nơi người dùng tạo lập toàn bộ hình học 2D và 3D theo tỉ lệ thật 1:1."
+  see: [Layout, Vùng vẽ]
+
+- term: Layout
+  aliases: [Paper Space, Không gian giấy in, Bố cục in ấn]
+  def: "Không gian tờ giấy in đại diện cho khổ giấy A4, A3, A1 thực tế, dùng để đặt khung tên và các khung nhìn Viewport."
+  see: [Model, Viewport]
+
+- term: Viewport
+  aliases: [Khung nhìn, Viewports, MVIEW]
+  def: "Ô cửa sổ trên không gian giấy Layout trích xuất hình ảnh từ không gian mô hình Model Space với tỉ lệ xích xác định."
+  see: [Layout, Model]
+
+- term: Template
+  aliases: [Mẫu bản vẽ, Drawing Template, DWT]
+  def: "Tệp khuôn mẫu bản vẽ đuôi .dwt chứa sẵn hệ thống Layer, Dimstyle, Textstyle và Layout chuẩn công ty."
+  see: [Layout]
+
+- term: UCS
+  aliases: [User Coordinate System, Hệ toạ độ người dùng]
+  def: "Hệ toạ độ tuỳ biến cho phép người vẽ xoay mặt phẳng làm việc XY đến bất kỳ bề mặt nghiêng nào trong không gian 3D."
+  see: [WCS, Hệ toạ độ tương đối]
+
+- term: Visual Styles
+  aliases: [Visual Style, Kiểu hiển thị, VSCURRENT]
+  def: "Chế độ hiển thị mô hình 3D trên màn hình như 2D Wireframe (khung dây), Conceptual (ý niệm), Shaded (đổ bóng) hoặc Realistic (vật liệu thực)."
+  see: [Model]
+
+- term: Solid
+  aliases: [Solid 3D, Khối đặc, 3D Solid]
+  def: "Đối tượng hình học 3D thể tích đặc hoàn chỉnh, chứa đựng các thuộc tính khối lượng, trọng tâm và mô men quán tính phục vụ tính toán kỹ thuật."
+  see: [Surface, Mesh]
+
+- term: Surface
+  aliases: [Bề mặt 3D, Mặt cong 3D]
+  def: "Vỏ bao mỏng không có thể tích bên trong, dùng để mô hình hóa các bề mặt cong khí động học hoặc vỏ xe, tàu thuyền."
+  see: [Solid, Mesh]
+
+- term: Mesh
+  aliases: [Lưới 3D, Lưới đa giác]
+  def: "Mạng lưới các đỉnh, cạnh và mặt tam giác/tứ giác cho phép điêu khắc và uốn nắn tự do các hình thể hữu cơ phức tạp."
+  see: [Solid, Surface]
+
+- term: Boolean
+  aliases: [Phép toán Boolean, UNION, SUBTRACT, INTERSECT]
+  def: "Bộ ba phép toán hợp nhất (Union), trừ khối (Subtract) và lấy phần giao (Intersect) giữa các khối đặc 3D."
+  see: [Solid]
+
+- term: AutoLISP
+  aliases: [LISP, Ngôn ngữ AutoLISP, Lisp CAD]
+  def: "Ngôn ngữ lập trình chuyên dụng tích hợp trong AutoCAD, cho phép viết các hàm tự động hóa tính toán và vẽ hình phức tạp trong chớp mắt."
+  see: [Script, Action Recorder]
+
+- term: Parametric
+  aliases: [Ràng buộc tham số, Tham số hóa, GEOMCONSTRAINT]
+  def: "Hệ thống ràng buộc hình học (song song, vuông góc, đồng tâm) và ràng buộc kích thước biến đổi đối tượng thông qua các công thức toán học."
+  see: [Dynamic Block]
+
+- term: Data Link
+  aliases: [DATALINK, Kết nối Excel]
+  def: "Đường liên kết dữ liệu hai chiều giữa bảng tính Microsoft Excel (.xlsx) và bảng AutoCAD Table, tự động đồng bộ số liệu khi tệp nguồn thay đổi."
+  see: [Bảng biểu, Table]

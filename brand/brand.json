@@ -1,0 +1,191 @@
+{
+  "version": "1.4.0",
+  "name": "Tutorial Hub",
+  "tagline": "Hub học tập tương tác",
+  "promise": "Bấm vào đâu cũng hiểu — trợ giảng tiếng Việt ngồi cạnh bạn khi học phần mềm, chụp ảnh, lập trình… Bài học, câu hỏi và thực hành cùng nằm một chỗ.",
+  "logo": "logo.svg",
+  "logoWordmark": "logo-wordmark.svg",
+  "logoSystem": {
+    "files": {
+      "logo.svg": "Logo màu (icon app, góc giao diện, avatar). Mặc định dùng bản này.",
+      "logo-wordmark.svg": "Logo + chữ, trên nền sáng (tài liệu, trang web, slide).",
+      "logo-wordmark-dark.svg": "Logo + chữ, trên nền tối.",
+      "logo-mono-white.svg": "Một màu trắng — đặt trên ảnh hoặc nền màu đậm.",
+      "logo-mono-dark.svg": "Một màu tối — in đen trắng, khắc, đóng dấu."
+    },
+    "meaning": "Khối lập phương = thứ đang học (vật thể, phần mềm). Bóng thoại ba chấm = trợ giảng đang giải thích.",
+    "clearSpace": "Chừa khoảng trống quanh logo tối thiểu bằng 1/4 chiều rộng logo.",
+    "minSize": "Icon tối thiểu 24 px (màn hình) / 8 mm (in). Logo + chữ tối thiểu 120 px chiều ngang.",
+    "dont": [
+      "Không đổi màu cam sang màu khác, không thêm hiệu ứng bóng/viền.",
+      "Không kéo méo, xoay, cắt bớt logo.",
+      "Không đặt logo màu lên nền cam hoặc nền rối — dùng bản một màu.",
+      "Không dùng logo / màu / tên của phần mềm được dạy (Blender, Photoshop...) như logo của mình."
+    ]
+  },
+  "font": {
+    "family": "'Be Vietnam Pro', 'Segoe UI', system-ui, sans-serif",
+    "mono": "'JetBrains Mono', 'Cascadia Code', Consolas, monospace",
+    "license": "Be Vietnam Pro — SIL Open Font License 1.1 (dùng tự do, kể cả thương mại)",
+    "weights": {
+      "regular": 400,
+      "medium": 500,
+      "semibold": 600,
+      "bold": 700
+    },
+    "scale": {
+      "display": 24,
+      "h1": 20,
+      "h2": 17,
+      "h3": 15,
+      "body": 14,
+      "small": 12.5,
+      "caption": 11
+    },
+    "lineHeight": {
+      "body": 1.6,
+      "heading": 1.3
+    }
+  },
+  "spacing": [
+    4,
+    8,
+    12,
+    16,
+    24,
+    32
+  ],
+  "radius": {
+    "sm": "6px",
+    "md": "10px",
+    "lg": "14px"
+  },
+  "palette": [
+    {
+      "token": "accent",
+      "name": "Cam Trợ Giảng",
+      "use": "Màu chủ đạo: nút chính, tab đang chọn, tên công cụ, điểm nhấn. Không dùng cho chữ dài."
+    },
+    {
+      "token": "accent-hover",
+      "name": "Cam Sáng",
+      "use": "Trạng thái rê chuột / nhấn của màu chủ đạo."
+    },
+    {
+      "token": "success",
+      "name": "Xanh Kết Nối",
+      "use": "Đã kết nối, đã lưu, đã học xong."
+    },
+    {
+      "token": "warning",
+      "name": "Vàng Lưu Ý",
+      "use": "Mẹo, cảnh báo nhẹ (Scale chưa Apply...)."
+    },
+    {
+      "token": "danger",
+      "name": "Đỏ Lỗi",
+      "use": "Lỗi, mất kết nối, có bản cập nhật (chấm đỏ)."
+    },
+    {
+      "token": "info",
+      "name": "Xanh Liên Kết",
+      "use": "Đường link, thông tin phụ."
+    },
+    {
+      "token": "bg-primary",
+      "name": "Nền chính",
+      "use": "Nền cửa sổ."
+    },
+    {
+      "token": "bg-secondary",
+      "name": "Nền phụ",
+      "use": "Cột, thanh trên, hộp thoại."
+    },
+    {
+      "token": "bg-card",
+      "name": "Nền thẻ",
+      "use": "Thẻ, khung nội dung."
+    },
+    {
+      "token": "text-main",
+      "name": "Chữ chính",
+      "use": "Nội dung, tiêu đề."
+    },
+    {
+      "token": "text-muted",
+      "name": "Chữ phụ",
+      "use": "Mô tả, giải thích."
+    },
+    {
+      "token": "text-dim",
+      "name": "Chữ mờ",
+      "use": "Ghi chú, nhãn nhỏ, gợi ý ô nhập."
+    },
+    {
+      "token": "border",
+      "name": "Viền",
+      "use": "Viền thẻ, ô nhập, đường kẻ."
+    }
+  ],
+  "tokens": {
+    "dark": {
+      "bg-primary": "#111215",
+      "bg-secondary": "#16171a",
+      "bg-card": "#1c1d21",
+      "bg-card-hover": "#25262b",
+      "bg-input": "#141518",
+      "accent": "#e87d0d",
+      "accent-hover": "#ff9426",
+      "info": "#5291f7",
+      "success": "#10b981",
+      "danger": "#f26464",
+      "warning": "#f59e0b",
+      "text-main": "#ededef",
+      "text-muted": "#a3a3ad",
+      "text-dim": "#8a8a95",
+      "border": "#2c2d33",
+      "border-light": "#3b3d44"
+    },
+    "light": {
+      "bg-primary": "#f5f5f6",
+      "bg-secondary": "#ffffff",
+      "bg-card": "#ffffff",
+      "bg-card-hover": "#f1f1f3",
+      "bg-input": "#f5f5f7",
+      "accent": "#a95704",
+      "accent-hover": "#8f4903",
+      "info": "#2563eb",
+      "success": "#047c57",
+      "danger": "#dc2626",
+      "warning": "#a35a05",
+      "text-main": "#18181b",
+      "text-muted": "#52525b",
+      "text-dim": "#6b6b74",
+      "border": "#e4e4e8",
+      "border-light": "#d0d0d6"
+    }
+  },
+  "icons": {
+    "set": "Lucide (lucide-static 0.460.0, ISC)",
+    "style": "Nét 2 px, đầu nét bo tròn, không tô màu; cỡ 16–20 px trong giao diện.",
+    "rules": [
+      "Không dùng emoji ở bất kỳ đâu trong giao diện.",
+      "Nút chỉ có icon luôn kèm tooltip mô tả việc nút làm.",
+      "Một ý nghĩa = một icon trong mọi app (vd cài plugin = plug, cập nhật = refresh-cw)."
+    ]
+  },
+  "voice": {
+    "tone": "Thân thiện như người hướng dẫn kèm cặp: ngắn, rõ, không hù doạ, không thuật ngữ khi chưa giải thích.",
+    "rules": [
+      "Gọi người học là \"bạn\". Tên nút/lệnh giữ tiếng Anh gốc kèm tiếng Việt: Bo Tròn (Bevel).",
+      "Câu hướng dẫn bắt đầu bằng động từ: \"Bấm Tab để vào Edit Mode\".",
+      "Phím tắt viết dạng [Ctrl + B].",
+      "Báo lỗi: nói chuyện gì xảy ra + làm gì tiếp; không đổ lỗi cho người học."
+    ],
+    "examples": {
+      "good": "Chưa kết nối Blender. Mở Blender, app sẽ tự nối sau khoảng 2 giây.",
+      "bad": "ERROR: socket connection refused (ECONNREFUSED)!!!"
+    }
+  },
+  "accessibility": "Mọi màu chữ đạt tối thiểu WCAG AA (4.5:1) trên nền thẻ và nền chính, cả giao diện sáng lẫn tối — trang hướng dẫn tự kiểm tra lại mỗi lần build."
+}

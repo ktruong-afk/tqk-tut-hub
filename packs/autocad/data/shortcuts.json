@@ -1,0 +1,28 @@
+{
+  "GLOBAL": [
+    { "key": "F1", "desc": "Mở trợ giúp trực tuyến hoặc tài liệu hướng dẫn (Help)" },
+    { "key": "F2", "desc": "Bật / tắt cửa sổ lịch sử dòng lệnh (Command History Window)" },
+    { "key": "F3", "desc": "Bật / tắt chế độ bắt điểm tự động (Object Snap - OSNAP)" },
+    { "key": "F7", "desc": "Bật / tắt lưới đồ hoạ trên vùng vẽ (Grid Display)" },
+    { "key": "F8", "desc": "Bật / tắt chế độ vẽ khoá phương vuông góc (Ortho Mode)" },
+    { "key": "F9", "desc": "Bật / tắt chế độ nhảy theo mắt lưới (Snap Mode)" },
+    { "key": "F10", "desc": "Bật / tắt chế độ bắt góc định hướng (Polar Tracking)" },
+    { "key": "F11", "desc": "Bật / tắt chế độ gióng theo dõi điểm bắt đối tượng (Object Snap Tracking)" },
+    { "key": "F12", "desc": "Bật / tắt nhập toạ độ động tại đầu con trỏ (Dynamic Input)" },
+    { "key": "Ctrl + S", "desc": "Lưu bản vẽ hiện tại (QSAVE)" },
+    { "key": "Ctrl + Shift + S", "desc": "Lưu bản vẽ với tên hoặc định dạng khác (SAVEAS)" },
+    { "key": "Ctrl + O", "desc": "Mở file bản vẽ sẵn có (OPEN)" },
+    { "key": "Ctrl + N", "desc": "Tạo bản vẽ mới từ mẫu template (NEW)" },
+    { "key": "Ctrl + P", "desc": "Mở hộp thoại in ấn / xuất PDF (PLOT)" },
+    { "key": "Ctrl + Z", "desc": "Hoàn tác thao tác vừa thực hiện (UNDO)" },
+    { "key": "Ctrl + Y", "desc": "Lấy lại thao tác vừa hoàn tác (REDO)" },
+    { "key": "Ctrl + C", "desc": "Sao chép đối tượng vào bộ nhớ đệm (COPYCLIP)" },
+    { "key": "Ctrl + V", "desc": "Dán đối tượng từ bộ nhớ đệm vào bản vẽ (PASTECLIP)" },
+    { "key": "Ctrl + 0", "desc": "Bật / tắt chế độ toàn màn hình ẩn Ribbon (Clean Screen)" },
+    { "key": "Ctrl + 1", "desc": "Bật / tắt bảng thuộc tính đối tượng (Properties Palette)" },
+    { "key": "Ctrl + 9", "desc": "Ẩn hoặc hiện thanh dòng lệnh (Command Line)" },
+    { "key": "Esc", "desc": "Huỷ bỏ lệnh đang thực hiện hoặc bỏ chọn toàn bộ đối tượng" },
+    { "key": "Spacebar", "desc": "Xác nhận kết thúc nhập hoặc lặp lại lệnh vừa thực hiện trước đó" },
+    { "key": "Enter", "desc": "Xác nhận kết thúc nhập hoặc lặp lại lệnh vừa thực hiện trước đó" }
+  ]
+}

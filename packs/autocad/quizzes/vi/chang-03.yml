@@ -1,0 +1,159 @@
+- id: q-ac-chang-03-01
+  type: single
+  question: Lệnh nào trong AutoCAD giúp bạn phục hồi lại đối tượng bị xoá bởi lệnh ERASE gần nhất mà không làm mất các nét vừa vẽ thêm sau đó?
+  options:
+    - text: OOPS
+      correct: true
+      why: OOPS chỉ cứu đối tượng của lệnh ERASE cuối cùng mà không lùi thời gian như UNDO
+    - text: UNDO
+      why: UNDO lùi lại từng bước và sẽ xoá các nét vừa vẽ thêm
+    - text: REDO
+      why: REDO chỉ phục hồi thao tác vừa bị Undo
+    - text: RECOVER
+      why: RECOVER dùng để sửa chữa file DWG bị lỗi
+  explain: "Lệnh OOPS là công cụ cứu nguy đặc biệt trong AutoCAD giúp lấy lại đối tượng bị xoá bởi lệnh ERASE gần nhất mà vẫn bảo toàn nguyên vẹn các thao tác vẽ tiếp theo."
+  tags: [chang-03, oops, erase]
+
+- id: q-ac-chang-03-02
+  type: single
+  question: Điểm mốc gốc dùng để tính toán khoảng cách và hướng dịch chuyển trong lệnh MOVE hoặc COPY được gọi là gì?
+  options:
+    - text: Base Point (Điểm chuẩn)
+      correct: true
+      why: Base Point là gốc toạ độ quy chiếu của véc-tơ tịnh tiến
+    - text: Endpoint
+      why: Endpoint là điểm mút hình học
+    - text: Insertion Point
+      why: Insertion Point là điểm chèn khối Block
+    - text: Center Point
+      why: Center Point là tâm đường tròn
+  explain: "Base Point (Điểm chuẩn) là điểm xuất phát của véc-tơ dời hình, giúp xác định chính xác cự ly và hướng di dời vật thể đến điểm thứ hai."
+  tags: [chang-03, move, copy, base-point]
+
+- id: q-ac-chang-03-03
+  type: single
+  question: Khi sử dụng lệnh ROTATE, nếu bạn nhập giá trị góc quay là -45 độ (số âm), đối tượng sẽ xoay theo chiều nào?
+  options:
+    - text: Cùng chiều kim đồng hồ (Clockwise)
+      correct: true
+      why: Quy ước góc âm trong AutoCAD là quay cùng chiều kim đồng hồ
+    - text: Ngược chiều kim đồng hồ (Counter-Clockwise)
+      why: Góc dương mới quay ngược chiều kim đồng hồ
+    - text: Không xoay
+      why: Lệnh ROTATE nhận giá trị góc âm bình thường
+    - text: Tự động đổi màu
+      why: ROTATE không đổi màu sắc
+  explain: "Theo quy ước toán học của AutoCAD, góc quay dương là ngược chiều kim đồng hồ, do đó góc quay mang giá trị âm sẽ làm đối tượng xoay theo chiều kim đồng hồ."
+  tags: [chang-03, rotate, goc-am]
+
+- id: q-ac-chang-03-04
+  type: single
+  question: Khi thực hiện lệnh OFFSET lên một đường tròn bán kính R=40 với khoảng cách d=10 và nhấp chuột vào bên trong, kết quả thu được là gì?
+  options:
+    - text: Một đường tròn đồng tâm có bán kính R=30
+      correct: true
+      why: "Bấm vào trong sẽ trừ bớt bán kính: 40 - 10 = 30"
+    - text: Một đường tròn đồng tâm có bán kính R=50
+      why: Bấm ra ngoài mới cộng thêm thành R=50
+    - text: Đường tròn bị cắt làm đôi
+      why: OFFSET không cắt đối tượng
+    - text: Một hình elip
+      why: OFFSET đường tròn luôn ra đường tròn đồng tâm
+  explain: "Lệnh OFFSET áp dụng cho đường tròn luôn sinh ra đường tròn đồng tâm. Khi nhấp chuột vào phía trong, bán kính mới sẽ bằng bán kính cũ trừ đi khoảng cách offset (40 - 10 = 30)."
+  tags: [chang-03, offset, circle]
+
+- id: q-ac-chang-03-05
+  type: single
+  question: Đang trong lệnh TRIM, phím tắt nào giúp bạn chuyển đổi tức thì sang thực hiện lệnh kéo dài EXTEND mà không cần thoát lệnh?
+  options:
+    - text: Đè giữ phím Shift
+      correct: true
+      why: Phím Shift là công tắc đảo chiều tức thời giữa Trim và Extend
+    - text: Đè giữ phím Ctrl
+      why: Ctrl không có tác dụng đổi lệnh Trim/Extend
+    - text: Đè giữ phím Alt
+      why: Alt kích hoạt thanh menu
+    - text: Nhấn phím Tab
+      why: Tab dùng để chuyển ô nhập liệu
+  explain: "Đè giữ phím [Shift] khi đang chạy lệnh TRIM sẽ tạm thời kích hoạt lệnh EXTEND, giúp bạn vừa cắt tỉa vừa kéo dài nét cực kỳ linh hoạt."
+  tags: [chang-03, trim, extend, shift]
+
+- id: q-ac-chang-03-06
+  type: single
+  question: Tuyệt chiêu thực hiện lệnh FILLET với bán kính R=0 mang lại kết quả gì cho hai đường thẳng cắt nhau?
+  options:
+    - text: Nối liền hai đường thẳng thành một góc vuông nhọn chuẩn xác và xén sạch phần thừa
+      correct: true
+      why: Bán kính R=0 bo góc thành một đỉnh góc nhọn hoàn hảo
+    - text: Báo lỗi không cho phép
+      why: R=0 là tính năng rất thông dụng trong CAD
+    - text: Biến hai đường thẳng thành hình tròn
+      why: R=0 không tạo hình tròn
+    - text: Xoá bỏ cả hai đường thẳng
+      why: FILLET không xoá đối tượng
+  explain: "Fillet với bán kính bằng 0 (R=0) là mẹo kinh điển để làm sạch các góc giao nhau: AutoCAD tự động kéo dài nếu hở hoặc xén bớt nếu thừa để tạo thành góc nhọn hoàn chỉnh."
+  tags: [chang-03, fillet, meo]
+
+- id: q-ac-chang-03-07
+  type: single
+  question: Loại mảng sao chép nào trong lệnh ARRAY dùng để phân bố đều các đối tượng quay xung quanh một điểm tâm?
+  options:
+    - text: Polar Array (ARRAYPOLAR)
+      correct: true
+      why: Polar Array chuyên dùng cho mảng xoay quanh tâm
+    - text: Rectangular Array (ARRAYRECT)
+      why: Rectangular Array dùng cho lưới hàng và cột
+    - text: Path Array (ARRAYPATH)
+      why: Path Array dùng để rải theo đường cong
+    - text: Matrix Array
+      why: Không có lệnh Matrix Array trong AutoCAD
+  explain: "Polar Array (mảng tròn xoay) phân bố đều các đối tượng theo góc quét (thường là 360 độ) xung quanh một tâm mốc chỉ định."
+  tags: [chang-03, array, polar]
+
+- id: q-ac-chang-03-08
+  type: single
+  question: Khi thực hiện lệnh STRETCH để kéo dài một phần hình học, bạn bắt buộc phải dùng phương pháp chọn đối tượng nào?
+  options:
+    - text: Crossing Selection (quét chuột từ Phải sang Trái với khung viền xanh lá nét đứt)
+      correct: true
+      why: STRETCH bắt buộc phải dùng Crossing để xác định các đỉnh cần dời và các cạnh cần kéo dài
+    - text: Window Selection (quét từ Trái sang Phải với khung xanh dương)
+      why: Window Selection sẽ biến lệnh STRETCH thành lệnh MOVE
+    - text: Chọn từng đối tượng đơn lẻ
+      why: Chọn đơn lẻ không xác định được nhóm đỉnh hình học
+    - text: Select All
+      why: Chọn tất cả sẽ di chuyển toàn bộ bản vẽ
+  explain: "Quy tắc cốt tử của lệnh STRETCH là luôn dùng khung Crossing (Phải sang Trái): các đỉnh nằm trong khung sẽ bị dời đi, còn các cạnh bị khung cắt qua sẽ bị kéo giãn dài ra."
+  tags: [chang-03, stretch, crossing]
+
+- id: q-ac-chang-03-09
+  type: single
+  question: Lệnh nào dùng để rã các đối tượng phức hợp (như hình chữ nhật, đường Polyline liền khối hoặc khối Block) thành các đoạn thẳng đơn lẻ?
+  options:
+    - text: EXPLODE (phím tắt X)
+      correct: true
+      why: EXPLODE phá vỡ khối phức hợp thành các thành phần đơn lẻ cơ bản
+    - text: JOIN (phím tắt J)
+      why: JOIN dùng để nối liền các đoạn rời thành một khối
+    - text: ERASE (phím tắt E)
+      why: ERASE dùng để xoá đối tượng
+    - text: TRIM (phím tắt TR)
+      why: TRIM dùng để cắt tỉa nét thừa
+  explain: "Lệnh EXPLODE (phím tắt X) rã các đối tượng phức hợp (Polyline, Block, Rectangle, Array) thành các đoạn Line và Arc đơn lẻ độc lập."
+  tags: [chang-03, explode]
+
+- id: q-ac-chang-03-10
+  type: single
+  question: Lệnh OVERKILL trong AutoCAD có chức năng chính là gì?
+  options:
+    - text: Tự động tìm và xoá sạch các nét vẽ thừa, nét trùng lặp đè lên nhau và gộp các đoạn thẳng thẳng hàng
+      correct: true
+      why: OVERKILL là công cụ dọn dẹp nét vẽ trùng cực mạnh
+    - text: Tắt toàn bộ các layer đang mở
+      why: Tắt layer dùng lệnh LAYOFF
+    - text: Phá vỡ toàn bộ bản vẽ
+      why: Phá vỡ dùng lệnh EXPLODE
+    - text: Khôi phục lại bản vẽ bị lỗi
+      why: Khôi phục dùng lệnh RECOVER
+  explain: "Lệnh OVERKILL rà soát toàn bộ bản vẽ để xoá bỏ các đối tượng hình học vẽ đè chồng lên nhau, giúp bản vẽ nhẹ hơn và tránh lỗi khi cắt CNC hoặc in ấn."
+  tags: [chang-03, overkill]

@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "updated": "2026-10-21T09:09:26.919Z",
+  "packs": [
+    {
+      "id": "autocad",
+      "name": "AutoCAD",
+      "description": "Từ làm quen giao diện đến vẽ 2D, ghi kích thước, block, in ấn, 3D cơ bản và AutoLISP — bài học tiếng Việt có hình tương tác, câu hỏi tự kiểm tra và bài tập tự động ghi nhận khi dùng plugin.",
+      "icon": "grid-3x3",
+      "version": "0.1.0",
+      "status": "coming-soon",
+      "app": {
+        "name": "AutoCAD",
+        "bridge": "autocad",
+        "minVersion": "2024",
+        "versions": [
+          {
+            "id": "2026",
+            "label": "AutoCAD 2026",
+            "match": "25.1",
+            "note": "R25.1 · .NET 8"
+          },
+          {
+            "id": "2025",
+            "label": "AutoCAD 2025",
+            "match": "25.0",
+            "note": "R25.0 · .NET 8"
+          },
+          {
+            "id": "2024",
+            "label": "AutoCAD 2024",
+            "match": "24.",
+            "note": "R24.3 · .NET Framework 4.8"
+          }
+        ]
+      },
+      "languages": [
+        "vi"
+      ],
+      "lessonCount": 0,
+      "size": 0,
+      "manifest": "packs/autocad/pack.json"
+    },
+    {
+      "id": "blender",
+      "name": "Blender",
+      "description": "Dựng hình, điêu khắc, rig, animation và xuất nhân vật sang Unity — 16 bài cho người mới, Blender 5.2 LTS.",
+      "icon": "box",
+      "version": "1.0.0",
+      "status": "ready",
+      "app": {
+        "name": "Blender",
+        "bridge": "blender",
+        "minVersion": "4.2"
+      },
+      "languages": [
+        "vi"
+      ],
+      "lessonCount": 16,
+      "size": 197888,
+      "manifest": "packs/blender/pack.json"
+    },
+    {
+      "id": "photoshop",
+      "name": "Photoshop",
+      "description": "Chỉnh sửa ảnh, layer, mask, công cụ chọn vùng — đang soạn bài học và plugin cầu nối (UXP).",
+      "icon": "image",
+      "version": "0.0.0",
+      "status": "coming-soon",
+      "app": {
+        "name": "Photoshop",
+        "bridge": "photoshop",
+        "minVersion": "2024"
+      },
+      "languages": [],
+      "lessonCount": 0,
+      "size": 0,
+      "manifest": "packs/photoshop/pack.json"
+    }
+  ],
+  "brand": {
+    "version": "1.4.0",
+    "manifest": "brand/brand.json"
+  },
+  "i18n": [
+    {
+      "code": "en",
+      "name": "English",
+      "version": "1.1.4",
+      "manifest": "i18n/en.json",
+      "strings": 294
+    },
+    {
+      "code": "vi",
+      "name": "Tiếng Việt",
+      "version": "1.0.0",
+      "manifest": "i18n/vi.json",
+      "strings": 0
+    }
+  ]
+}

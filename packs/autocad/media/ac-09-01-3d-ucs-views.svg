@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 440" width="100%" height="100%">
+  <rect width="760" height="440" fill="#1b1d22" rx="8"/>
+  <rect x="20" y="20" width="720" height="400" fill="#14161a" stroke="#323640" stroke-width="1.5" rx="6"/>
+
+  <text x="380" y="55" fill="#e5c07b" font-family="sans-serif" font-size="18" font-weight="bold" text-anchor="middle">Không gian 3D, Hệ toạ độ UCS và Điều hướng góc nhìn (ViewCube)</text>
+
+  <!-- Left: 3D Coordinate System UCS -->
+  <g transform="translate(60, 95)">
+    <rect width="300" height="250" fill="#1e222b" stroke="#323640" rx="4"/>
+    <text x="150" y="28" fill="#61afef" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle">1. Hệ toạ độ 3D (X, Y, Z)</text>
+
+    <!-- 3D Axes -->
+    <g transform="translate(150, 160)">
+      <!-- Z axis (Blue) -->
+      <line x1="0" y1="0" x2="0" y2="-90" stroke="#61afef" stroke-width="3"/>
+      <polygon points="0,-98 -5,-88 5,-88" fill="#61afef"/>
+      <text x="12" y="-85" fill="#61afef" font-family="sans-serif" font-size="12" font-weight="bold">+Z (Chiều cao)</text>
+
+      <!-- X axis (Red) -->
+      <line x1="0" y1="0" x2="90" y2="40" stroke="#e06c75" stroke-width="3"/>
+      <polygon points="98,43 86,35 91,47" fill="#e06c75"/>
+      <text x="100" y="55" fill="#e06c75" font-family="sans-serif" font-size="12" font-weight="bold">+X (Đỏ)</text>
+
+      <!-- Y axis (Green) -->
+      <line x1="0" y1="0" x2="-80" y2="40" stroke="#98c379" stroke-width="3"/>
+      <polygon points="-88,44 -81,47 -76,35" fill="#98c379"/>
+      <text x="-105" y="55" fill="#98c379" font-family="sans-serif" font-size="12" font-weight="bold">+Y (Xanh lá)</text>
+
+      <circle cx="0" cy="0" r="4" fill="#ffffff"/>
+      <text x="10" y="15" fill="#ffffff" font-family="sans-serif" font-size="10">Origin (0,0,0)</text>
+    </g>
+
+    <text x="150" y="215" fill="#abb2bf" font-family="sans-serif" font-size="11" text-anchor="middle">• WCS: Hệ toạ độ thế giới cố định</text>
+    <text x="150" y="235" fill="#e5c07b" font-family="sans-serif" font-size="11" text-anchor="middle">• UCS: Xoay mặt phẳng XY theo mặt nghiêng</text>
+  </g>
+
+  <!-- Right: ViewCube & Isometric Views -->
+  <g transform="translate(400, 95)">
+    <rect width="300" height="250" fill="#1e222b" stroke="#323640" rx="4"/>
+    <text x="150" y="28" fill="#98c379" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle">2. ViewCube &amp; Góc nhìn trục đo</text>
+
+    <!-- Isometric Cube Illustration -->
+    <g transform="translate(150, 115)">
+      <!-- Top face -->
+      <polygon points="0,-45 55,-20 0,5 -55,-20" fill="#2c313a" stroke="#abb2bf" stroke-width="1.5"/>
+      <text x="0" y="-15" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">TOP</text>
+
+      <!-- Front face -->
+      <polygon points="-55,-20 0,5 0,65 -55,40" fill="#21252b" stroke="#abb2bf" stroke-width="1.5"/>
+      <text x="-25" y="35" fill="#ffffff" font-family="sans-serif" font-size="10" font-weight="bold" text-anchor="middle">FRONT</text>
+
+      <!-- Right face -->
+      <polygon points="0,5 55,-20 55,40 0,65" fill="#181a1f" stroke="#abb2bf" stroke-width="1.5"/>
+      <text x="28" y="35" fill="#ffffff" font-family="sans-serif" font-size="10" font-weight="bold" text-anchor="middle">RIGHT</text>
+
+      <!-- Corner highlight SW Isometric -->
+      <circle cx="-55" cy="40" r="5" fill="#e5c07b"/>
+    </g>
+
+    <text x="150" y="200" fill="#abb2bf" font-family="sans-serif" font-size="11" text-anchor="middle">Bấm góc ViewCube để vào góc nhìn trục đo</text>
+    <text x="150" y="220" fill="#98c379" font-family="sans-serif" font-size="11" text-anchor="middle">Tổ hợp phím Shift + Chuột giữa: Xoay 3D tự do (3D Orbit)</text>
+  </g>
+
+  <text x="380" y="390" fill="#abb2bf" font-family="sans-serif" font-size="12" text-anchor="middle">AutoCAD vẽ hình 2D luôn nằm trên mặt phẳng XY của hệ toạ độ UCS hiện hành</text>
+</svg>

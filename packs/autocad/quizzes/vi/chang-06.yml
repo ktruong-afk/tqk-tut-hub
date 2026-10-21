@@ -1,0 +1,159 @@
+- id: q-ac-chang-06-01
+  type: single
+  question: "Điểm chèn cơ sở (Base point) trong lệnh BLOCK có vai trò gì quan trọng nhất?"
+  options:
+    - text: "Là vị trí mốc bắt chuột khi chèn khối Block vào bản vẽ"
+      correct: true
+      why: "Base point quy định tọa độ tương đối mà con trỏ chuột nắm giữ khi thực hiện lệnh INSERT."
+    - text: "Quy định màu sắc mặc định của toàn bộ hình vẽ"
+      why: "Màu sắc do Layer hoặc thuộc tính ByLayer kiểm soát."
+    - text: "Quy định thời gian tự động lưu tệp"
+      why: "Tự động lưu do biến SAVETIME quản lý."
+    - text: "Khóa không cho phép người khác chỉnh sửa đối tượng"
+      why: "Base point không có chức năng bảo mật."
+  explain: "Nếu không xác định Base point, AutoCAD mặc định lấy gốc 0,0 khiến khối hình bị văng ra rất xa khi chèn."
+  tags: [chang-06, block]
+
+- id: q-ac-chang-06-02
+  type: single
+  question: "Khác biệt cơ bản giữa lệnh BLOCK và lệnh WBLOCK là gì?"
+  options:
+    - text: "BLOCK lưu khối bên trong file hiện hành, còn WBLOCK xuất khối thành tệp tin DWG riêng biệt ngoài ổ đĩa"
+      correct: true
+      why: "WBLOCK (Write Block) ghi dữ liệu ra tệp DWG độc lập để dùng chung cho nhiều dự án khác nhau."
+    - text: "BLOCK chỉ dùng cho đường thẳng, WBLOCK chỉ dùng cho đường cong"
+      why: "Cả hai đều dùng được cho mọi loại hình học."
+    - text: "BLOCK là bản quyền có phí, WBLOCK là miễn phí"
+      why: "Cả hai đều là lệnh cơ bản tích hợp sẵn trong AutoCAD."
+    - text: "BLOCK không cho phép gắn thuộc tính, WBLOCK bắt buộc gắn thuộc tính"
+      why: "Cả hai đều hỗ trợ thuộc tính như nhau."
+  explain: "Sử dụng WBLOCK để xây dựng kho thư viện tệp DWG dùng chung cho toàn bộ phòng ban."
+  tags: [chang-06, wblock]
+
+- id: q-ac-chang-06-03
+  type: single
+  question: "Trong lệnh khai báo thuộc tính ATTDEF, ô thông số nào đại diện cho tên biến định danh của thuộc tính?"
+  options:
+    - text: "Tag"
+      correct: true
+      why: "Tag là tên định danh duy nhất của thuộc tính, viết liền không dấu."
+    - text: "Prompt"
+      why: "Prompt là câu hỏi nhắc nhở người dùng nhập thông tin."
+    - text: "Default"
+      why: "Default là giá trị điền sẵn mặc định nếu bỏ qua."
+    - text: "Height"
+      why: "Height là chiều cao chữ của thuộc tính."
+  explain: "Tag là tên biến (ví dụ TEN_PHONG, SO_HIEU) để quản lý và trích xuất dữ liệu sau này."
+  tags: [chang-06, attdef]
+
+- id: q-ac-chang-06-04
+  type: single
+  question: "Lệnh nào dùng để đồng bộ hóa (Sync) lại định nghĩa thuộc tính khi bạn vừa chỉnh sửa thêm hoặc bớt thuộc tính trong khối Block?"
+  options:
+    - text: "BATTMAN (hoặc ATTSYNC)"
+      correct: true
+      why: "BATTMAN (Block Attribute Manager) cung cấp nút Sync để đồng bộ toàn bộ các thể hiện block trên bản vẽ."
+    - text: "PURGE"
+      why: "PURGE dùng để dọn dẹp các đối tượng rác không dùng."
+    - text: "EXPLODE"
+      why: "EXPLODE phá hủy khối thành nét rời, làm mất thuộc tính."
+    - text: "REGEN"
+      why: "REGEN chỉ làm mới hiển thị đồ họa màn hình."
+  explain: "Dùng BATTMAN hoặc ATTSYNC để cập nhật lại cấu trúc thuộc tính cho tất cả các Block đã chèn trước đó."
+  tags: [chang-06, battman]
+
+- id: q-ac-chang-06-05
+  type: single
+  question: "Nguyên lý toán học cốt lõi để tạo nên một khối động thông minh (Dynamic Block) là gì?"
+  options:
+    - text: "Kết hợp giữa Tham số (Parameter) và Hành động (Action)"
+      correct: true
+      why: "Parameter xác định điểm/khoảng cách cần đổi, còn Action xác định hành vi như Stretch, Flip, Move."
+    - text: "Kết hợp giữa màu đỏ và màu xanh"
+      why: "Màu sắc không tạo nên tính năng khối động."
+    - text: "Kết hợp giữa lệnh LINE và CIRCLE"
+      why: "Đây chỉ là các hình vẽ tĩnh thông thường."
+    - text: "Phải viết code bằng ngôn ngữ C++"
+      why: "Dynamic Block được tạo trực quan trong môi trường đồ họa Block Editor."
+  explain: "Parameter định nghĩa mốc hình học và Action quy định cách thức biến đổi hình học khi kéo Grip."
+  tags: [chang-06, dynamic-block]
+
+- id: q-ac-chang-06-06
+  type: single
+  question: "Tổ hợp phím tắt nào mở nhanh bảng công cụ đồ họa trực quan Tool Palettes trong AutoCAD?"
+  options:
+    - text: "Ctrl + 3"
+      correct: true
+      why: "Ctrl + 3 là phím tắt mở Tool Palettes."
+    - text: "Ctrl + 1"
+      why: "Ctrl + 1 mở bảng thuộc tính Properties."
+    - text: "Ctrl + 2"
+      why: "Ctrl + 2 mở AutoCAD DesignCenter."
+    - text: "Ctrl + 9"
+      why: "Ctrl + 9 bật tắt thanh dòng lệnh Command Line."
+  explain: "Nhớ bộ phím kinh điển: Ctrl+1 (Properties), Ctrl+2 (DesignCenter), Ctrl+3 (Tool Palettes)."
+  tags: [chang-06, toolpalettes]
+
+- id: q-ac-chang-06-07
+  type: single
+  question: "Tại sao kiểu tham chiếu Overlay lại an toàn hơn kiểu Attach khi làm việc nhóm với External References (XREF)?"
+  options:
+    - text: "Overlay chỉ hiển thị ở bản vẽ hiện tại, không tự động truyền tiếp sang bản vẽ của người khác để tránh vòng lặp tham chiếu"
+      correct: true
+      why: "Overlay ngăn chặn tình trạng file lồng nhau (Nested references) gây phình to và xung đột bản vẽ."
+    - text: "Overlay tự động mã hóa bảo vệ tệp bằng mật khẩu"
+      why: "Overlay không liên quan đến mã hóa mật khẩu."
+    - text: "Overlay không cần kết nối mạng nội bộ"
+      why: "Cả hai kiểu đều cần truy cập được vào tệp nguồn."
+    - text: "Overlay làm màu bản vẽ tự động đổi sang đen trắng"
+      why: "Màu sắc do Layer và plot style quản lý."
+  explain: "Kiểu Overlay tránh triệt để lỗi Circular Reference gây treo đơ hệ thống trong các dự án làm việc nhóm nhiều bộ môn."
+  tags: [chang-06, xref]
+
+- id: q-ac-chang-06-08
+  type: single
+  question: "Đặc điểm nhận diện trực quan của một trường dữ liệu động FIELD trên màn hình làm việc là gì?"
+  options:
+    - text: "Đoạn chữ có một khung nền vệt xám nhạt bao quanh"
+      correct: true
+      why: "Vệt xám nhạt nhắc nhở người vẽ đây là con số tự động, khi in ra giấy vệt xám sẽ biến mất."
+    - text: "Chữ luôn có gạch chân màu đỏ"
+      why: "AutoCAD không có tính năng gạch chân đỏ cho Field."
+    - text: "Chữ liên tục phát ra âm thanh bíp"
+      why: "Không có âm thanh cho trường Field."
+    - text: "Chữ luôn bị xoay ngược 180 độ"
+      why: "Chữ hiển thị bình thường theo hướng nhìn."
+  explain: "Vệt xám nền này giúp người dùng phân biệt giữa văn bản gõ tay thông thường và các trường dữ liệu tự tính toán."
+  tags: [chang-06, field]
+
+- id: q-ac-chang-06-09
+  type: single
+  question: "Lệnh DATAEXTRACTION (DX) cho phép xuất dữ liệu thống kê ra những định dạng nào?"
+  options:
+    - text: "Bảng AutoCAD Table gắn vào bản vẽ hoặc tệp bảng tính ngoài (.xlsx, .csv)"
+      correct: true
+      why: "Trình thuật sĩ cho phép chèn bảng trực tiếp vào CAD và xuất file Excel để làm báo giá."
+    - text: "Chỉ xuất ra file ảnh JPEG"
+      why: "DATAEXTRACTION là công cụ xuất bảng số liệu, không phải xuất ảnh."
+    - text: "Chỉ in ra máy in laser"
+      why: "Dữ liệu được lưu trữ dạng bảng số học."
+    - text: "Chỉ xuất sang phần mềm Photoshop"
+      why: "Không liên quan đến phần mềm chỉnh sửa ảnh."
+  explain: "DATAEXTRACTION kết xuất dữ liệu linh hoạt dưới dạng bảng Table trong CAD hoặc tệp Excel (.xlsx, .csv) bên ngoài."
+  tags: [chang-06, dataextraction]
+
+- id: q-ac-chang-06-10
+  type: single
+  question: "Để dọn dẹp các định nghĩa Block, Layer, Dimstyle rác không còn đối tượng nào sử dụng nhằm giảm dung lượng tệp DWG, bạn dùng lệnh gì?"
+  options:
+    - text: "PURGE (PU)"
+      correct: true
+      why: "PURGE thanh lọc sạch sẽ các định nghĩa thừa trong cơ sở dữ liệu tệp DWG."
+    - text: "ERASE"
+      why: "ERASE chỉ xóa hình vẽ trên màn hình, không xóa định nghĩa ngầm trong file."
+    - text: "EXPLODE"
+      why: "EXPLODE phá vỡ khối, làm tệp nặng thêm."
+    - text: "REGEN"
+      why: "REGEN chỉ vẽ lại hiển thị màn hình."
+  explain: "Lệnh PURGE dọn sạch triệt để các rác dữ liệu, giúp giảm dung lượng file đáng kể."
+  tags: [chang-06, purge]

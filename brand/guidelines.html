@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nhận diện Tutorial Hub — v1.4.0</title>
+<link rel="stylesheet" href="fonts/be-vietnam-pro.css">
+<style>
+:root{--bg:#f5f5f6;--card:#ffffff;--tx:#18181b;--mu:#52525b;--bd:#e4e4e8;--ac:#a95704}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#111215;--card:#1c1d21;--tx:#ededef;--mu:#a3a3ad;--bd:#2c2d33;--ac:#e87d0d}}
+:root[data-theme="dark"]{--bg:#111215;--card:#1c1d21;--tx:#ededef;--mu:#a3a3ad;--bd:#2c2d33;--ac:#e87d0d}
+*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--tx);font-family:'Be Vietnam Pro', 'Segoe UI', system-ui, sans-serif;line-height:1.6}
+main{max-width:1000px;margin:0 auto;padding:32px 16px 64px} h1{font-size:30px;margin:0} h2{font-size:20px;margin:40px 0 12px;color:var(--ac)}
+.lead{color:var(--mu);margin:6px 0 0} section{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:18px}
+.logos{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px} figure{margin:0;padding:14px;border:1px solid var(--bd);border-radius:10px;background:#f6f7f9;color:#111827}
+figure.onDark{background:#151619;color:#f3f4f6} figure img{width:100%;height:110px;object-fit:contain} figcaption{font-size:12px;margin-top:8px}
+.sw{display:flex;gap:12px;align-items:flex-start;padding:8px 0;border-bottom:1px solid var(--bd)} .chip{width:44px;height:44px;border-radius:8px;border:1px solid var(--bd);flex:none}
+.use{color:var(--mu);font-size:13px} code{font-size:12px;background:rgba(127,127,127,.15);padding:1px 5px;border-radius:4px}
+.ratio{font-size:11.5px;margin-left:6px;padding:1px 6px;border-radius:999px;border:1px solid} .ok{color:#10b981} .mid{color:#f59e0b} .bad{color:#ef4444}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:16px} @media(max-width:720px){.cols{grid-template-columns:1fr}}
+.ts{padding:6px 0;border-bottom:1px dashed var(--bd)} ul{margin:6px 0;padding-left:20px} .good{color:#10b981} .badx{color:#ef4444}
+.head{display:flex;gap:16px;align-items:center} .head img{width:64px;height:64px}
+</style></head><body><main>
+<div class="head"><img src="logo.svg" alt=""><div><h1>Tutorial Hub — Hệ thống nhận diện</h1>
+<p class="lead">Hub học tập tương tác · phiên bản 1.4.0 · trang này sinh tự động từ <code>brand.json</code></p></div></div>
+<h2>Lời hứa thương hiệu</h2><section><b>Bấm vào đâu cũng hiểu — trợ giảng tiếng Việt ngồi cạnh bạn khi học phần mềm, chụp ảnh, lập trình… Bài học, câu hỏi và thực hành cùng nằm một chỗ.</b><p class="use">Khối lập phương = thứ đang học (vật thể, phần mềm). Bóng thoại ba chấm = trợ giảng đang giải thích.</p></section>
+<h2>Logo</h2><section><div class="logos"><figure class=""><img src="logo.svg" alt="logo.svg"><figcaption><code>logo.svg</code><br>Logo màu (icon app, góc giao diện, avatar). Mặc định dùng bản này.</figcaption></figure><figure class=""><img src="logo-wordmark.svg" alt="logo-wordmark.svg"><figcaption><code>logo-wordmark.svg</code><br>Logo + chữ, trên nền sáng (tài liệu, trang web, slide).</figcaption></figure><figure class="onDark"><img src="logo-wordmark-dark.svg" alt="logo-wordmark-dark.svg"><figcaption><code>logo-wordmark-dark.svg</code><br>Logo + chữ, trên nền tối.</figcaption></figure><figure class="onDark"><img src="logo-mono-white.svg" alt="logo-mono-white.svg"><figcaption><code>logo-mono-white.svg</code><br>Một màu trắng — đặt trên ảnh hoặc nền màu đậm.</figcaption></figure><figure class=""><img src="logo-mono-dark.svg" alt="logo-mono-dark.svg"><figcaption><code>logo-mono-dark.svg</code><br>Một màu tối — in đen trắng, khắc, đóng dấu.</figcaption></figure></div>
+<p><b>Vùng an toàn:</b> Chừa khoảng trống quanh logo tối thiểu bằng 1/4 chiều rộng logo.<br><b>Cỡ tối thiểu:</b> Icon tối thiểu 24 px (màn hình) / 8 mm (in). Logo + chữ tối thiểu 120 px chiều ngang.</p>
+<b>Không được:</b><ul><li>Không đổi màu cam sang màu khác, không thêm hiệu ứng bóng/viền.</li><li>Không kéo méo, xoay, cắt bớt logo.</li><li>Không đặt logo màu lên nền cam hoặc nền rối — dùng bản một màu.</li><li>Không dùng logo / màu / tên của phần mềm được dạy (Blender, Photoshop...) như logo của mình.</li></ul></section>
+<h2>Màu</h2><section class="cols"><div><b>Giao diện tối (mặc định)</b><div class="sw"><div class="chip" style="background:#e87d0d"></div><div><b>Cam Trợ Giảng</b> <code>accent</code> <code>#e87d0d</code>
+      <span class="ratio ok">5.9:1 trên nền thẻ · AA</span>
+      <div class="use">Màu chủ đạo: nút chính, tab đang chọn, tên công cụ, điểm nhấn. Không dùng cho chữ dài.</div></div></div><div class="sw"><div class="chip" style="background:#ff9426"></div><div><b>Cam Sáng</b> <code>accent-hover</code> <code>#ff9426</code>
+      <span class="ratio ok">7.6:1 trên nền thẻ · AAA</span>
+      <div class="use">Trạng thái rê chuột / nhấn của màu chủ đạo.</div></div></div><div class="sw"><div class="chip" style="background:#10b981"></div><div><b>Xanh Kết Nối</b> <code>success</code> <code>#10b981</code>
+      <span class="ratio ok">6.6:1 trên nền thẻ · AA</span>
+      <div class="use">Đã kết nối, đã lưu, đã học xong.</div></div></div><div class="sw"><div class="chip" style="background:#f59e0b"></div><div><b>Vàng Lưu Ý</b> <code>warning</code> <code>#f59e0b</code>
+      <span class="ratio ok">7.8:1 trên nền thẻ · AAA</span>
+      <div class="use">Mẹo, cảnh báo nhẹ (Scale chưa Apply...).</div></div></div><div class="sw"><div class="chip" style="background:#f26464"></div><div><b>Đỏ Lỗi</b> <code>danger</code> <code>#f26464</code>
+      <span class="ratio ok">5.4:1 trên nền thẻ · AA</span>
+      <div class="use">Lỗi, mất kết nối, có bản cập nhật (chấm đỏ).</div></div></div><div class="sw"><div class="chip" style="background:#5291f7"></div><div><b>Xanh Liên Kết</b> <code>info</code> <code>#5291f7</code>
+      <span class="ratio ok">5.4:1 trên nền thẻ · AA</span>
+      <div class="use">Đường link, thông tin phụ.</div></div></div><div class="sw"><div class="chip" style="background:#111215"></div><div><b>Nền chính</b> <code>bg-primary</code> <code>#111215</code>
+      
+      <div class="use">Nền cửa sổ.</div></div></div><div class="sw"><div class="chip" style="background:#16171a"></div><div><b>Nền phụ</b> <code>bg-secondary</code> <code>#16171a</code>
+      
+      <div class="use">Cột, thanh trên, hộp thoại.</div></div></div><div class="sw"><div class="chip" style="background:#1c1d21"></div><div><b>Nền thẻ</b> <code>bg-card</code> <code>#1c1d21</code>
+      
+      <div class="use">Thẻ, khung nội dung.</div></div></div><div class="sw"><div class="chip" style="background:#ededef"></div><div><b>Chữ chính</b> <code>text-main</code> <code>#ededef</code>
+      <span class="ratio ok">14.4:1 trên nền thẻ · AAA</span>
+      <div class="use">Nội dung, tiêu đề.</div></div></div><div class="sw"><div class="chip" style="background:#a3a3ad"></div><div><b>Chữ phụ</b> <code>text-muted</code> <code>#a3a3ad</code>
+      <span class="ratio ok">6.7:1 trên nền thẻ · AA</span>
+      <div class="use">Mô tả, giải thích.</div></div></div><div class="sw"><div class="chip" style="background:#8a8a95"></div><div><b>Chữ mờ</b> <code>text-dim</code> <code>#8a8a95</code>
+      <span class="ratio ok">4.9:1 trên nền thẻ · AA</span>
+      <div class="use">Ghi chú, nhãn nhỏ, gợi ý ô nhập.</div></div></div><div class="sw"><div class="chip" style="background:#2c2d33"></div><div><b>Viền</b> <code>border</code> <code>#2c2d33</code>
+      
+      <div class="use">Viền thẻ, ô nhập, đường kẻ.</div></div></div></div><div><b>Giao diện sáng</b><div class="sw"><div class="chip" style="background:#a95704"></div><div><b>Cam Trợ Giảng</b> <code>accent</code> <code>#a95704</code>
+      <span class="ratio ok">5.2:1 trên nền thẻ · AA</span>
+      <div class="use">Màu chủ đạo: nút chính, tab đang chọn, tên công cụ, điểm nhấn. Không dùng cho chữ dài.</div></div></div><div class="sw"><div class="chip" style="background:#8f4903"></div><div><b>Cam Sáng</b> <code>accent-hover</code> <code>#8f4903</code>
+      <span class="ratio ok">6.7:1 trên nền thẻ · AA</span>
+      <div class="use">Trạng thái rê chuột / nhấn của màu chủ đạo.</div></div></div><div class="sw"><div class="chip" style="background:#047c57"></div><div><b>Xanh Kết Nối</b> <code>success</code> <code>#047c57</code>
+      <span class="ratio ok">5.2:1 trên nền thẻ · AA</span>
+      <div class="use">Đã kết nối, đã lưu, đã học xong.</div></div></div><div class="sw"><div class="chip" style="background:#a35a05"></div><div><b>Vàng Lưu Ý</b> <code>warning</code> <code>#a35a05</code>
+      <span class="ratio ok">5.2:1 trên nền thẻ · AA</span>
+      <div class="use">Mẹo, cảnh báo nhẹ (Scale chưa Apply...).</div></div></div><div class="sw"><div class="chip" style="background:#dc2626"></div><div><b>Đỏ Lỗi</b> <code>danger</code> <code>#dc2626</code>
+      <span class="ratio ok">4.8:1 trên nền thẻ · AA</span>
+      <div class="use">Lỗi, mất kết nối, có bản cập nhật (chấm đỏ).</div></div></div><div class="sw"><div class="chip" style="background:#2563eb"></div><div><b>Xanh Liên Kết</b> <code>info</code> <code>#2563eb</code>
+      <span class="ratio ok">5.2:1 trên nền thẻ · AA</span>
+      <div class="use">Đường link, thông tin phụ.</div></div></div><div class="sw"><div class="chip" style="background:#f5f5f6"></div><div><b>Nền chính</b> <code>bg-primary</code> <code>#f5f5f6</code>
+      
+      <div class="use">Nền cửa sổ.</div></div></div><div class="sw"><div class="chip" style="background:#ffffff"></div><div><b>Nền phụ</b> <code>bg-secondary</code> <code>#ffffff</code>
+      
+      <div class="use">Cột, thanh trên, hộp thoại.</div></div></div><div class="sw"><div class="chip" style="background:#ffffff"></div><div><b>Nền thẻ</b> <code>bg-card</code> <code>#ffffff</code>
+      
+      <div class="use">Thẻ, khung nội dung.</div></div></div><div class="sw"><div class="chip" style="background:#18181b"></div><div><b>Chữ chính</b> <code>text-main</code> <code>#18181b</code>
+      <span class="ratio ok">17.7:1 trên nền thẻ · AAA</span>
+      <div class="use">Nội dung, tiêu đề.</div></div></div><div class="sw"><div class="chip" style="background:#52525b"></div><div><b>Chữ phụ</b> <code>text-muted</code> <code>#52525b</code>
+      <span class="ratio ok">7.7:1 trên nền thẻ · AAA</span>
+      <div class="use">Mô tả, giải thích.</div></div></div><div class="sw"><div class="chip" style="background:#6b6b74"></div><div><b>Chữ mờ</b> <code>text-dim</code> <code>#6b6b74</code>
+      <span class="ratio ok">5.3:1 trên nền thẻ · AA</span>
+      <div class="use">Ghi chú, nhãn nhỏ, gợi ý ô nhập.</div></div></div><div class="sw"><div class="chip" style="background:#e4e4e8"></div><div><b>Viền</b> <code>border</code> <code>#e4e4e8</code>
+      
+      <div class="use">Viền thẻ, ô nhập, đường kẻ.</div></div></div></div></section>
+<h2>Chữ</h2><section><p>Font: <b>Be Vietnam Pro</b> (Be Vietnam Pro — SIL Open Font License 1.1 (dùng tự do, kể cả thương mại)) · độ đậm 400 / 500 / 600 / 700 · giãn dòng nội dung 1.6</p><div class="ts" style="font-size:24px;font-weight:700">
+      <code>display · 24px</code> Bấm Tab để vào Edit Mode — Bo Tròn (Bevel) [Ctrl + B]</div><div class="ts" style="font-size:20px;font-weight:700">
+      <code>h1 · 20px</code> Bấm Tab để vào Edit Mode — Bo Tròn (Bevel) [Ctrl + B]</div><div class="ts" style="font-size:17px;font-weight:700">
+      <code>h2 · 17px</code> Bấm Tab để vào Edit Mode — Bo Tròn (Bevel) [Ctrl + B]</div><div class="ts" style="font-size:15px;font-weight:600">
+      <code>h3 · 15px</code> Bấm Tab để vào Edit Mode — Bo Tròn (Bevel) [Ctrl + B]</div><div class="ts" style="font-size:14px;font-weight:400">
+      <code>body · 14px</code> Bấm Tab để vào Edit Mode — Bo Tròn (Bevel) [Ctrl + B]</div><div class="ts" style="font-size:12.5px;font-weight:400">
+      <code>small · 12.5px</code> Bấm Tab để vào Edit Mode — Bo Tròn (Bevel) [Ctrl + B]</div><div class="ts" style="font-size:11px;font-weight:400">
+      <code>caption · 11px</code> Bấm Tab để vào Edit Mode — Bo Tròn (Bevel) [Ctrl + B]</div>
+<p class="use">Cỡ chữ trong app là giá trị gốc; người dùng chỉnh A+/A− thì mọi cỡ nhân cùng một hệ số (chỉ chữ, không phóng cả giao diện).</p></section>
+<h2>Khoảng cách & bo góc</h2><section>Thang khoảng cách: <code>4px</code> <code>8px</code> <code>12px</code> <code>16px</code> <code>24px</code> <code>32px</code> · Bo góc: <code>sm 6px</code> <code>md 10px</code> <code>lg 14px</code></section>
+<h2>Icon</h2><section><b>Lucide (lucide-static 0.460.0, ISC)</b> — Nét 2 px, đầu nét bo tròn, không tô màu; cỡ 16–20 px trong giao diện.<ul><li>Không dùng emoji ở bất kỳ đâu trong giao diện.</li><li>Nút chỉ có icon luôn kèm tooltip mô tả việc nút làm.</li><li>Một ý nghĩa = một icon trong mọi app (vd cài plugin = plug, cập nhật = refresh-cw).</li></ul></section>
+<h2>Giọng văn</h2><section>Thân thiện như người hướng dẫn kèm cặp: ngắn, rõ, không hù doạ, không thuật ngữ khi chưa giải thích.<ul><li>Gọi người học là &quot;bạn&quot;. Tên nút/lệnh giữ tiếng Anh gốc kèm tiếng Việt: Bo Tròn (Bevel).</li><li>Câu hướng dẫn bắt đầu bằng động từ: &quot;Bấm Tab để vào Edit Mode&quot;.</li><li>Phím tắt viết dạng [Ctrl + B].</li><li>Báo lỗi: nói chuyện gì xảy ra + làm gì tiếp; không đổ lỗi cho người học.</li></ul>
+<p class="good">Nên: “Chưa kết nối Blender. Mở Blender, app sẽ tự nối sau khoảng 2 giây.”</p><p class="badx">Không nên: “ERROR: socket connection refused (ECONNREFUSED)!!!”</p></section>
+<h2>Cập nhật</h2><section>Sửa <code>brand/brand.json</code> (+ file logo), <b>tăng version</b>, chạy <code>node tools/build-registry.js</code>, push GitHub — mọi app đọc kho này tự đổi theo, trang này tự sinh lại.</section>
+</main></body></html>

@@ -1,0 +1,108 @@
+[
+  {
+    "id": "MAKE_CIRCULAR_HOLE",
+    "title": "Cách tạo lỗ tròn trên mặt phẳng vuông (Không nát lưới)",
+    "category": "Hard Surface Modeling",
+    "tags": ["hole", "circle", "subsurf", "quad"],
+    "summary": "Tạo lỗ tròn hoàn hảo trên tấm phẳng mà vẫn giữ 100% lưới Quad sạch sẽ.",
+    "steps": [
+      "1. Trong Edit Mode, tạo một lưới vuông bằng Loop Cut (Ctrl+R) hoặc Subdivide (ví dụ 3x3 ô vuông).",
+      "2. Chọn 4 mặt vuông ở vị trí muốn khoét lỗ tròn (nhấn 3 để chọn mặt).",
+      "3. Nhấn I (Inset) để đẩy viền vào một khoảng nhỏ làm vòng bảo vệ (Holding Edge).",
+      "4. Kích hoạt Add-on LoopTools (mặc định có sẵn trong Blender: Edit > Preferences > Add-ons > gõ LoopTools và bật lên).",
+      "5. Chuột phải > chọn LoopTools > Circle. 4 mặt vuông sẽ biến thành hình tròn hoàn hảo!",
+      "6. Nhấn E (Extrude) để đùn thành lỗ sâu vào trong."
+    ]
+  },
+  {
+    "id": "PERFECT_BEVEL_WORKFLOW",
+    "title": "Quy trình Bo góc (Bevel) chuẩn Hard-Surface",
+    "category": "Hard Surface Modeling",
+    "tags": ["bevel", "modifier", "weight", "hard-surface"],
+    "summary": "Cách bo góc không bị phá hỏng lưới và giữ bóng đổ sắc nét.",
+    "steps": [
+      "1. Luôn Apply Scale trước tiên: Ở Object Mode, nhấn Ctrl + A > chọn Scale.",
+      "2. Thêm Bevel Modifier: Vào tab cờ lê Modifier > Add Modifier > Generate > Bevel.",
+      "3. Trong cài đặt Bevel Modifier: Chỉnh 'Amount' vừa phải (ví dụ 0.02m), 'Segments' = 3 hoặc 4.",
+      "4. Trong mục 'Limit Method': Chọn 'Weight' hoặc 'Angle' (Angle = 30° là chuẩn nhất).",
+      "5. Trong mục 'Geometry' > 'Miter Outer': Chọn 'Arc' để góc bo các góc vuông tròn trịa.",
+      "6. Bật 'Harden Normals' trong mục Shading của Bevel để bề mặt phẳng giữ nguyên độ phẳng, không bị bóng loang lổ."
+    ]
+  },
+  {
+    "id": "CLEAN_BOOLEAN",
+    "title": "Cách đục khối bằng Boolean sạch sẽ",
+    "category": "Hard Surface Modeling",
+    "tags": ["boolean", "cutting", "modifier"],
+    "summary": "Dùng modifier Boolean mà không làm hỏng bề mặt khi Shade Smooth.",
+    "steps": [
+      "1. Đảm bảo cả vật thể chính và vật thể dùng để cắt đều đã Apply Scale (Ctrl + A).",
+      "2. Trên vật thể chính, thêm Modifier Boolean > Chọn chế độ 'Difference'.",
+      "3. Ở mục Solver: Chọn 'Exact' nếu cần độ chính xác cao, chọn 'Fast' nếu lưới đơn giản.",
+      "4. Chọn bút nhỏ (Eyedropper) click vào vật thể cắt.",
+      "5. Chọn vật thể cắt > sang tab Object Properties (hình vuông cam) > Viewport Display > Display As: đổi thành 'Wire' (để nhìn thấy vết cắt).",
+      "6. Áp dụng (Apply) Boolean khi đã ưng ý, rồi dùng Knife Tool (K) hoặc Connect (J) để nối các đỉnh lẻ về các cạnh chính."
+    ]
+  },
+  {
+    "id": "REALISTIC_GLASS_MATERIAL",
+    "title": "Tạo chất liệu Thủy Tinh (Glass) chuẩn Blender 5.2",
+    "category": "Shading & Texturing",
+    "tags": ["glass", "material", "cycles", "eevee", "raytracing"],
+    "summary": "Setup vật liệu thủy tinh trong suốt phản chiếu sắc nét trong EEVEE và Cycles.",
+    "steps": [
+      "1. Chọn vật thể, tạo Material mới trong Shader Editor với node 'Principled BSDF'.",
+      "2. Kéo thông số 'Transmission Weight' lên tối đa = 1.0.",
+      "3. Kéo 'Roughness' xuống thấp (khoảng 0.02 - 0.05 để bóng trong suốt).",
+      "4. Chỉ số khúc xạ IOR đặt là 1.45 đến 1.52 (chuẩn khúc xạ của thủy tinh).",
+      "5. Thiết lập EEVEE 5.2: Vào Render Properties > Tích bật 'Raytracing' (Screen Tracing).",
+      "6. Trong Material Properties > mục Settings: Bật 'Raytraced Transmission' để hiển thị khúc xạ ánh sáng chính xác."
+    ]
+  },
+  {
+    "id": "RETOPOLOGY_SNAP_WORKFLOW",
+    "title": "Quy trình Đi lại lưới (Retopology) cho nhân vật Game",
+    "category": "Character Workflow",
+    "tags": ["retopology", "snap", "shrinkwrap", "lowpoly", "unity"],
+    "summary": "Biến mô hình sculpt hàng triệu đa giác thành lưới quad tối ưu sẵn sàng cho game.",
+    "steps": [
+      "1. Chọn khối sculpt High-poly, tạo một Mesh Plane mới đặt sát bề mặt.",
+      "2. Bật công cụ Snap (hình nam châm trên cùng) > đổi kiểu Snap sang 'Face Project' (hoặc Face Nearest) > tích chọn 'Project Individual Elements'.",
+      "3. Thêm Modifier 'Shrinkwrap' vào mesh low-poly, chọn Target là khối High-poly và chỉnh Offset = 0.001m.",
+      "4. Trong Object Properties > Viewport Display: Bật 'In Front' để luôn nhìn thấy lưới đang dựng nổi trên khối sculpt.",
+      "5. Dùng công cụ Poly Build hoặc đùn cạnh (E) đi các vòng cạnh (Edge Loops) quanh mắt, miệng, cánh tay.",
+      "6. Kết nối các vòng lặp thành các mặt Quad 4 cạnh hoàn chỉnh."
+    ]
+  },
+  {
+    "id": "BAKE_NORMAL_MAP_HIGH_TO_LOW",
+    "title": "Nướng (Bake) Normal Map từ High-Poly sang Low-Poly",
+    "category": "Texture & Baking",
+    "tags": ["bake", "normalmap", "cycles", "unity"],
+    "summary": "Chuyển toàn bộ chi tiết điêu khắc phức tạp vào một tấm ảnh map cho game engine.",
+    "steps": [
+      "1. Đảm bảo mô hình Low-poly đã được trải UV hoàn chỉnh và không bị chồng lấn UV Islands.",
+      "2. Trong Shader Editor của Low-poly: Tạo node 'Image Texture' mới, bấm New tạo ảnh độ phân giải 2048x2048 (bỏ tích 32-bit Float, Color Space chọn 'Non-Color'). Nhấp chọn node này (không cần nối dây).",
+      "3. Đổi Render Engine sang 'Cycles' (EEVEE không hỗ trợ Bake).",
+      "4. Ở Object Mode: Click chọn khối High-poly trước, giữ Shift click chọn khối Low-poly sau cùng (Low-poly có viền cam sáng).",
+      "5. Trong Render Properties > cuộn xuống mục Bake: Chọn Bake Type là 'Normal', tích chọn ô 'Selected to Active'.",
+      "6. Mở mục Selected to Active: Đặt Extrusion = 0.02m (hoặc dùng Cage nếu có). Bấm nút 'Bake' và chờ thanh tiến trình chạy xong.",
+      "7. Trong Image Editor: Bấm Image > Save As để lưu file ảnh Normal Map ra ổ cứng."
+    ]
+  },
+  {
+    "id": "EXPORT_CHARACTER_TO_UNITY",
+    "title": "Quy trình Xuất nhân vật sang Unity (glTF & FBX)",
+    "category": "Game Engine Export",
+    "tags": ["unity", "gltf", "fbx", "export", "rigging"],
+    "summary": "Xuất mô hình kèm xương và animation chuẩn xác không bị lỗi lệch góc xoay hoặc sai tỉ lệ.",
+    "steps": [
+      "1. Kiểm tra toàn bộ Mesh và Armature: Nhấn phím A chọn tất cả > Ctrl + A > chọn 'All Transforms' để khóa Location=0, Rotation=0, Scale=1.",
+      "2. Đảm bảo nhân vật đứng quay mặt về hướng -Y (Front View trong Blender).",
+      "3. Nếu xuất FBX: Vào File > Export > FBX (.fbx) > Trong bảng cài đặt bên phải: Tích chọn 'Selected Objects', Object Types chọn 'Armature' và 'Mesh'. Ở mục Armature: Bỏ tích 'Add Leaf Bones' để tránh tạo xương thừa ở đầu ngón.",
+      "4. Trong mục Transform của FBX: Tích chọn '! Apply Transform' để tránh lỗi xoay -90 độ trục X khi vào Unity.",
+      "5. Nếu xuất glTF 2.0 (Khuyên dùng): File > Export > glTF 2.0 (.glb) > Định dạng này tự động xử lý chuẩn trục Y-up và PBR Material sang Unity vô cùng mượt mà.",
+      "6. Kéo file vào thư mục Assets của Unity: Chọn file > sang Inspector tab Rig > đổi Animation Type thành 'Humanoid' nếu là nhân vật người, hoặc 'Generic' nếu là quái vật."
+    ]
+  }
+]

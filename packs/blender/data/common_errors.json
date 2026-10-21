@@ -1,0 +1,118 @@
+[
+  {
+    "id": "UNAPPLIED_SCALE",
+    "title": "Scale không đồng đều (Chưa Apply Scale)",
+    "symptom": "Lệnh Bevel (Ctrl+B) bị vát méo mó, bo góc 1 chiều quá dẹt hoặc quá dài. Modifier Solidify/Array ra độ dày không đều.",
+    "cause": "Bạn đã phóng to/thu nhỏ vật thể ở Object Mode thay vì Edit Mode. Tỉ lệ scale không phải (1.0, 1.0, 1.0).",
+    "solution_steps": [
+      "1. Về Object Mode (phím Tab).",
+      "2. Chọn vật thể bị lỗi.",
+      "3. Nhấn tổ hợp phím Ctrl + A.",
+      "4. Chọn 'Scale'. Quan sát thanh N-panel thấy Scale quay về (1.0, 1.0, 1.0) là xong."
+    ],
+    "shortcut": "Ctrl + A > Scale"
+  },
+  {
+    "id": "INVERTED_NORMALS",
+    "title": "Mặt bị đảo ngược pháp tuyến (Flipped / Inverted Normals)",
+    "symptom": "Bề mặt 3D xuất hiện các mảng màu đen bất thường, bóng đổ kỳ quặc hoặc khi đưa vào game engine Unity bị tàng hình xuyên thấu.",
+    "cause": "Các mặt polygon đang quay mặt trong ra ngoài.",
+    "solution_steps": [
+      "1. Vào Edit Mode (phím Tab).",
+      "2. Nhấn phím A để chọn toàn bộ lưới (Select All).",
+      "3. Nhấn Shift + N để 'Recalculate Outside' (tính lại hướng mặt hướng ra ngoài).",
+      "4. Để kiểm tra: Mở menu Overlays (góc trên bên phải) > Tích chọn 'Face Orientation' (màu xanh dương là đúng, màu đỏ là bị lộn mặt)."
+    ],
+    "shortcut": "Tab > A > Shift + N"
+  },
+  {
+    "id": "DOUBLE_VERTICES",
+    "title": "Trùng đỉnh (Overlapping / Double Vertices)",
+    "symptom": "Khi Bevel hoặc Subsurf mặt phẳng bị rách, xuất hiện nếp gấp nhăn nhó, lệnh Loop Cut (Ctrl+R) dừng giữa chừng không chạy hết vòng.",
+    "cause": "Vô tình bấm chuột phải khi đang Extrude (E) làm 2 đỉnh nằm đè lên cùng 1 tọa độ mà mắt thường khó nhận biết.",
+    "solution_steps": [
+      "1. Vào Edit Mode (Tab).",
+      "2. Bấm A để chọn toàn bộ đỉnh.",
+      "3. Bấm phím M (Merge Menu).",
+      "4. Chọn 'By Distance'. Nhìn góc dưới màn hình xem báo xóa bao nhiêu Vertices (Removed X vertices)."
+    ],
+    "shortcut": "Tab > A > M > By Distance"
+  },
+  {
+    "id": "NGONS_SUBSURF",
+    "title": "Mặt N-gon (>4 đỉnh) bị lỗi nhăn khi dùng Subdivision Surface",
+    "symptom": "Mặt phẳng xuất hiện các vết lõm, quầng sáng xấu xí khi bật Shade Smooth hoặc modifier Subdivision Surface.",
+    "cause": "Mặt đó có nhiều hơn 4 cạnh kết nối (N-gon), thuật toán Subsurf chỉ hoạt động mượt nhất với Quad (4 cạnh).",
+    "solution_steps": [
+      "1. Vào Edit Mode (Tab), chuyển sang chế độ chọn đỉnh (phím 1).",
+      "2. Chọn 2 đỉnh đối diện nhau qua mặt N-gon.",
+      "3. Nhấn phím J (Connect Vertex Path) để chém đôi mặt đó thành các mặt 4 cạnh.",
+      "4. Lặp lại cho đến khi toàn bộ lưới là Quad (4 cạnh)."
+    ],
+    "shortcut": "Chọn 2 đỉnh > phím J"
+  },
+  {
+    "id": "ORIGIN_OFF_CENTER",
+    "title": "Tâm vật thể (Origin Point) bị lệch xa tít",
+    "symptom": "Khi nhấn R để xoay hoặc S để scale, vật thể bay vòng tròn xung quanh một điểm vô định ở đằng xa.",
+    "cause": "Tâm điểm màu cam (Origin) bị lệch khỏi trọng tâm hình học của vật thể.",
+    "solution_steps": [
+      "1. Về Object Mode (Tab).",
+      "2. Chuột phải vào vật thể.",
+      "3. Chọn 'Set Origin' -> 'Origin to Geometry' (hoặc 'Origin to 3D Cursor' nếu muốn đặt tâm tự do)."
+    ],
+    "shortcut": "Right Click > Set Origin > Origin to Geometry"
+  },
+  {
+    "id": "SCULPT_VOXEL_FREEZE",
+    "title": "Điêu khắc bị đơ máy khi Remesh (Voxel Size quá nhỏ)",
+    "symptom": "Khi nhấn Ctrl + R để Remesh trong Sculpt Mode, Blender bị đứng hình (Not Responding) hoặc văng ứng dụng do sinh ra hàng triệu đa giác.",
+    "cause": "Thông số Voxel Size đặt quá nhỏ (ví dụ 0.001m) so với kích thước thật của vật thể.",
+    "solution_steps": [
+      "1. Nhấn phím R trong Sculpt Mode để hiện lưới đo trực quan.",
+      "2. Di chuột ra xa để ô lưới lớn hơn (khoảng 0.05m cho giai đoạn chặn dáng thô).",
+      "3. Chỉ thu nhỏ ô lưới khi đã lên đủ phom dáng lớn và chuẩn bị làm chi tiết nếp nhăn.",
+      "4. Kiểm tra tổng số đỉnh ở góc dưới màn hình, giữ dưới 1-2 triệu đỉnh khi dựng hình."
+    ],
+    "shortcut": "R (chỉnh ô) > Ctrl + R (Remesh)"
+  },
+  {
+    "id": "UV_TEXEL_STRETCH",
+    "title": "Texture bị méo mó, giãn hạt sau khi trải UV",
+    "symptom": "Khi gán vật liệu caro hoặc hoa văn, các ô vuông trên mặt phẳng bị dẹt, méo hoặc kích thước hạt không đều giữa đầu và thân nhân vật.",
+    "cause": "Vật thể chưa Apply Scale trước khi Unwrap, hoặc thiếu đường cắt Seam ở các khúc cua gập.",
+    "solution_steps": [
+      "1. Về Object Mode: Ctrl + A > chọn Scale để chuẩn hóa tỉ lệ (1.0, 1.0, 1.0).",
+      "2. Vào Edit Mode: Đánh dấu thêm đường khâu (Mark Seam) ở những vị trí khuất (sau lưng, nách, đũng quần).",
+      "3. Nhấn A chọn toàn bộ lưới > U > chọn Unwrap.",
+      "4. Trong UV Editor: Chọn UV > Pack Islands (bật Rotate) để tận dụng tối đa diện tích ảnh."
+    ],
+    "shortcut": "Ctrl + A (Scale) > Edit Mode > U > Unwrap"
+  },
+  {
+    "id": "WEIGHT_PAINT_BLEED",
+    "title": "Cử động tay làm méo lồng ngực hoặc chân đối diện",
+    "symptom": "Khi xoay xương cánh tay trong Pose Mode, vùng mạng sườn hoặc đùi bị co rúm méo mó theo.",
+    "cause": "Lệnh gán tự động (With Automatic Weights) để lọt trọng số thừa sang các phần cơ thể nằm gần nhau.",
+    "solution_steps": [
+      "1. Chọn Armature > giữ Shift chọn Mesh > vào Weight Paint Mode.",
+      "2. Giữ Ctrl + click vào xương cánh tay đang bị lỗi.",
+      "3. Dùng cọ Draw với Weight = 0 hoặc cọ Subtract để xóa sạch vùng màu xanh lá/vàng trên lồng ngực.",
+      "4. Vào menu Weights trên thanh trên cùng > chọn 'Normalize All' để đảm bảo tổng trọng số của mỗi đỉnh luôn bằng 1.0."
+    ],
+    "shortcut": "Ctrl + Click Xương > Weights > Normalize All"
+  },
+  {
+    "id": "UNITY_ROTATION_MISMATCH",
+    "title": "Nhân vật xuất sang Unity bị quay ngửa -90 độ hoặc Scale 100",
+    "symptom": "Khi kéo file FBX vào Unity Scene, nhân vật nằm ngửa úp mặt xuống đất (Rotation X = -90) hoặc kích thước to gấp 100 lần.",
+    "cause": "Hệ trục Blender là Z-Up (trục Z hướng lên trên), trong khi Unity là Y-Up (trục Y hướng lên trên).",
+    "solution_steps": [
+      "1. Ưu tiên xuất định dạng glTF 2.0 (.glb/.gltf) - Blender 5.2 đã chuẩn hóa trục Y-up tự động hoàn hảo.",
+      "2. Nếu xuất FBX: Trong hộp thoại Export FBX, tích chọn '! Apply Transform'.",
+      "3. Luôn nhấn Ctrl + A > Apply All Transforms trên nhân vật và bộ xương trước khi xuất.",
+      "4. Đảm bảo nhân vật đứng quay mặt về hướng -Y (Front View trong Blender bằng phím Numpad 1)."
+    ],
+    "shortcut": "Ctrl + A > Apply All Transforms > Export glTF/FBX"
+  }
+]

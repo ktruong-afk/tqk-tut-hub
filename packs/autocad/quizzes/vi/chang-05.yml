@@ -1,0 +1,159 @@
+- id: q-ac-chang-05-01
+  type: single
+  question: "Lệnh nào dùng để đo chiều dài thực của một đoạn thẳng nghiêng bất kỳ song song với đối tượng?"
+  options:
+    - text: "DIMALIGNED (DAL)"
+      correct: true
+      why: "DIMALIGNED đo khoảng cách song song với trục nghiêng của đoạn thẳng."
+    - text: "DIMLINEAR (DLI)"
+      why: "DIMLINEAR chỉ chiếu theo trục toạ độ X hoặc Y."
+    - text: "DIMANGULAR (DAN)"
+      why: "DIMANGULAR dùng để đo góc mở độ."
+    - text: "DIMRADIUS (DRA)"
+      why: "DIMRADIUS dùng để đo bán kính cung tròn."
+  explain: "DIMALIGNED (lệnh tắt DAL) là lệnh đo song song với hướng của đoạn thẳng xiên."
+  tags: [chang-05, dimension]
+
+- id: q-ac-chang-05-02
+  type: single
+  question: "Để đo một chuỗi các kích thước nối tiếp nhau thẳng hàng liên tục, lệnh nào là tối ưu nhất?"
+  options:
+    - text: "DIMCONTINUE (DCO)"
+      correct: true
+      why: "DIMCONTINUE tự động lấy điểm cuối của kích thước trước làm điểm đầu kích thước sau."
+    - text: "DIMBASELINE (DBA)"
+      why: "DIMBASELINE đo các kích thước song song xuất phát từ 1 gốc chung."
+    - text: "DIMLINEAR (DLI)"
+      why: "DIMLINEAR phải thao tác lặp lại 2 điểm cho mỗi đoạn."
+    - text: "DIMDIAMETER (DDI)"
+      why: "DIMDIAMETER chỉ dùng đo đường kính."
+  explain: "DIMCONTINUE giúp tạo chuỗi kích thước nối tiếp liên tục chỉ bằng cách bấm các điểm mốc tiếp theo."
+  tags: [chang-05, dimcontinue]
+
+- id: q-ac-chang-05-03
+  type: single
+  question: "Biến hệ thống hoặc thông số nào quy định khoảng cách giữa các tầng kích thước song song trong DIMBASELINE?"
+  options:
+    - text: "Baseline spacing (biến DIMDLI)"
+      correct: true
+      why: "Baseline spacing trong thẻ Lines quyết định khoảng nhảy tầng của các đường kích thước song song."
+    - text: "Extend beyond dim lines"
+      why: "Đây là độ nhô của đường gióng qua đường kích thước."
+    - text: "Offset from origin"
+      why: "Đây là khoảng hở chân đường gióng so với vật thể."
+    - text: "Text height"
+      why: "Đây là chiều cao của con số kích thước."
+  explain: "Baseline spacing quy định khoảng cách giữa hai đường kích thước song song kế tiếp nhau."
+  tags: [chang-05, dimbaseline]
+
+- id: q-ac-chang-05-04
+  type: single
+  question: "Lệnh QDIM cho phép người dùng làm gì?"
+  options:
+    - text: "Quét chọn nhiều đối tượng cùng lúc để tạo hàng loạt kích thước trong một thao tác"
+      correct: true
+      why: "QDIM là công cụ đo nhanh hàng loạt tự động phân tích các điểm mút và tâm hình học."
+    - text: "Tự động đổi đơn vị từ mét sang milimet"
+      why: "QDIM không làm thay đổi đơn vị đo của bản vẽ."
+    - text: "Biến đường thẳng thành đường cong Spline"
+      why: "QDIM là lệnh ghi kích thước, không phải lệnh vẽ hình."
+    - text: "Tạo bảng thống kê vật tư"
+      why: "Bảng biểu được tạo bằng lệnh TABLE."
+  explain: "QDIM (Quick Dimension) giúp tăng tốc độ ghi kích thước bằng cách xử lý hàng loạt chỉ qua một vùng quét chuột."
+  tags: [chang-05, qdim]
+
+- id: q-ac-chang-05-05
+  type: single
+  question: "Tại sao nên đặt chiều cao chữ Text Height = 0 trong hộp thoại Text Style (STYLE)?"
+  options:
+    - text: "Để chiều cao chữ có thể điều chỉnh linh hoạt theo từng kiểu Dimstyle hoặc lệnh viết chữ MTEXT"
+      correct: true
+      why: "Height = 0 giúp kiểu chữ không bị đóng đinh cố định kích thước cưỡng bức."
+    - text: "Để chữ biến thành nét đứt"
+      why: "Nét đứt do Linetype quản lý."
+    - text: "Để tránh việc người khác sao chép chữ trong bản vẽ"
+      why: "Height = 0 không có tính năng bảo vệ bản quyền."
+    - text: "Để giảm dung lượng file xuống 50%"
+      why: "Height = 0 không ảnh hưởng đáng kể đến dung lượng tệp DWG."
+  explain: "Đặt Height bằng 0 là nguyên tắc số 1 để hệ thống kích thước và văn bản trong bản vẽ dễ tuỳ biến."
+  tags: [chang-05, textstyle]
+
+- id: q-ac-chang-05-06
+  type: single
+  question: "Ký hiệu nào đại diện cho giá trị đo thực tế tự động của đối tượng trong lệnh DIMEDIT?"
+  options:
+    - text: "Cặp dấu ngoặc nhọn <>"
+      correct: true
+      why: "Dấu <> đại diện cho giá trị kích thước thực đo tự động cập nhật của AutoCAD."
+    - text: "Cặp dấu ngoặc đơn ()"
+      why: "Dấu () chỉ là ký hiệu văn bản thông thường."
+    - text: "Dấu ngoặc vuông []"
+      why: "Dấu [] dùng cho hệ đơn vị phụ Alternate Units."
+    - text: "Dấu thăng ##"
+      why: "Dấu ## không phải mã giữ số đo."
+  explain: "Ký hiệu <> giữ cho số đo luôn tự động liên kết với hình học chi tiết khi thay đổi kích thước."
+  tags: [chang-05, dimedit]
+
+- id: q-ac-chang-05-07
+  type: single
+  question: "Mã ký tự nào dùng để chèn nhanh ký hiệu phi đường kính (Ø) vào chuỗi chữ số kích thước?"
+  options:
+    - text: "%%c"
+      correct: true
+      why: "%%c là mã viết tắt để chèn ký hiệu đường kính phi Ø."
+    - text: "%%d"
+      why: "%%d là mã chèn ký hiệu độ góc °."
+    - text: "%%p"
+      why: "%%p là mã chèn ký hiệu cộng trừ ±."
+    - text: "%%u"
+      why: "%%u là mã gạch chân văn bản."
+  explain: "Gõ %%c trong văn bản hoặc kích thước sẽ hiển thị ra ký hiệu đường kính phi Ø."
+  tags: [chang-05, ky-hieu]
+
+- id: q-ac-chang-05-08
+  type: single
+  question: "Thành phần nào KHÔNG thuộc cấu tạo mặc định của một đối tượng Multileader (MLEADER)?"
+  options:
+    - text: "Đường cắt mặt cắt Hatch"
+      correct: true
+      why: "Hatch là vùng tô vật liệu riêng biệt, không thuộc Multileader."
+    - text: "Mũi tên (Arrowhead)"
+      why: "Mũi tên là thành phần chỉ điểm của Multileader."
+    - text: "Đoạn ngang gác chữ (Landing line)"
+      why: "Landing line là đoạn thẳng đỡ văn bản ghi chú."
+    - text: "Nội dung chú thích (MText hoặc Block)"
+      why: "Nội dung ghi chú là phần hiển thị thông tin của Multileader."
+  explain: "Multileader gồm 3 phần chính: Mũi tên & đường dẫn (Leader line), đoạn gác (Landing) và nội dung (Content)."
+  tags: [chang-05, mleader]
+
+- id: q-ac-chang-05-09
+  type: single
+  question: "Tính năng Annotative trong AutoCAD mang lại lợi ích nổi bật nào?"
+  options:
+    - text: "Tự động điều chỉnh kích thước chữ số để chiều cao in thật trên giấy luôn bằng nhau ở mọi tỉ lệ"
+      correct: true
+      why: "Annotative tự động co giãn theo tỉ lệ khung nhìn Viewport để giữ nguyên chiều cao chuẩn in ấn."
+    - text: "Tự động phát hiện lỗi chính tả tiếng Việt"
+      why: "AutoCAD không tích hợp bộ kiểm tra chính tả tiếng Việt tự động."
+    - text: "Tự động chuyển đổi hình chiếu 2D thành vật thể 3D"
+      why: "Annotative chỉ áp dụng cho các đối tượng chú thích kích thước, chữ viết."
+    - text: "Tự động gửi email bản vẽ cho đối tác"
+      why: "Không liên quan đến chức năng gửi email."
+  explain: "Annotative giúp người vẽ chỉ cần 1 kiểu Dimstyle duy nhất mà vẫn hiển thị đúng chuẩn ở mọi tỉ lệ bản vẽ."
+  tags: [chang-05, annotative]
+
+- id: q-ac-chang-05-10
+  type: single
+  question: "Bảng biểu tạo bằng lệnh TABLE trong AutoCAD có thể thực hiện công thức nào tương tự Excel?"
+  options:
+    - text: "=SUM để tính tổng các ô dữ liệu"
+      correct: true
+      why: "TABLE hỗ trợ các công thức số học cơ bản như SUM, AVERAGE, COUNT."
+    - text: "Chỉ hiển thị chữ, hoàn toàn không tính toán được"
+      why: "Bảng trong AutoCAD có hỗ trợ công thức tính toán tự động."
+    - text: "Chạy mô phỏng chuyển động động cơ"
+      why: "TABLE không có chức năng mô phỏng cơ học."
+    - text: "Tự động render ảnh 3D photorealistic"
+      why: "TABLE là bảng dữ liệu 2D, không liên quan đến render ảnh."
+  explain: "AutoCAD hỗ trợ tính năng công thức tự động cho bảng TABLE, đặc biệt là hàm tính tổng =SUM."
+  tags: [chang-05, table]

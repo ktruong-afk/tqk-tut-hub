@@ -1,0 +1,159 @@
+- id: q-ac-chang-08-01
+  type: single
+  question: "Tệp mẫu bản vẽ Drawing Template trong AutoCAD có phần mở rộng tệp là gì?"
+  options:
+    - text: ".dwt"
+      correct: true
+      why: "DWT viết tắt của Drawing Template."
+    - text: ".dwg"
+      why: "DWG là tệp bản vẽ đồ họa thông thường."
+    - text: ".dws"
+      why: "DWS là tệp tiêu chuẩn CAD Standards."
+    - text: ".dxe"
+      why: "DXE là tệp cấu hình trích xuất dữ liệu Data Extraction."
+  explain: "Tệp đuôi .dwt lưu trữ sẵn toàn bộ hệ thống Layer, Dimstyle, Textstyle và Layout chuẩn công ty."
+  tags: [chang-08, template]
+
+- id: q-ac-chang-08-02
+  type: single
+  question: "Để cài đặt tệp template tự động mở mỗi khi người dùng tạo bản vẽ mới (QNEW), bạn thiết lập tại mục nào trong Options?"
+  options:
+    - text: "Thẻ Files > Template Settings > Default Template File Name for QNEW"
+      correct: true
+      why: "Đây là đường dẫn quy định file mẫu tự động nạp cho lệnh QNEW."
+    - text: "Thẻ Display > Colors"
+      why: "Thẻ Display dùng để chỉnh màu nền giao diện."
+    - text: "Thẻ Open and Save"
+      why: "Thẻ Open and Save dùng để cài đặt tự động lưu file."
+    - text: "Thẻ Plot and Publish"
+      why: "Thẻ Plot and Publish dùng để cài đặt in ấn."
+  explain: "Cấu hình Default Template File Name for QNEW giúp tự động mở ngay bản vẽ chuẩn mẫu khi bấm Ctrl + N."
+  tags: [chang-08, options]
+
+- id: q-ac-chang-08-03
+  type: single
+  question: "Định dạng file tệp tin lưu trữ bộ quy chuẩn kiểm tra bản vẽ CAD Standards là gì?"
+  options:
+    - text: ".dws"
+      correct: true
+      why: "DWS viết tắt của Drawing Standards."
+    - text: ".dwg"
+      why: "DWG là tệp bản vẽ thông thường."
+    - text: ".dwt"
+      why: "DWT là tệp mẫu bản vẽ."
+    - text: ".ctb"
+      why: "CTB là bảng nét in."
+  explain: "Tệp .dws đóng vai trò là khuôn mẫu quy chuẩn đối chiếu sai sót cho các bản vẽ trong dự án."
+  tags: [chang-08, cad-standards]
+
+- id: q-ac-chang-08-04
+  type: single
+  question: "Lệnh nào trong AutoCAD khởi chạy trình quét và tự động sửa các vi phạm tiêu chuẩn layer, font chữ, dimstyle?"
+  options:
+    - text: "CHECKSTANDARDS"
+      correct: true
+      why: "CHECKSTANDARDS là lệnh quét và sửa vi phạm tiêu chuẩn theo tệp .dws."
+    - text: "AUDIT"
+      why: "AUDIT sửa lỗi cấu trúc cơ sở dữ liệu tệp tin."
+    - text: "PURGE"
+      why: "PURGE xóa bỏ đối tượng rác không dùng."
+    - text: "SPELL"
+      why: "SPELL kiểm tra chính tả tiếng Anh."
+  explain: "Lệnh CHECKSTANDARDS đối chiếu bản vẽ với file .dws chuẩn và cho phép Fix lỗi hàng loạt chỉ bằng 1 nút bấm."
+  tags: [chang-08, checkstandards]
+
+- id: q-ac-chang-08-05
+  type: single
+  question: "Lệnh tắt nào ngắn nhất để đo khoảng cách và góc nghiêng giữa hai điểm mốc mà không tạo ra đường kích thước rác?"
+  options:
+    - text: "DI (lệnh DIST)"
+      correct: true
+      why: "DI là lệnh tắt tiêu chuẩn của lệnh DIST."
+    - text: "DLI"
+      why: "DLI là DIMLINEAR vẽ kích thước cố định."
+    - text: "DO"
+      why: "DO là lệnh DONUT vẽ hình vành khăn."
+    - text: "DT"
+      why: "DT là lệnh DTEXT viết chữ đơn dòng."
+  explain: "Dùng lệnh DIST (DI) để kiểm tra nhanh khoảng cách và góc độ mà không làm rối bản vẽ."
+  tags: [chang-08, dist]
+
+- id: q-ac-chang-08-06
+  type: single
+  question: "Khi một tệp bản vẽ DWG bị lỗi hỏng nặng không thể mở bằng lệnh OPEN, lệnh nào giúp quét sâu và phục hồi lại tệp tin?"
+  options:
+    - text: "RECOVER"
+      correct: true
+      why: "RECOVER quét phân tích và sửa chữa tệp tin DWG bị hỏng trước khi nạp vào bộ nhớ."
+    - text: "NEW"
+      why: "NEW dùng để tạo bản vẽ mới."
+    - text: "SAVEAS"
+      why: "SAVEAS dùng để lưu bản vẽ thành tên khác."
+    - text: "EXPORT"
+      why: "EXPORT dùng để xuất dữ liệu đồ họa."
+  explain: "Lệnh RECOVER là công cụ cứu hộ chuyên dụng để mở các tệp bản vẽ bị crash hoặc lỗi hỏng cấu trúc."
+  tags: [chang-08, recover]
+
+- id: q-ac-chang-08-07
+  type: single
+  question: "Tệp tin văn bản nào trong hệ thống AutoCAD lưu trữ toàn bộ các định nghĩa phím tắt lệnh của phần mềm?"
+  options:
+    - text: "acad.pgp"
+      correct: true
+      why: "PGP viết tắt của Program Parameters, lưu toàn bộ Command Aliases của AutoCAD."
+    - text: "acad.cuix"
+      why: "CUIX lưu cấu hình giao diện Ribbon."
+    - text: "acad.lin"
+      why: "LIN lưu định nghĩa kiểu đường Linetype."
+    - text: "acad.pat"
+      why: "PAT lưu mẫu hoa văn mặt cắt Hatch."
+  explain: "Tệp acad.pgp là nơi bạn tùy biến các phím tắt lệnh theo quy tắc bàn tay trái để tăng tốc độ vẽ."
+  tags: [chang-08, pgp]
+
+- id: q-ac-chang-08-08
+  type: single
+  question: "Định dạng file kịch bản tự động hóa gồm chuỗi lệnh tuần tự trong AutoCAD có đuôi mở rộng là gì?"
+  options:
+    - text: ".scr"
+      correct: true
+      why: "SCR viết tắt của Script File."
+    - text: ".bat"
+      why: "BAT là tệp thực thi của Windows."
+    - text: ".lsp"
+      why: "LSP là tệp mã nguồn AutoLISP."
+    - text: ".txt"
+      why: "TXT là văn bản thông thường."
+  explain: "Tệp đuôi .scr được thực thi bằng lệnh SCRIPT để tự động hóa hàng loạt thao tác lặp đi lặp lại."
+  tags: [chang-08, script]
+
+- id: q-ac-chang-08-09
+  type: single
+  question: "Lệnh nào trong AutoCAD mở trung tâm tùy biến toàn diện giao diện người dùng (Ribbon, Quick Access Toolbar, chuột và phím tắt)?"
+  options:
+    - text: "CUI"
+      correct: true
+      why: "CUI là Customize User Interface."
+    - text: "GUI"
+      why: "GUI là thuật ngữ giao diện đồ họa."
+    - text: "MENU"
+      why: "MENU chỉ nạp lại giao diện mặc định."
+    - text: "WORKSPACE"
+      why: "WORKSPACE dùng để chuyển đổi không gian làm việc."
+  explain: "Lệnh CUI cho phép cá nhân hóa toàn bộ thanh công cụ, menu ngữ cảnh và phím tắt của phần mềm."
+  tags: [chang-08, cui]
+
+- id: q-ac-chang-08-10
+  type: single
+  question: "Phím chức năng nào trên bàn phím dùng để bật hoặc tắt nhanh chế độ vẽ vuông góc Ortho Mode?"
+  options:
+    - text: "Phím F8"
+      correct: true
+      why: "F8 là phím tắt mặc định khóa các đường vẽ vuông góc ngang hoặc đứng."
+    - text: "Phím F3"
+      why: "F3 dùng để bật tắt truy bắt điểm Osnap."
+    - text: "Phím F7"
+      why: "F7 dùng để bật tắt lưới Grid."
+    - text: "Phím F12"
+      why: "F12 dùng để bật tắt Dynamic Input."
+  explain: "Nhấn F8 để bật tắt nhanh chế độ vẽ vuông góc Ortho cực kỳ tiện lợi."
+  tags: [chang-08, phim-chuc-nang]

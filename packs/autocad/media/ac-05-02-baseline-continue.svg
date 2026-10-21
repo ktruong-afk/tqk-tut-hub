@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 440" width="100%" height="100%">
+  <rect width="760" height="440" fill="#1b1d22" rx="8"/>
+  <rect x="20" y="20" width="720" height="400" fill="#14161a" stroke="#323640" stroke-width="1.5" rx="6"/>
+
+  <!-- Left: DIMCONTINUE (Kích thước nối tiếp) -->
+  <g transform="translate(60, 50)">
+    <rect width="280" height="320" fill="#1e222b" stroke="#2d3340" stroke-width="1" rx="4"/>
+    <text x="140" y="30" fill="#61afef" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle">DIMCONTINUE (Nối tiếp)</text>
+
+    <!-- Stepped part geometry -->
+    <path d="M 30 220 L 30 140 L 90 140 L 90 160 L 170 160 L 170 180 L 250 180 L 250 220 Z" stroke="#98c379" stroke-width="2" fill="none"/>
+
+    <!-- Continue Dim Chain on same baseline height -->
+    <!-- Segment 1: 30 to 90 -->
+    <line x1="30" y1="100" x2="90" y2="100" stroke="#61afef" stroke-width="1.5"/>
+    <line x1="30" y1="135" x2="30" y2="95" stroke="#61afef" stroke-width="1"/>
+    <line x1="90" y1="135" x2="90" y2="95" stroke="#61afef" stroke-width="1"/>
+    <text x="60" y="95" fill="#ffffff" font-family="monospace" font-size="11" text-anchor="middle">60</text>
+
+    <!-- Segment 2: 90 to 170 -->
+    <line x1="90" y1="100" x2="170" y2="100" stroke="#61afef" stroke-width="1.5"/>
+    <line x1="170" y1="155" x2="170" y2="95" stroke="#61afef" stroke-width="1"/>
+    <text x="130" y="95" fill="#ffffff" font-family="monospace" font-size="11" text-anchor="middle">80</text>
+
+    <!-- Segment 3: 170 to 250 -->
+    <line x1="170" y1="100" x2="250" y2="100" stroke="#61afef" stroke-width="1.5"/>
+    <line x1="250" y1="175" x2="250" y2="95" stroke="#61afef" stroke-width="1"/>
+    <text x="210" y="95" fill="#ffffff" font-family="monospace" font-size="11" text-anchor="middle">80</text>
+
+    <text x="140" y="270" fill="#abb2bf" font-family="sans-serif" font-size="12" text-anchor="middle">Nối tiếp liên tục cùng cao độ</text>
+    <text x="140" y="295" fill="#61afef" font-family="sans-serif" font-size="12" text-anchor="middle">Đo kích thước phân đoạn từng phòng/bậc</text>
+  </g>
+
+  <!-- Right: DIMBASELINE (Kích thước song song từ gốc) -->
+  <g transform="translate(400, 50)">
+    <rect width="280" height="320" fill="#1e222b" stroke="#2d3340" stroke-width="1" rx="4"/>
+    <text x="140" y="30" fill="#e5c07b" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle">DIMBASELINE (Song song từ gốc)</text>
+
+    <!-- Same geometry -->
+    <path d="M 30 220 L 30 140 L 90 140 L 90 160 L 170 160 L 170 180 L 250 180 L 250 220 Z" stroke="#98c379" stroke-width="2" fill="none"/>
+
+    <!-- Common origin line on left -->
+    <circle cx="30" cy="140" r="4" fill="#e06c75"/>
+    <text x="25" y="240" fill="#e06c75" font-family="sans-serif" font-size="11">Gốc chuẩn</text>
+
+    <!-- Baseline tier 1: 60 -->
+    <line x1="30" y1="115" x2="90" y2="115" stroke="#e5c07b" stroke-width="1.5"/>
+    <line x1="30" y1="135" x2="30" y2="55" stroke="#e06c75" stroke-width="1"/>
+    <line x1="90" y1="135" x2="90" y2="110" stroke="#e5c07b" stroke-width="1"/>
+    <text x="60" y="110" fill="#ffffff" font-family="monospace" font-size="11" text-anchor="middle">60</text>
+
+    <!-- Baseline tier 2: 140 -->
+    <line x1="30" y1="85" x2="170" y2="85" stroke="#e5c07b" stroke-width="1.5"/>
+    <line x1="170" y1="155" x2="170" y2="80" stroke="#e5c07b" stroke-width="1"/>
+    <text x="100" y="80" fill="#ffffff" font-family="monospace" font-size="11" text-anchor="middle">140</text>
+
+    <!-- Baseline tier 3: 220 -->
+    <line x1="30" y1="55" x2="250" y2="55" stroke="#e5c07b" stroke-width="1.5"/>
+    <line x1="250" y1="175" x2="250" y2="50" stroke="#e5c07b" stroke-width="1"/>
+    <text x="140" y="50" fill="#ffffff" font-family="monospace" font-size="11" text-anchor="middle">220 (Tổng)</text>
+
+    <text x="140" y="270" fill="#abb2bf" font-family="sans-serif" font-size="12" text-anchor="middle">Xếp tầng tự động cách đều nhau</text>
+    <text x="140" y="295" fill="#e5c07b" font-family="sans-serif" font-size="12" text-anchor="middle">Tránh tích luỹ dung sai khi gia công</text>
+  </g>
+</svg>

@@ -1,0 +1,151 @@
+- id: q-ac-chang-10-01
+  type: single
+  question: "Trong tính năng ràng buộc hình học (Geometric Constraints), ràng buộc nào đảm bảo hai đường thẳng luôn song song với nhau dù bạn di chuyển hay xoay một trong hai đường?"
+  options:
+    - text: "Parallel"
+      correct: true
+      why: "Parallel duy trì quan hệ hình học song song tuyệt đối giữa hai đường thẳng."
+    - text: "Coincident"
+      why: "Coincident gắn hai điểm trùng khít vị trí với nhau."
+    - text: "Concentric"
+      why: "Concentric giữ hai đường tròn đồng tâm."
+    - text: "Collinear"
+      why: "Collinear ép hai đoạn thẳng nằm trên cùng một đường thẳng hàng."
+  explain: "Ràng buộc Parallel khóa góc nghiêng của hai đường luôn bằng nhau và giữ chúng song song vĩnh viễn."
+  tags: [chang-10, parametric, constraints]
+
+- id: q-ac-chang-10-02
+  type: single
+  question: "Bảng quản lý tham số Parameters Manager trong AutoCAD cho phép bạn làm điều gì đặc biệt với các kích thước hình học?"
+  options:
+    - text: "Viết công thức toán học và hàm liên kết giữa các biến số kích thước (ví dụ d2 = d1 * 2 + 50)"
+      correct: true
+      why: "Parameters Manager cho phép gán công thức đại số tính toán kích thước tự động."
+    - text: "Đổi màu nền của bản vẽ sang màu xanh lá"
+      why: "Màu nền bản vẽ được chỉnh trong hộp thoại Options."
+    - text: "Tự động gửi email thông báo cho chủ đầu tư"
+      why: "AutoCAD không có chức năng tự động gửi email từ bảng tham số."
+    - text: "Tăng tốc độ card màn hình đồ họa"
+      why: "Tăng tốc phần cứng được quản lý bởi Graphics Performance."
+  explain: "Parameters Manager biến bản vẽ thành mô hình tham số thông minh, nơi kích thước này tự động thay đổi theo kích thước kia qua biểu thức toán học."
+  tags: [chang-10, parameters, cong-thuc]
+
+- id: q-ac-chang-10-03
+  type: single
+  question: "Trong khối động Dynamic Block nâng cao, công cụ nào cho phép người dùng chọn danh sách kích thước định sẵn từ menu thả xuống (ví dụ chọn Cửa D1: 900x2200, D2: 800x2000)?"
+  options:
+    - text: "Lookup Parameter kết hợp Lookup Action"
+      correct: true
+      why: "Bộ đôi Lookup tạo menu xổ xuống cho phép tra bảng kích thước tiêu chuẩn."
+    - text: "Visibility State đơn thuần"
+      why: "Visibility State chỉ bật tắt ẩn hiện đối tượng chứ không thay đổi giá trị kích thước hình học."
+    - text: "Array Action"
+      why: "Array Action dùng để sao chép mảng đối tượng."
+    - text: "Basepoint Parameter"
+      why: "Basepoint xác định điểm chèn của block."
+  explain: "Lookup Table ánh xạ các giá trị kích thước thực tế của tham số (Linear Parameter) thành các tên gọi tiêu chuẩn trong danh sách menu thả xuống."
+  tags: [chang-10, dynamic-block, lookup]
+
+- id: q-ac-chang-10-04
+  type: single
+  question: "Trong ngôn ngữ lập trình AutoLISP, tại sao định nghĩa hàm bằng (defun c:VTIM () ...) lại cho phép người dùng gõ trực tiếp chữ VTIM trên dòng lệnh AutoCAD mà không cần dấu ngoặc đơn?"
+  options:
+    - text: "Vì tiền tố c: báo cho AutoCAD biết đây là một lệnh người dùng hợp lệ của hệ thống"
+      correct: true
+      why: "Tiền tố c: biến hàm Lisp thành một lệnh AutoCAD thông thường."
+    - text: "Vì chữ c là viết tắt của ngôn ngữ lập trình C++"
+      why: "c: là quy ước cú pháp đặc thù của riêng AutoLISP, không liên quan đến C++."
+    - text: "Vì chữ c bắt buộc phải đại diện cho lệnh Copy"
+      why: "c: ở đây là tiền tố hàm, không phải lệnh Copy."
+    - text: "Vì không có tiền tố c: thì AutoLISP sẽ báo lỗi cú pháp lập tức"
+      why: "Không có c: hàm vẫn hợp lệ nhưng người dùng phải gọi ở dạng biểu thức ngoặc đơn (VTIM)."
+  explain: "Quy ước đặt tên tiền tố c: trong AutoLISP giúp hàm đăng ký trực tiếp với bộ xử lý dòng lệnh của AutoCAD."
+  tags: [chang-10, autolisp, defun]
+
+- id: q-ac-chang-10-05
+  type: single
+  question: "Hàm nào trong AutoLISP dùng để tạm dừng chương trình và yêu cầu người dùng bấm chọn một tọa độ điểm trên màn hình đồ họa?"
+  options:
+    - text: "getpoint"
+      correct: true
+      why: "getpoint là hàm chuẩn để nhận tọa độ điểm 2D hoặc 3D từ người dùng."
+    - text: "getstring"
+      why: "getstring dùng để nhận chuỗi ký tự văn bản."
+    - text: "getint"
+      why: "getint dùng để nhận một số nguyên."
+    - text: "getdist"
+      why: "getdist dùng để đo hoặc nhận một khoảng cách."
+  explain: "Hàm (getpoint [pt] [prompt]) cho phép hiển thị thông báo và trả về danh sách toạ độ (X Y Z) khi người dùng nhấp chuột."
+  tags: [chang-10, autolisp, getpoint]
+
+- id: q-ac-chang-10-06
+  type: truefalse
+  question: "Một chương trình AutoLISP chuyên nghiệp luôn cần lưu lại giá trị ban đầu của các biến hệ thống (như OSMODE, CMDECHO) trước khi thay đổi và khôi phục lại khi kết thúc chương trình."
+  answer: true
+  explain: "Đúng. Nếu chương trình tắt chế độ bắt điểm OSMODE khi vẽ tự động mà không khôi phục lại, người dùng sẽ bị mất bắt điểm sau khi chạy xong lệnh."
+  tags: [chang-10, autolisp, bien-he-thong]
+
+- id: q-ac-chang-10-07
+  type: single
+  question: "Lệnh nào trong AutoCAD chịu trách nhiệm cập nhật lại dữ liệu từ bảng tính Excel vào bảng AutoCAD Table hoặc ghi ngược số liệu từ CAD vào Excel?"
+  options:
+    - text: "DATALINKUPDATE"
+      correct: true
+      why: "DATALINKUPDATE thực hiện đồng bộ hai chiều giữa file Excel ngoài và bảng AutoCAD."
+    - text: "TABLESTYLE"
+      why: "TABLESTYLE dùng để tạo kiểu dáng hiển thị cho bảng."
+    - text: "XREF"
+      why: "XREF dùng để tham chiếu bản vẽ DWG, PDF hoặc ảnh raster."
+    - text: "ATTEDIT"
+      why: "ATTEDIT dùng để sửa giá trị thuộc tính block."
+  explain: "DATALINKUPDATE là công cụ chuyên biệt để đồng bộ dữ liệu giữa bảng tính ngoại vi và đối tượng Table nội bộ."
+  tags: [chang-10, datalink, table]
+
+- id: q-ac-chang-10-08
+  type: single
+  question: "Khi cần gửi bộ hồ sơ thiết kế lớn gồm nhiều bản vẽ cho đối tác thẩm tra, tại sao bạn nên dùng lệnh ETRANSMIT thay vì chỉ đính kèm các tệp DWG đơn lẻ?"
+  options:
+    - text: "ETRANSMIT tự động thu gom toàn bộ các tệp Xref, phông chữ kỹ thuật SHX và bảng nét in CTB vào một file ZIP nén chuẩn xác"
+      correct: true
+      why: "ETRANSMIT loại bỏ hoàn toàn nguy cơ đối tác bị lỗi font chữ, mất nét in hoặc thiếu tệp tham chiếu ngoài."
+    - text: "ETRANSMIT tự động chuyển ngữ toàn bộ bản vẽ sang tiếng Anh"
+      why: "AutoCAD không có tính năng tự động dịch ngôn ngữ văn bản."
+    - text: "ETRANSMIT mã hóa bản vẽ để người nhận không thể in ấn được"
+      why: "ETRANSMIT nhằm mục đích bàn giao hồ sơ đầy đủ, không phải khóa in ấn."
+    - text: "ETRANSMIT xóa sạch toàn bộ kích thước của bản vẽ"
+      why: "ETRANSMIT giữ nguyên toàn bộ kích thước hình học."
+  explain: "ETRANSMIT đảm bảo tính độc lập và toàn vẹn của dự án khi di chuyển giữa các máy tính khác nhau."
+  tags: [chang-10, etransmit, du-an]
+
+- id: q-ac-chang-10-09
+  type: single
+  question: "Nếu một đồng nghiệp phàn nàn rằng mỗi khi họ nhấn Ctrl + O hoặc gõ OPEN thì AutoCAD không hiện cửa sổ duyệt file mà lại bắt gõ tên file trên dòng lệnh, bạn sẽ khuyên họ chỉnh biến hệ thống nào?"
+  options:
+    - text: "Gõ FILEDIA và đặt giá trị bằng 1"
+      correct: true
+      why: "FILEDIA = 1 bật lại các hộp thoại tương tác tệp (File Dialogues)."
+    - text: "Cài lại toàn bộ hệ điều hành Windows"
+      why: "Đây là cách quá tốn kém thời gian và hoàn toàn không cần thiết."
+    - text: "Gõ PICKFIRST và đặt giá trị bằng 0"
+      why: "PICKFIRST liên quan đến việc chọn đối tượng trước hay sau khi bấm lệnh."
+    - text: "Gõ LTSCALE và đặt bằng 100"
+      why: "LTSCALE quản lý tỉ lệ nét đứt."
+  explain: "Biến hệ thống FILEDIA bằng 0 sẽ vô hiệu hoá các cửa sổ duyệt file. Đặt lại FILEDIA = 1 là giải pháp khắc phục tức thì."
+  tags: [chang-10, sua-loi, filedia]
+
+- id: q-ac-chang-10-10
+  type: multi
+  question: "Những tính năng nào sau đây có mặt đầy đủ trên phiên bản AutoCAD Full nhưng KHÔNG có sẵn trên AutoCAD LT? (Chọn 2 phương án)"
+  options:
+    - text: "Không gian làm việc và bộ lệnh dựng hình mô hình khối đặc 3D Solid (EXTRUDE, REVOLVE, UNION...)"
+      correct: true
+      why: "AutoCAD LT chỉ dành riêng cho vẽ kỹ thuật 2D, không hỗ trợ tạo khối 3D Solid."
+    - text: "7 Bộ công cụ Specialized Toolsets chuyên ngành (Architecture, Mechanical, Electrical...)"
+      correct: true
+      why: "Các bộ công cụ chuyên ngành chuyên sâu chỉ được tặng kèm trong gói thuê bao AutoCAD Full."
+    - text: "Khả năng vẽ đường thẳng với lệnh LINE và đường tròn với lệnh CIRCLE"
+      why: "Vẽ 2D cơ bản là tính năng cốt lõi có trên cả hai phiên bản."
+    - text: "In ấn bản vẽ kỹ thuật ra tệp định dạng PDF"
+      why: "Cả hai phiên bản đều xuất bản in PDF với chất lượng đồ họa tương đương nhau."
+  explain: "Mô hình hóa 3D Solid và 7 bộ công cụ chuyên ngành (Toolsets) là các tính năng phân cấp độc quyền chỉ có trên AutoCAD Full."
+  tags: [chang-10, autocad-full, autocad-lt, so-sanh]

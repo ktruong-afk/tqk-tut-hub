@@ -1,0 +1,159 @@
+- id: q-ac-chang-09-01
+  type: single
+  question: "Theo quy ước màu sắc chuẩn RGB tương ứng với XYZ trong hệ toạ độ 3D của AutoCAD, trục Z chiều cao mang màu gì?"
+  options:
+    - text: "Màu xanh dương (Blue)"
+      correct: true
+      why: "Trục X màu đỏ, trục Y màu xanh lá, trục Z màu xanh dương."
+    - text: "Màu đỏ (Red)"
+      why: "Màu đỏ đại diện cho trục X."
+    - text: "Màu xanh lá (Green)"
+      why: "Màu xanh lá đại diện cho trục Y."
+    - text: "Màu vàng (Yellow)"
+      why: "Không có trục toạ độ chuẩn màu vàng."
+  explain: "Trục Z luôn mang màu xanh dương và vuông góc với mặt phẳng làm việc XY."
+  tags: [chang-09, ucs]
+
+- id: q-ac-chang-09-02
+  type: single
+  question: "Thao tác kết hợp phím nào trên bàn phím và chuột giúp xoay tự do (3D Orbit) góc nhìn trong không gian 3 chiều?"
+  options:
+    - text: "Nhấn giữ phím Shift kết hợp nhấn giữ bánh xe chuột giữa và di chuột"
+      correct: true
+      why: "Shift + chuột giữa là phím tắt mặc định để xoay 3D Orbit mượt mà."
+    - text: "Nhấp đúp chuột trái"
+      why: "Nhấp đúp chuột trái chỉ mở bảng thuộc tính."
+    - text: "Nhấn Ctrl + Alt + Delete"
+      why: "Tổ hợp phím này mở Task Manager của Windows."
+    - text: "Lăn bánh xe chuột tiến lùi"
+      why: "Lăn chuột dùng để phóng to thu nhỏ Zoom."
+  explain: "Nhấn giữ Shift và chuột giữa là thao tác điều hướng cơ bản nhất của mô hình hóa 3D."
+  tags: [chang-09, 3d-orbit]
+
+- id: q-ac-chang-09-03
+  type: single
+  question: "Kiểu hiển thị Visual Style nào lý tưởng nhất cho kỹ sư thiết kế vì vừa đổ bóng khối đặc vừa thể hiện rõ đường nét cạnh để bắt điểm?"
+  options:
+    - text: "Shaded with Edges"
+      correct: true
+      why: "Shaded with Edges hiển thị đầy đủ bề mặt khối đặc và tô đậm các đường viền cạnh."
+    - text: "2D Wireframe"
+      why: "2D Wireframe chỉ là khung dây rỗng, khó cảm nhận khối."
+    - text: "Realistic"
+      why: "Realistic làm mờ đường viền cạnh nên khó bắt điểm góc."
+    - text: "Sketchy"
+      why: "Sketchy là kiểu phác thảo nghệ thuật nét chì."
+  explain: "Shaded with Edges là kiểu hiển thị tối ưu được khuyên dùng nhiều nhất khi vẽ 3D."
+  tags: [chang-09, visual-styles]
+
+- id: q-ac-chang-09-04
+  type: single
+  question: "Điều kiện bắt buộc của hình phẳng 2D để khi sử dụng lệnh EXTRUDE tạo ra được một khối đặc 3D Solid là gì?"
+  options:
+    - text: "Biên dạng 2D phải là một đường khép kín hoàn hảo (như Circle, Polyline khép kín)"
+      correct: true
+      why: "Chỉ biên dạng kín mới chứa đựng diện tích để đùn thành thể tích khối đặc."
+    - text: "Biên dạng phải vẽ bằng nét đứt"
+      why: "Kiểu đường không quyết định tính chất Solid."
+    - text: "Bắt buộc phải vẽ bằng màu đỏ"
+      why: "Màu sắc không can thiệp vào cấu trúc hình học."
+    - text: "Phải nằm ở toạ độ gốc 0,0"
+      why: "Vật thể có thể nằm ở bất kỳ toạ độ nào."
+  explain: "Nếu đùn một đường cong hoặc đoạn thẳng hở, lệnh EXTRUDE chỉ sinh ra bề mặt Surface mỏng."
+  tags: [chang-09, extrude]
+
+- id: q-ac-chang-09-05
+  type: single
+  question: "Lệnh nào trong AutoCAD tự động nhận diện vùng khép kín và cho phép ấn chuột xuống dưới để khoét lỗ cực kỳ trực quan?"
+  options:
+    - text: "PRESSPULL"
+      correct: true
+      why: "PRESSPULL nhận diện vùng kín thông minh và tự động đắp thịt hoặc khoét lỗ khi kéo chuột."
+    - text: "EXTRUDE"
+      why: "EXTRUDE đòi hỏi phải chọn đối tượng có sẵn và không tự trừ lỗ."
+    - text: "REVOLVE"
+      why: "REVOLVE dùng để quay khối tròn xoay."
+    - text: "LOFT"
+      why: "LOFT dùng để nối chuyển tiếp tiết diện."
+  explain: "Lệnh PRESSPULL là công cụ tạo khối và khoét lỗ nhanh và trực quan nhất của AutoCAD hiện đại."
+  tags: [chang-09, presspull]
+
+- id: q-ac-chang-09-06
+  type: single
+  question: "Để dựng một chi tiết tròn xoay đối xứng tâm như trục xe, bình gốm hoặc puly đai truyền, lệnh nào là tối ưu nhất?"
+  options:
+    - text: "REVOLVE (lệnh tắt REV)"
+      correct: true
+      why: "REVOLVE quay một nửa biên dạng quanh trục tâm 360 độ để tạo khối tròn xoay."
+    - text: "SWEEP"
+      why: "SWEEP kéo trượt theo đường dẫn uốn lượn."
+    - text: "EXTRUDE"
+      why: "EXTRUDE chỉ đùn thẳng theo phương vuông góc."
+    - text: "SLICE"
+      why: "SLICE dùng để cắt đôi vật thể."
+  explain: "Lệnh REVOLVE chuyên dùng tạo các chi tiết máy dạng tròn xoay trong ngành cơ khí chế tạo."
+  tags: [chang-09, revolve]
+
+- id: q-ac-chang-09-07
+  type: single
+  question: "Thứ tự thao tác chọn đối tượng BẮT BUỘC trong lệnh trừ khối SUBTRACT (SU) là gì?"
+  options:
+    - text: "Chọn vật cần giữ lại [Enter], sau đó chọn vật cần cắt bỏ [Enter]"
+      correct: true
+      why: "Khẩu quyết của lệnh SUBTRACT luôn là: Vật giữ lại trước, vật trừ đi sau."
+    - text: "Chọn vật cần cắt bỏ trước rồi mới chọn vật giữ lại"
+      why: "Chọn ngược sẽ làm phần mềm xóa mất vật chính và giữ lại mũi khoan."
+    - text: "Quét chọn toàn bộ tất cả vật thể cùng một lúc"
+      why: "Quét cùng lúc phần mềm không phân biệt được đâu là vật giữ và vật trừ."
+    - text: "Nhấn chuột phải chọn Delete"
+      why: "Delete sẽ xóa mất đối tượng."
+  explain: "Luôn chọn đối tượng gốc cần giữ lại trước, nhấn Enter rồi mới chọn các khối dao cắt cần trừ đi."
+  tags: [chang-09, subtract]
+
+- id: q-ac-chang-09-08
+  type: single
+  question: "Lệnh nào cho phép gia công bo tròn các mép cạnh sắc nhọn của khối đặc 3D Solid với bán kính uốn cong mượt mà?"
+  options:
+    - text: "FILLETEDGE"
+      correct: true
+      why: "FILLETEDGE là lệnh chuyên gia công bo tròn cạnh khối đặc 3D."
+    - text: "CHAMFEREDGE"
+      why: "CHAMFEREDGE dùng để vát mép phẳng, không phải bo tròn."
+    - text: "FILLET"
+      why: "FILLET chuyên dùng cho các đường nét 2D phẳng."
+    - text: "ROUND"
+      why: "ROUND không phải lệnh AutoCAD chuẩn."
+  explain: "Dùng FILLETEDGE để tạo các góc lượn đúc và bo tròn mép an toàn cho chi tiết 3D."
+  tags: [chang-09, filletedge]
+
+- id: q-ac-chang-09-09
+  type: single
+  question: "Lệnh FLATSHOT trong không gian 3D của AutoCAD mang lại lợi ích gì?"
+  options:
+    - text: "Trích xuất góc nhìn 3D hiện hành thành một khối Block 2D phẳng có tách riêng nét thấy và nét khuất"
+      correct: true
+      why: "FLATSHOT chụp ảnh chiếu phẳng góc nhìn 3D sang đối tượng 2D phục vụ in ấn bản vẽ kỹ thuật."
+    - text: "Tự động tắt phần mềm AutoCAD"
+      why: "FLATSHOT không tắt phần mềm."
+    - text: "Phá vỡ khối 3D thành các nét rời rạc"
+      why: "FLATSHOT tạo ra một block 2D mới, giữ nguyên vẹn mô hình 3D gốc."
+    - text: "Đổi màu nền của bản vẽ"
+      why: "Không liên quan đến màu nền."
+  explain: "FLATSHOT giúp trích xuất toàn bộ các hình chiếu trục đo và hình chiếu đứng 2D từ mô hình 3D gốc."
+  tags: [chang-09, flatshot]
+
+- id: q-ac-chang-09-10
+  type: single
+  question: "Lệnh nào giúp người kỹ sư tra cứu toàn bộ thể tích, trọng tâm và khối lượng của một chi tiết cơ khí 3D Solid?"
+  options:
+    - text: "MASSPROP"
+      correct: true
+      why: "MASSPROP (Mass Properties) tính toán toàn diện các thông số cơ học và khối lượng thể tích."
+    - text: "DIST"
+      why: "DIST chỉ đo khoảng cách giữa 2 điểm."
+    - text: "AREA"
+      why: "AREA tính diện tích mặt phẳng 2D."
+    - text: "ID"
+      why: "ID chỉ lấy toạ độ một điểm mốc."
+  explain: "Sử dụng MASSPROP để lấy thông số thể tích và khối lượng phục vụ dự toán vật tư và tính toán cơ học."
+  tags: [chang-09, massprop]

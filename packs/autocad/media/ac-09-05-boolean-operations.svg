@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 440" width="100%" height="100%">
+  <rect width="760" height="440" fill="#1b1d22" rx="8"/>
+  <rect x="20" y="20" width="720" height="400" fill="#14161a" stroke="#323640" stroke-width="1.5" rx="6"/>
+
+  <text x="380" y="55" fill="#e5c07b" font-family="sans-serif" font-size="18" font-weight="bold" text-anchor="middle">Ba phép toán Boolean trên khối đặc 3D: UNION, SUBTRACT, INTERSECT</text>
+
+  <!-- Op 1: UNION -->
+  <g transform="translate(45, 95)">
+    <rect width="205" height="250" fill="#1e222b" stroke="#61afef" stroke-width="1.5" rx="4"/>
+    <text x="102" y="28" fill="#61afef" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle">1. UNION (UNI)</text>
+    <text x="102" y="48" fill="#abb2bf" font-family="sans-serif" font-size="11" text-anchor="middle">Hợp nhất khối: A + B</text>
+
+    <!-- Union visual -->
+    <g transform="translate(60, 80)">
+      <rect x="0" y="30" width="60" height="50" fill="#61afef" fill-opacity="0.4" stroke="#61afef" stroke-width="1.5"/>
+      <circle cx="65" cy="55" r="30" fill="#61afef" fill-opacity="0.4" stroke="#61afef" stroke-width="1.5"/>
+      <!-- fused outline -->
+      <path d="M 0 30 L 60 30 A 30 30 0 0 1 85 75 L 0 80 Z" fill="#61afef" fill-opacity="0.3"/>
+    </g>
+
+    <text x="102" y="190" fill="#abb2bf" font-family="sans-serif" font-size="10" text-anchor="middle">Gộp nhiều khối rời thành 1</text>
+    <text x="102" y="210" fill="#abb2bf" font-family="sans-serif" font-size="10" text-anchor="middle">Xóa bỏ các vách ngăn bên trong</text>
+  </g>
+
+  <!-- Op 2: SUBTRACT -->
+  <g transform="translate(277, 95)">
+    <rect width="205" height="250" fill="#1e222b" stroke="#e06c75" stroke-width="1.5" rx="4"/>
+    <text x="102" y="28" fill="#e06c75" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle">2. SUBTRACT (SU)</text>
+    <text x="102" y="48" fill="#abb2bf" font-family="sans-serif" font-size="11" text-anchor="middle">Trừ thể tích: A - B</text>
+
+    <!-- Subtract visual -->
+    <g transform="translate(60, 80)">
+      <rect x="0" y="30" width="60" height="50" fill="#e06c75" fill-opacity="0.4" stroke="#e06c75" stroke-width="1.5"/>
+      <circle cx="60" cy="55" r="25" fill="#14161a" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="3,2"/>
+    </g>
+
+    <text x="102" y="190" fill="#abb2bf" font-family="sans-serif" font-size="10" text-anchor="middle">1. Chọn vật giữ lại (A) [Enter]</text>
+    <text x="102" y="210" fill="#e5c07b" font-family="sans-serif" font-size="10" text-anchor="middle">2. Chọn vật bị trừ (B) [Enter]</text>
+  </g>
+
+  <!-- Op 3: INTERSECT -->
+  <g transform="translate(510, 95)">
+    <rect width="205" height="250" fill="#1e222b" stroke="#98c379" stroke-width="1.5" rx="4"/>
+    <text x="102" y="28" fill="#98c379" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle">3. INTERSECT (IN)</text>
+    <text x="102" y="48" fill="#abb2bf" font-family="sans-serif" font-size="11" text-anchor="middle">Lấy phần giao: A ∩ B</text>
+
+    <!-- Intersect visual -->
+    <g transform="translate(60, 80)">
+      <rect x="0" y="30" width="60" height="50" fill="none" stroke="#5c6370" stroke-width="1" stroke-dasharray="3,2"/>
+      <circle cx="60" cy="55" r="30" fill="none" stroke="#5c6370" stroke-width="1" stroke-dasharray="3,2"/>
+      <!-- Intersection area highlighted -->
+      <path d="M 35 30 A 30 30 0 0 1 60 25 L 60 80 A 30 30 0 0 1 35 75 Z" fill="#98c379" stroke="#98c379" stroke-width="1.5"/>
+    </g>
+
+    <text x="102" y="190" fill="#abb2bf" font-family="sans-serif" font-size="10" text-anchor="middle">Chỉ giữ lại phần thể tích</text>
+    <text x="102" y="210" fill="#abb2bf" font-family="sans-serif" font-size="10" text-anchor="middle">chung nhau giữa hai vật thể</text>
+  </g>
+
+  <text x="380" y="390" fill="#abb2bf" font-family="sans-serif" font-size="12" text-anchor="middle">Sự kết hợp giữa các khối sơ khai (Box, Cylinder) và phép toán Boolean tạo nên mọi cỗ máy phức tạp</text>
+</svg>

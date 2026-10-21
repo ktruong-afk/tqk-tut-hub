@@ -1,0 +1,4 @@
+[
+  { "key": "tip", "label": "Mẹo AutoCAD", "hint": "Gợi ý lệnh / phím tắt theo bài đang học", "kind": "note", "route": "left", "ttl": 0 },
+  { "key": "standard", "label": "Chuẩn bản vẽ", "hint": "Nhắc layer, đơn vị, tỉ lệ in khi phát hiện sai chuẩn", "kind": "toast", "route": "top", "ttl": 8 }
+]

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 440" width="100%" height="100%">
+  <rect width="760" height="440" fill="#1b1d22" rx="8"/>
+  <rect x="20" y="20" width="720" height="400" fill="#14161a" stroke="#323640" stroke-width="1.5" rx="6"/>
+
+  <text x="380" y="55" fill="#e5c07b" font-family="sans-serif" font-size="18" font-weight="bold" text-anchor="middle">Thiết lập trang in Page Setup cho Layout (PAGESETUP)</text>
+
+  <!-- Dialog Box mockup -->
+  <g transform="translate(60, 85)">
+    <rect width="640" height="275" fill="#21252b" stroke="#4b5263" stroke-width="1.5" rx="6"/>
+    <rect width="640" height="30" fill="#2c313a" rx="6"/>
+    <text x="20" y="20" fill="#abb2bf" font-family="sans-serif" font-size="12" font-weight="bold">Page Setup - Layout1</text>
+
+    <!-- Section 1: Printer/Plotter -->
+    <g transform="translate(25, 45)">
+      <rect width="280" height="85" fill="#1e222b" stroke="#323640" rx="4"/>
+      <text x="15" y="22" fill="#61afef" font-family="sans-serif" font-size="11" font-weight="bold">1. Printer / Plotter</text>
+      <rect x="15" y="32" width="250" height="24" fill="#282c34" stroke="#4b5263"/>
+      <text x="25" y="48" fill="#ffffff" font-family="sans-serif" font-size="10">AutoCAD PDF (General Documentation)</text>
+      <text x="15" y="72" fill="#5c6370" font-family="sans-serif" font-size="10">Xuất file PDF chất lượng cao vector</text>
+    </g>
+
+    <!-- Section 2: Paper Size -->
+    <g transform="translate(335, 45)">
+      <rect width="280" height="85" fill="#1e222b" stroke="#323640" rx="4"/>
+      <text x="15" y="22" fill="#98c379" font-family="sans-serif" font-size="11" font-weight="bold">2. Paper Size (Khổ giấy)</text>
+      <rect x="15" y="32" width="250" height="24" fill="#282c34" stroke="#4b5263"/>
+      <text x="25" y="48" fill="#ffffff" font-family="sans-serif" font-size="10">ISO full bleed A3 (420.00 x 297.00 mm)</text>
+      <text x="15" y="72" fill="#5c6370" font-family="sans-serif" font-size="10">Full bleed: Không bị xén lề trắng</text>
+    </g>
+
+    <!-- Section 3: Plot Area & Scale -->
+    <g transform="translate(25, 145)">
+      <rect width="280" height="115" fill="#1e222b" stroke="#323640" rx="4"/>
+      <text x="15" y="22" fill="#e5c07b" font-family="sans-serif" font-size="11" font-weight="bold">3. Plot Area &amp; Scale (Vùng &amp; Tỉ lệ in)</text>
+      <text x="15" y="45" fill="#abb2bf" font-family="sans-serif" font-size="10">What to plot: <tspan fill="#61afef" font-weight="bold">Layout</tspan></text>
+      <text x="15" y="65" fill="#abb2bf" font-family="sans-serif" font-size="10">Scale: <tspan fill="#98c379" font-weight="bold">1:1</tspan> (1 mm = 1 unit)</text>
+      <text x="15" y="85" fill="#e06c75" font-family="sans-serif" font-size="10">Tuyệt đối KHÔNG tick vào Fit to paper!</text>
+      <text x="15" y="103" fill="#5c6370" font-family="sans-serif" font-size="9">Fit to paper sẽ làm sai lệch tỉ lệ thước kẻ</text>
+    </g>
+
+    <!-- Section 4: Plot Style Table -->
+    <g transform="translate(335, 145)">
+      <rect width="280" height="115" fill="#1e222b" stroke="#323640" rx="4"/>
+      <text x="15" y="22" fill="#c678dd" font-family="sans-serif" font-size="11" font-weight="bold">4. Plot style table (Bảng nét in)</text>
+      <rect x="15" y="32" width="250" height="24" fill="#282c34" stroke="#4b5263"/>
+      <text x="25" y="48" fill="#ffffff" font-family="sans-serif" font-size="10">monochrome.ctb (In toàn bộ nét đen)</text>
+      <text x="15" y="75" fill="#abb2bf" font-family="sans-serif" font-size="10">• In đúng độ dày Lineweight theo Layer</text>
+      <text x="15" y="95" fill="#abb2bf" font-family="sans-serif" font-size="10">• Bản vẽ rõ nét, không bị mờ nhạt</text>
+    </g>
+  </g>
+
+  <text x="380" y="390" fill="#abb2bf" font-family="sans-serif" font-size="12" text-anchor="middle">Thiết lập Page Setup chuẩn 1 lần cho Layout $\to$ Áp dụng đồng bộ cho toàn bộ dự án</text>
+</svg>

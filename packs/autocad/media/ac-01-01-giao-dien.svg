@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <rect width="800" height="500" fill="#1e1e24" rx="8"/>
+  
+  <!-- Ribbon Area (Top) -->
+  <rect x="10" y="10" width="780" height="80" fill="#2b2d35" rx="4" stroke="#3e424e" stroke-width="1.5"/>
+  <text x="30" y="35" fill="#e0e0e0" font-family="sans-serif" font-size="14" font-weight="bold">Dải Ribbon (Home, Insert, Annotate, Parametric, View...)</text>
+  <rect x="25" y="45" width="60" height="35" fill="#3a3d4a" rx="3"/>
+  <text x="40" y="67" fill="#8ec07c" font-family="sans-serif" font-size="12">Line</text>
+  <rect x="95" y="45" width="60" height="35" fill="#3a3d4a" rx="3"/>
+  <text x="108" y="67" fill="#8ec07c" font-family="sans-serif" font-size="12">Circle</text>
+  <rect x="165" y="45" width="60" height="35" fill="#3a3d4a" rx="3"/>
+  <text x="180" y="67" fill="#8ec07c" font-family="sans-serif" font-size="12">Arc</text>
+  <rect x="235" y="45" width="60" height="35" fill="#3a3d4a" rx="3"/>
+  <text x="245" y="67" fill="#8ec07c" font-family="sans-serif" font-size="12">Modify</text>
+
+  <!-- Drawing Area (Center) -->
+  <rect x="10" y="98" width="780" height="320" fill="#141619" rx="4" stroke="#333742" stroke-width="1.5"/>
+  <!-- Grid lines -->
+  <g stroke="#1e2229" stroke-width="1">
+    <line x1="10" y1="160" x2="790" y2="160"/>
+    <line x1="10" y1="220" x2="790" y2="220"/>
+    <line x1="10" y1="280" x2="790" y2="280"/>
+    <line x1="10" y1="340" x2="790" y2="340"/>
+    <line x1="150" y1="98" x2="150" y2="418"/>
+    <line x1="300" y1="98" x2="300" y2="418"/>
+    <line x1="450" y1="98" x2="450" y2="418"/>
+    <line x1="600" y1="98" x2="600" y2="418"/>
+  </g>
+  <text x="320" y="240" fill="#4a5263" font-family="sans-serif" font-size="22" font-weight="bold">Vùng vẽ (Drawing Area)</text>
+
+  <!-- ViewCube (Top Right of Drawing Area) -->
+  <rect x="700" y="115" width="70" height="70" fill="#2d3139" rx="4" stroke="#525866" stroke-width="1.5"/>
+  <text x="720" y="155" fill="#4fa3d1" font-family="sans-serif" font-size="13" font-weight="bold">TOP</text>
+  <path d="M 700 115 L 720 100 L 790 100 L 770 115 Z" fill="#383d47"/>
+  <path d="M 770 115 L 790 100 L 790 170 L 770 185 Z" fill="#202329"/>
+
+  <!-- UCS Icon (Bottom Left of Drawing Area) -->
+  <g stroke-width="2">
+    <line x1="35" y1="395" x2="65" y2="395" stroke="#e05252"/>
+    <line x1="35" y1="395" x2="35" y2="365" stroke="#52b352"/>
+    <text x="70" y="399" fill="#e05252" font-family="sans-serif" font-size="11">X</text>
+    <text x="32" y="358" fill="#52b352" font-family="sans-serif" font-size="11">Y</text>
+  </g>
+
+  <!-- Command Line (Bottom-Center) -->
+  <rect x="50" y="380" width="700" height="32" fill="#22252c" rx="4" stroke="#4c566a" stroke-width="1.5"/>
+  <text x="65" y="401" fill="#abb2bf" font-family="monospace" font-size="13">Type a command or press Enter...</text>
+
+  <!-- Status Bar (Bottom) -->
+  <rect x="10" y="426" width="780" height="34" fill="#282c34" rx="3" stroke="#3b4048" stroke-width="1"/>
+  <text x="25" y="448" fill="#98c379" font-family="monospace" font-size="12">120.50, 45.20, 0.00</text>
+  <rect x="220" y="432" width="55" height="22" fill="#3e4452" rx="3"/>
+  <text x="228" y="447" fill="#61afef" font-family="sans-serif" font-size="11">MODEL</text>
+  <rect x="285" y="432" width="45" height="22" fill="#3e4452" rx="3"/>
+  <text x="295" y="447" fill="#abb2bf" font-family="sans-serif" font-size="11">GRID</text>
+  <rect x="340" y="432" width="55" height="22" fill="#2d5e8a" rx="3"/>
+  <text x="347" y="447" fill="#ffffff" font-family="sans-serif" font-size="11">ORTHO</text>
+  <rect x="405" y="432" width="55" height="22" fill="#2d5e8a" rx="3"/>
+  <text x="414" y="447" fill="#ffffff" font-family="sans-serif" font-size="11">OSNAP</text>
+  <rect x="470" y="432" width="45" height="22" fill="#3e4452" rx="3"/>
+  <text x="480" y="447" fill="#abb2bf" font-family="sans-serif" font-size="11">DYN</text>
+
+  <!-- Document Tabs (Top Under Ribbon) -->
+  <rect x="20" y="94" width="110" height="18" fill="#141619" rx="2" stroke="#444" stroke-width="1"/>
+  <text x="30" y="107" fill="#ffffff" font-family="sans-serif" font-size="11">Drawing1.dwg ✕</text>
+</svg>

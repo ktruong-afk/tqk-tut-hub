@@ -1,0 +1,16 @@
+{
+  "id": "photoshop",
+  "name": "Photoshop",
+  "description": "Chỉnh sửa ảnh, layer, mask, công cụ chọn vùng — đang soạn bài học và plugin cầu nối (UXP).",
+  "icon": "image",
+  "version": "0.0.0",
+  "status": "coming-soon",
+  "app": {
+    "name": "Photoshop",
+    "bridge": "photoshop",
+    "minVersion": "2024"
+  },
+  "languages": [],
+  "lessonCount": 0,
+  "files": []
+}

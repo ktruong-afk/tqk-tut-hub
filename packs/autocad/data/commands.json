@@ -1,0 +1,1774 @@
+[
+  {
+    "name": "LINE",
+    "aliases": [
+      "L"
+    ],
+    "desc": "Vẽ các đoạn thẳng nối tiếp nhau giữa các điểm chỉ định",
+    "ribbon": "Home > Draw > Line",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "CIRCLE",
+    "aliases": [
+      "C"
+    ],
+    "desc": "Vẽ đường tròn theo tâm và bán kính/đường kính hoặc qua các tiếp điểm",
+    "ribbon": "Home > Draw > Circle",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "ARC",
+    "aliases": [
+      "A"
+    ],
+    "desc": "Vẽ cung tròn qua 3 điểm hoặc theo tâm, góc, chiều dài",
+    "ribbon": "Home > Draw > Arc",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "RECTANG",
+    "aliases": [
+      "REC"
+    ],
+    "desc": "Vẽ hình chữ nhật hoặc hình vuông từ hai điểm góc đối diện",
+    "ribbon": "Home > Draw > Rectangle",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "POLYGON",
+    "aliases": [
+      "POL"
+    ],
+    "desc": "Vẽ đa giác đều nội tiếp hoặc ngoại tiếp đường tròn từ 3 đến 1024 cạnh",
+    "ribbon": "Home > Draw > Polygon",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "ELLIPSE",
+    "aliases": [
+      "EL"
+    ],
+    "desc": "Vẽ hình elip hoặc cung elip từ tâm và các bán trục",
+    "ribbon": "Home > Draw > Ellipse",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "PLINE",
+    "aliases": [
+      "PL"
+    ],
+    "desc": "Vẽ đường đa tuyến liên tục gồm nhiều đoạn thẳng và cung tròn kết hợp",
+    "ribbon": "Home > Draw > Polyline",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "SPLINE",
+    "aliases": [
+      "SPL"
+    ],
+    "desc": "Vẽ đường cong trơn mượt đi qua các điểm nội suy hoặc đỉnh điều khiển",
+    "ribbon": "Home > Draw > Spline",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "POINT",
+    "aliases": [
+      "PO"
+    ],
+    "desc": "Tạo đối tượng điểm đơn lẻ trên bản vẽ",
+    "ribbon": "Home > Draw > Multiple Points",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "DIVIDE",
+    "aliases": [
+      "DIV"
+    ],
+    "desc": "Chia đều đối tượng hình học thành n phần bằng nhau bằng các điểm",
+    "ribbon": "Home > Draw > Divide",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "MEASURE",
+    "aliases": [
+      "ME"
+    ],
+    "desc": "Rải các điểm hoặc block dọc theo đối tượng với khoảng cách cố định",
+    "ribbon": "Home > Draw > Measure",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "HATCH",
+    "aliases": [
+      "H"
+    ],
+    "desc": "Tô mặt cắt hoặc hoa văn vật liệu vào vùng kín được chọn",
+    "ribbon": "Home > Draw > Hatch",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "GRADIENT",
+    "aliases": [
+      "GD"
+    ],
+    "desc": "Tô chuyển sắc thái màu (gradient) vào vùng kín",
+    "ribbon": "Home > Draw > Gradient",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "TEXT",
+    "aliases": [
+      "DT"
+    ],
+    "desc": "Tạo dòng chữ đơn (Single-line Text)",
+    "ribbon": "Home > Annotation > Single Line Text",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "MTEXT",
+    "aliases": [
+      "MT",
+      "T"
+    ],
+    "desc": "Tạo đoạn văn bản đa dòng (Multiline Text) với đầy đủ định dạng",
+    "ribbon": "Home > Annotation > Multiline Text",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "UNITS",
+    "aliases": [
+      "UN"
+    ],
+    "desc": "Mở hộp thoại thiết lập đơn vị đo lường và góc cho bản vẽ",
+    "ribbon": "Application Menu > Drawing Utilities > Units",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "ZOOM",
+    "aliases": [
+      "Z"
+    ],
+    "desc": "Phóng to, thu nhỏ hoặc bao quát khung nhìn bản vẽ",
+    "ribbon": "View > Navigate 2D > Zoom",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "PAN",
+    "aliases": [
+      "P"
+    ],
+    "desc": "Rê trượt khung nhìn bản vẽ theo hướng kéo chuột",
+    "ribbon": "View > Navigate 2D > Pan",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "REGEN",
+    "aliases": [
+      "RE"
+    ],
+    "desc": "Tái tạo và tính toán lại toàn bộ đồ hoạ bản vẽ trên màn hình",
+    "ribbon": "View > Navigate 2D > Regen",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "QSAVE",
+    "aliases": [],
+    "desc": "Lưu nhanh các thay đổi của bản vẽ hiện hành",
+    "ribbon": "Quick Access Toolbar > Save",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "SAVEAS",
+    "aliases": [],
+    "desc": "Lưu bản vẽ hiện tại sang file mới hoặc phiên bản DWG/DXF khác",
+    "ribbon": "Quick Access Toolbar > Save As",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "OPEN",
+    "aliases": [],
+    "desc": "Mở một file bản vẽ kỹ thuật đã lưu trên máy tính",
+    "ribbon": "Quick Access Toolbar > Open",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "NEW",
+    "aliases": [],
+    "desc": "Tạo bản vẽ mới từ file mẫu bản vẽ (template)",
+    "ribbon": "Quick Access Toolbar > New",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "OSNAP",
+    "aliases": [
+      "OS"
+    ],
+    "desc": "Mở hộp thoại cài đặt các chế độ bắt điểm đối tượng tự động",
+    "ribbon": "Status Bar > Object Snap",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "ORTHO",
+    "aliases": [],
+    "desc": "Bật hoặc tắt chế độ khoá con trỏ theo phương ngang hoặc dọc",
+    "ribbon": "Status Bar > Ortho Mode",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "DSETTINGS",
+    "aliases": [
+      "DS",
+      "SE"
+    ],
+    "desc": "Mở hộp thoại cài đặt hỗ trợ vẽ Drafting Settings (Snap, Grid, Polar, Osnap)",
+    "ribbon": "Tools > Drafting Settings",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "QSELECT",
+    "aliases": [
+      "QSE"
+    ],
+    "desc": "Lọc và chọn nhanh các đối tượng trên bản vẽ theo thuộc tính chỉ định",
+    "ribbon": "Home > Utilities > Quick Select",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "ERASE",
+    "aliases": [
+      "E"
+    ],
+    "desc": "Xoá bỏ các đối tượng được chọn khỏi bản vẽ",
+    "ribbon": "Home > Modify > Erase",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "UNDO",
+    "aliases": [
+      "U"
+    ],
+    "desc": "Huỷ bỏ thao tác lệnh vừa thực hiện trước đó",
+    "ribbon": "Quick Access Toolbar > Undo",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "REDO",
+    "aliases": [],
+    "desc": "Khôi phục lại thao tác lệnh vừa bị Undo",
+    "ribbon": "Quick Access Toolbar > Redo",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "PTYPE",
+    "aliases": [],
+    "desc": "Mở hộp thoại tuỳ chỉnh kiểu hiển thị và kích thước của đối tượng Point",
+    "ribbon": "Home > Utilities > Point Style",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "CLOSE",
+    "aliases": [],
+    "desc": "Đóng bản vẽ hiện hành",
+    "ribbon": "Application Menu > Close",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "QUIT",
+    "aliases": [
+      "EXIT"
+    ],
+    "desc": "Thoát khỏi chương trình AutoCAD",
+    "ribbon": "Application Menu > Exit AutoCAD",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "MOVE",
+    "aliases": [
+      "M"
+    ],
+    "desc": "Di chuyển đối tượng từ vị trí này sang vị trí khác theo khoảng cách và hướng chỉ định",
+    "ribbon": "Home > Modify > Move",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "COPY",
+    "aliases": [
+      "CO",
+      "CP"
+    ],
+    "desc": "Sao chép một hoặc nhiều đối tượng sang các vị trí mới",
+    "ribbon": "Home > Modify > Copy",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "ROTATE",
+    "aliases": [
+      "RO"
+    ],
+    "desc": "Xoay đối tượng quanh một điểm chuẩn theo góc chỉ định",
+    "ribbon": "Home > Modify > Rotate",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "SCALE",
+    "aliases": [
+      "SC"
+    ],
+    "desc": "Phóng to hoặc thu nhỏ đối tượng theo tỷ lệ đồng dạng từ một điểm gốc",
+    "ribbon": "Home > Modify > Scale",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "MIRROR",
+    "aliases": [
+      "MI"
+    ],
+    "desc": "Tạo bản sao đối xứng của đối tượng qua một trục đối xứng",
+    "ribbon": "Home > Modify > Mirror",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "OFFSET",
+    "aliases": [
+      "O"
+    ],
+    "desc": "Tạo đối tượng đồng dạng song song hoặc đồng tâm cách đối tượng gốc một khoảng cố định",
+    "ribbon": "Home > Modify > Offset",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "TRIM",
+    "aliases": [
+      "TR"
+    ],
+    "desc": "Cắt tỉa phần thừa của đối tượng tại các điểm giao cắt với đối tượng khác",
+    "ribbon": "Home > Modify > Trim",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "EXTEND",
+    "aliases": [
+      "EX"
+    ],
+    "desc": "Kéo dài đối tượng cho đến khi chạm tới đường biên giới hạn",
+    "ribbon": "Home > Modify > Extend",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "FILLET",
+    "aliases": [
+      "F"
+    ],
+    "desc": "Bo tròn góc giao giữa hai đường thẳng bằng một cung tròn có bán kính xác định",
+    "ribbon": "Home > Modify > Fillet",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "CHAMFER",
+    "aliases": [
+      "CHA"
+    ],
+    "desc": "Vát mép góc phẳng giữa hai đường thẳng theo khoảng cách hoặc góc vát",
+    "ribbon": "Home > Modify > Chamfer",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "ARRAY",
+    "aliases": [
+      "AR"
+    ],
+    "desc": "Sao chép đối tượng thành mảng có quy luật dạng chữ nhật, tròn xoay hoặc theo đường dẫn",
+    "ribbon": "Home > Modify > Array",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "ARRAYRECT",
+    "aliases": [],
+    "desc": "Tạo mảng sao chép đối tượng theo các hàng và cột hình chữ nhật",
+    "ribbon": "Home > Modify > Rectangular Array",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "ARRAYPOLAR",
+    "aliases": [],
+    "desc": "Tạo mảng sao chép đối tượng xoay quanh một tâm tròn",
+    "ribbon": "Home > Modify > Polar Array",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "ARRAYPATH",
+    "aliases": [],
+    "desc": "Sao chép rải đối tượng dọc theo một đường dẫn cong hoặc đa tuyến",
+    "ribbon": "Home > Modify > Path Array",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "STRETCH",
+    "aliases": [
+      "S"
+    ],
+    "desc": "Kéo giãn hoặc co ngắn một phần hình học của đối tượng được chọn qua khung Crossing",
+    "ribbon": "Home > Modify > Stretch",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "LENGTHEN",
+    "aliases": [
+      "LEN"
+    ],
+    "desc": "Thay đổi chiều dài đoạn thẳng hoặc góc mở cung tròn theo các phương thức đo",
+    "ribbon": "Home > Modify > Lengthen",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "EXPLODE",
+    "aliases": [
+      "X"
+    ],
+    "desc": "Phá vỡ đối tượng phức hợp (Polyline, Block, Rectangle) thành các thực thể đơn lẻ",
+    "ribbon": "Home > Modify > Explode",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "JOIN",
+    "aliases": [
+      "J"
+    ],
+    "desc": "Nối liền các đoạn thẳng, cung tròn tiếp giáp thành một đối tượng đường đa tuyến duy nhất",
+    "ribbon": "Home > Modify > Join",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "PEDIT",
+    "aliases": [
+      "PE"
+    ],
+    "desc": "Chỉnh sửa thuộc tính, bề dày, uốn mịn và nối gộp đường đa tuyến 2D",
+    "ribbon": "Home > Modify > Edit Polyline",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "BREAK",
+    "aliases": [
+      "BR"
+    ],
+    "desc": "Bẻ gãy hoặc cắt một khoảng hở trên đoạn thẳng, đường cong giữa hai điểm chỉ định",
+    "ribbon": "Home > Modify > Break",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "OVERKILL",
+    "aliases": [],
+    "desc": "Dọn dẹp và xoá bỏ các nét vẽ thừa, nét trùng lặp hoặc gộp các đoạn thẳng thẳng hàng",
+    "ribbon": "Home > Modify > Delete Duplicate Objects",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "MATCHPROP",
+    "aliases": [
+      "MA"
+    ],
+    "desc": "Sao chép thuộc tính (layer, màu sắc, linetype) từ đối tượng nguồn sang các đối tượng đích",
+    "ribbon": "Home > Clipboard > Match Properties",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "PROPERTIES",
+    "aliases": [
+      "PR",
+      "CH"
+    ],
+    "desc": "Mở bảng thuộc tính toàn diện hiển thị và chỉnh sửa mọi thông số đối tượng",
+    "ribbon": "View > Palettes > Properties",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "OOPS",
+    "aliases": [],
+    "desc": "Khôi phục lại đối tượng vừa bị xoá bởi lệnh ERASE gần nhất mà không làm mất các lệnh vẽ sau đó",
+    "ribbon": "Command Line: OOPS",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "LAYER",
+    "aliases": [
+      "LA"
+    ],
+    "desc": "Mở bảng quản lý lớp bản vẽ Layer Properties Manager để tạo và quản lý thuộc tính lớp",
+    "ribbon": "Home > Layers > Layer Properties",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "LINETYPE",
+    "aliases": [
+      "LT"
+    ],
+    "desc": "Mở bảng quản lý và nạp thêm các kiểu đường nét vẽ (Hidden, Center, Phantom...)",
+    "ribbon": "Home > Properties > Linetype",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "LTSCALE",
+    "aliases": [
+      "LTS"
+    ],
+    "desc": "Đặt hệ số tỷ lệ hiển thị toàn cục cho các kiểu đường nét đứt trên toàn bộ bản vẽ",
+    "ribbon": "Command Line: LTSCALE",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "LINEWEIGHT",
+    "aliases": [
+      "LW"
+    ],
+    "desc": "Cài đặt độ dày nét vẽ hiển thị trên màn hình và khi in ấn",
+    "ribbon": "Home > Properties > Lineweight",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "COLOR",
+    "aliases": [
+      "COL"
+    ],
+    "desc": "Cài đặt màu sắc hiện hành cho các đối tượng vẽ mới",
+    "ribbon": "Home > Properties > Color",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "LAYISO",
+    "aliases": [],
+    "desc": "Cô lập lớp được chọn, ẩn hoặc khoá toàn bộ các lớp còn lại để dễ dàng chỉnh sửa",
+    "ribbon": "Home > Layers > Isolate",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "LAYUNISO",
+    "aliases": [],
+    "desc": "Huỷ bỏ trạng thái cô lập lớp, khôi phục lại hiển thị cho toàn bộ các lớp",
+    "ribbon": "Home > Layers > Unisolate",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "LAYFRZ",
+    "aliases": [],
+    "desc": "Đóng băng (Freeze) lớp của đối tượng được chọn để tăng tốc đồ hoạ",
+    "ribbon": "Home > Layers > Freeze",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "LAYTHW",
+    "aliases": [],
+    "desc": "Làm tan băng (Thaw) toàn bộ các lớp đã bị đóng băng trong bản vẽ",
+    "ribbon": "Home > Layers > Thaw All Layers",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "LAYOFF",
+    "aliases": [],
+    "desc": "Tắt hiển thị (Turn off) lớp của đối tượng được nhấp chọn",
+    "ribbon": "Home > Layers > Turn Off",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "LAYON",
+    "aliases": [],
+    "desc": "Bật lại hiển thị (Turn on) cho toàn bộ các lớp đang bị tắt",
+    "ribbon": "Home > Layers > Turn All Layers On",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "LAYMRG",
+    "aliases": [],
+    "desc": "Gộp một hoặc nhiều lớp vào một lớp đích và xoá bỏ lớp cũ",
+    "ribbon": "Home > Layers > Merge",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "LAYERSTATE",
+    "aliases": [
+      "LAS"
+    ],
+    "desc": "Lưu và phục hồi các trạng thái cấu hình lớp bản vẽ (Layer States Manager)",
+    "ribbon": "Home > Layers > Layer States",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "DIMLINEAR",
+    "aliases": [
+      "DLI"
+    ],
+    "desc": "Ghi kích thước đoạn thẳng theo phương ngang hoặc phương đứng",
+    "ribbon": "Annotate > Dimensions > Linear",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "DIMALIGNED",
+    "aliases": [
+      "DAL"
+    ],
+    "desc": "Ghi kích thước đoạn thẳng song song theo phương nghiêng thực tế",
+    "ribbon": "Annotate > Dimensions > Aligned",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "DIMRADIUS",
+    "aliases": [
+      "DRA"
+    ],
+    "desc": "Ghi kích thước bán kính (R) cho đường tròn hoặc cung tròn",
+    "ribbon": "Annotate > Dimensions > Radius",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "DIMDIAMETER",
+    "aliases": [
+      "DDI"
+    ],
+    "desc": "Ghi kích thước đường kính (phi) cho đường tròn hoặc cung tròn",
+    "ribbon": "Annotate > Dimensions > Diameter",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "DIMANGULAR",
+    "aliases": [
+      "DAN"
+    ],
+    "desc": "Ghi kích thước góc đo giữa hai đường thẳng hoặc cung tròn",
+    "ribbon": "Annotate > Dimensions > Angular",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "DIMARC",
+    "aliases": [
+      "DAR"
+    ],
+    "desc": "Ghi kích thước chiều dài thực của dây cung tròn",
+    "ribbon": "Annotate > Dimensions > Arc Length",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "DIMBASELINE",
+    "aliases": [
+      "DBA"
+    ],
+    "desc": "Ghi chuỗi kích thước song song xếp chồng tính từ một đường gốc chuẩn (Baseline)",
+    "ribbon": "Annotate > Dimensions > Baseline",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "DIMCONTINUE",
+    "aliases": [
+      "DCO"
+    ],
+    "desc": "Ghi chuỗi kích thước nối tiếp liên tục từ chân kích thước trước đó",
+    "ribbon": "Annotate > Dimensions > Continue",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "QDIM",
+    "aliases": [],
+    "desc": "Tạo kích thước nhanh hàng loạt đối tượng được chọn chỉ trong một thao tác",
+    "ribbon": "Annotate > Dimensions > Quick Dimension",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "DIMSTYLE",
+    "aliases": [
+      "D"
+    ],
+    "desc": "Mở bảng quản lý Dimension Style Manager để cấu hình đường gióng, mũi tên, chữ số và dung sai",
+    "ribbon": "Annotate > Dimensions > Dimension Style",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "STYLE",
+    "aliases": [
+      "ST"
+    ],
+    "desc": "Mở bảng quản lý kiểu chữ Text Style để cấu hình phông chữ và chiều cao chữ",
+    "ribbon": "Annotate > Text > Text Style",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "MLEADER",
+    "aliases": [
+      "MLD"
+    ],
+    "desc": "Tạo đường chỉ dẫn ghi chú kèm văn bản hoặc khối bong bóng",
+    "ribbon": "Annotate > Leaders > Multileader",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "MLEADERSTYLE",
+    "aliases": [
+      "MLS"
+    ],
+    "desc": "Quản lý và tuỳ chỉnh kiểu đường chỉ dẫn Multileader Style",
+    "ribbon": "Annotate > Leaders > Multileader Style",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "TABLE",
+    "aliases": [],
+    "desc": "Tạo bảng biểu dữ liệu, bảng kê vật liệu hoặc danh mục bản vẽ",
+    "ribbon": "Annotate > Tables > Table",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "TABLESTYLE",
+    "aliases": [],
+    "desc": "Quản lý và thiết lập kiểu bảng biểu Table Style trong bản vẽ",
+    "ribbon": "Annotate > Tables > Table Style",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "DIMEDIT",
+    "aliases": [
+      "DED"
+    ],
+    "desc": "Chỉnh sửa nội dung chữ số, góc nghiêng hoặc vị trí đường gióng kích thước",
+    "ribbon": "Annotate > Dimensions > Dimension Edit",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "DIMTEDIT",
+    "aliases": [],
+    "desc": "Di chuyển vị trí đặt chữ số kích thước dọc theo đường kích thước",
+    "ribbon": "Annotate > Dimensions > Dimension Text Edit",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "DIMREASSOCIATE",
+    "aliases": [],
+    "desc": "Gán liên kết lại chân đường gióng kích thước với các điểm hình học bị mất liên kết",
+    "ribbon": "Annotate > Dimensions > Reassociate",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "DIMCENTER",
+    "aliases": [
+      "DCE"
+    ],
+    "desc": "Tạo dấu tâm chữ thập cho đường tròn hoặc cung tròn",
+    "ribbon": "Annotate > Dimensions > Center Mark",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "BLOCK",
+    "aliases": [
+      "B"
+    ],
+    "desc": "Đóng gói các đối tượng hình học thành một khối Block dùng lại trong bản vẽ hiện hành",
+    "ribbon": "Insert > Block Definition > Create Block",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "INSERT",
+    "aliases": [
+      "I"
+    ],
+    "desc": "Chèn khối Block hoặc bản vẽ ngoài vào vị trí chỉ định trong bản vẽ",
+    "ribbon": "Home > Block > Insert",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "WBLOCK",
+    "aliases": [
+      "W"
+    ],
+    "desc": "Xuất một khối hoặc vùng đối tượng ra thành một file bản vẽ DWG độc lập trên ổ cứng",
+    "ribbon": "Insert > Block Definition > Write Block",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "ATTDEF",
+    "aliases": [
+      "ATT"
+    ],
+    "desc": "Tạo thuộc tính biến đổi (Attribute) cho khối Block",
+    "ribbon": "Insert > Block Definition > Define Attributes",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "BATTMAN",
+    "aliases": [],
+    "desc": "Quản lý thuộc tính Block Attribute Manager để đồng bộ hoá và thay đổi thứ tự thuộc tính",
+    "ribbon": "Insert > Block > Block Attribute Manager",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "EATTEDIT",
+    "aliases": [
+      "ATE"
+    ],
+    "desc": "Chỉnh sửa nhanh giá trị nội dung thuộc tính của khối Block đã chèn",
+    "ribbon": "Modify > Object > Attribute > Single",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "BEDIT",
+    "aliases": [
+      "BE"
+    ],
+    "desc": "Mở trình biên tập khối Block Editor để chỉnh sửa hình học và thêm tham số Dynamic Block",
+    "ribbon": "Insert > Block Definition > Block Editor",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "BCLOSE",
+    "aliases": [],
+    "desc": "Đóng trình biên tập khối Block Editor và quay về không gian vẽ",
+    "ribbon": "Block Editor > Close > Close Block Editor",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "BSAVE",
+    "aliases": [],
+    "desc": "Lưu lại các thay đổi của khối trong trình biên tập Block Editor",
+    "ribbon": "Block Editor > Open/Save > Save Block",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "ADCENTER",
+    "aliases": [
+      "ADC"
+    ],
+    "desc": "Mở bảng DesignCenter duyệt và sao chép layer, block, text style giữa các file bản vẽ",
+    "ribbon": "View > Palettes > DesignCenter",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "TOOLPALETTES",
+    "aliases": [
+      "TP"
+    ],
+    "desc": "Mở thanh bảng công cụ Tool Palettes chứa các thư viện ký hiệu kéo thả",
+    "ribbon": "View > Palettes > Tool Palettes",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "XREF",
+    "aliases": [
+      "XR"
+    ],
+    "desc": "Mở bảng quản lý liên kết ngoài External References Palette",
+    "ribbon": "Insert > Reference > External References",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "ATTACH",
+    "aliases": [],
+    "desc": "Gắn tệp tham chiếu ngoài (DWG, hình ảnh DGN, PDF, ảnh quét) vào bản vẽ hiện hành",
+    "ribbon": "Insert > Reference > Attach",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "IMAGEATTACH",
+    "aliases": [],
+    "desc": "Chèn file ảnh raster (PNG, JPG, BMP) vào bản vẽ làm tham chiếu",
+    "ribbon": "Insert > Reference > Attach Image",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "PDFATTACH",
+    "aliases": [],
+    "desc": "Chèn file tài liệu PDF vào bản vẽ làm lớp tham chiếu nền",
+    "ribbon": "Insert > Reference > Attach PDF",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "FIELD",
+    "aliases": [],
+    "desc": "Chèn trường thông tin văn bản tự động cập nhật (ngày tháng, diện tích, tên file, tác giả)",
+    "ribbon": "Insert > Data > Field",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "UPDATEFIELD",
+    "aliases": [],
+    "desc": "Cập nhật lại giá trị tính toán cho các trường dữ liệu động Field được chọn",
+    "ribbon": "Annotate > Text > Update Fields",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "DATAEXTRACTION",
+    "aliases": [
+      "DX"
+    ],
+    "desc": "Trích xuất tự động dữ liệu thuộc tính, toạ độ, số lượng đối tượng sang bảng CAD hoặc file Excel",
+    "ribbon": "Insert > Linking & Extraction > Extract Data",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "PURGE",
+    "aliases": [
+      "PU"
+    ],
+    "desc": "Dọn dẹp và xoá bỏ triệt để các layer, block, kiểu chữ, kiểu đường rác không còn sử dụng",
+    "ribbon": "Application Menu > Drawing Utilities > Purge",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "AUDIT",
+    "aliases": [],
+    "desc": "Kiểm tra và tự động sửa chữa các lỗi cấu trúc dữ liệu bên trong file DWG",
+    "ribbon": "Application Menu > Drawing Utilities > Audit",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "PAGESETUP",
+    "aliases": [],
+    "desc": "Cấu hình khổ giấy, máy in và tỉ lệ in cho không gian Layout",
+    "ribbon": "Output > Plot > Page Setup",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "MVIEW",
+    "aliases": [
+      "MV"
+    ],
+    "desc": "Tạo khung nhìn Viewport mới trên không gian giấy Layout",
+    "ribbon": "Layout > Layout Viewports > Rectangular",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "MSPACE",
+    "aliases": [
+      "MS"
+    ],
+    "desc": "Kích hoạt chế độ chỉnh sửa mô hình bên trong khung nhìn Viewport",
+    "ribbon": "Status Bar > Model/Paper",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "PSPACE",
+    "aliases": [
+      "PS"
+    ],
+    "desc": "Thoát khỏi khung nhìn Viewport trở về không gian giấy Paper Space",
+    "ribbon": "Status Bar > Model/Paper",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "VPORTS",
+    "aliases": [],
+    "desc": "Quản lý và chia nhiều khung nhìn Viewports trong Model hoặc Layout",
+    "ribbon": "View > Model Viewports > Viewport Configuration",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "PLOT",
+    "aliases": [],
+    "desc": "Xuất bản vẽ ra máy in vật lý hoặc in điện tử PDF / DWF (phím tắt Ctrl + P)",
+    "ribbon": "Output > Plot > Plot",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "PUBLISH",
+    "aliases": [],
+    "desc": "Xuất và in hàng loạt nhiều bản vẽ hoặc layout cùng lúc",
+    "ribbon": "Output > Plot > Batch Plot",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "SHEETSET",
+    "aliases": [
+      "SSM"
+    ],
+    "desc": "Mở bảng quản lý tập hợp hồ sơ bản vẽ Sheet Set Manager",
+    "ribbon": "View > Palettes > Sheet Set Manager",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "EXPORTPDF",
+    "aliases": [],
+    "desc": "Xuất nhanh bản vẽ hiện hành sang định dạng tài liệu PDF",
+    "ribbon": "Output > Export to DWF/PDF > PDF",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "STYLESMANAGER",
+    "aliases": [],
+    "desc": "Mở thư mục chứa các bảng phong cách in ấn Plot Style (.ctb / .stb)",
+    "ribbon": "Application Menu > Print > Manage Plot Styles",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "DIST",
+    "aliases": [
+      "DI"
+    ],
+    "desc": "Đo nhanh khoảng cách và góc giữa hai điểm mốc",
+    "ribbon": "Home > Utilities > Measure > Distance",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "AREA",
+    "aliases": [
+      "AA"
+    ],
+    "desc": "Tính chu vi và diện tích vùng khép kín hoặc đối tượng",
+    "ribbon": "Home > Utilities > Measure > Area",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "ID",
+    "aliases": [],
+    "desc": "Hiển thị tọa độ X, Y, Z tuyệt đối của một điểm trên màn hình",
+    "ribbon": "Home > Utilities > ID Point",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "LIST",
+    "aliases": [
+      "LI"
+    ],
+    "desc": "Hiển thị toàn bộ thông số hình học và thuộc tính chi tiết của đối tượng",
+    "ribbon": "Home > Properties > List",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "MEASUREGEOM",
+    "aliases": [
+      "MEA"
+    ],
+    "desc": "Công cụ đo đa năng kiểm tra khoảng cách, bán kính, góc, diện tích và thể tích",
+    "ribbon": "Home > Utilities > Measure",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "RECOVER",
+    "aliases": [],
+    "desc": "Phục hồi và sửa lỗi tệp bản vẽ DWG bị hỏng nặng không mở được",
+    "ribbon": "Application Menu > Drawing Utilities > Recover",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "ALIASEDIT",
+    "aliases": [],
+    "desc": "Hiệu chỉnh và tạo mới các phím tắt lệnh trong tệp acad.pgp qua giao diện đồ họa",
+    "ribbon": "Express Tools > Tools > Command Aliases",
+    "editions": [
+      "full"
+    ]
+  },
+  {
+    "name": "ACTRECORD",
+    "aliases": [],
+    "desc": "Bắt đầu ghi lại chuỗi thao tác chuột và bàn phím vào macro tự động hóa Action Recorder",
+    "ribbon": "Manage > Action Recorder > Record",
+    "editions": [
+      "full"
+    ]
+  },
+  {
+    "name": "ACTSTOP",
+    "aliases": [],
+    "desc": "Dừng ghi macro Action Recorder và lưu lại thành lệnh tự động",
+    "ribbon": "Manage > Action Recorder > Stop",
+    "editions": [
+      "full"
+    ]
+  },
+  {
+    "name": "SCRIPT",
+    "aliases": [
+      "SCR"
+    ],
+    "desc": "Chạy tệp kịch bản tự động hóa gồm chuỗi lệnh CAD liên tiếp (.scr)",
+    "ribbon": "Manage > Applications > Run Script",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "CUI",
+    "aliases": [],
+    "desc": "Tùy biến sâu giao diện người dùng (Ribbon, Quick Access Toolbar, chuột và phím tắt)",
+    "ribbon": "Manage > Customization > User Interface",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "STANDARDS",
+    "aliases": [],
+    "desc": "Thiết lập liên kết kiểm tra tiêu chuẩn bản vẽ CAD Standards (.dws)",
+    "ribbon": "Manage > CAD Standards > Configure",
+    "editions": [
+      "full"
+    ]
+  },
+  {
+    "name": "CHECKSTANDARDS",
+    "aliases": [],
+    "desc": "Quét và kiểm tra các vi phạm tiêu chuẩn layer, text, dim trong bản vẽ",
+    "ribbon": "Manage > CAD Standards > Check",
+    "editions": [
+      "full"
+    ]
+  },
+  {
+    "name": "OPTIONS",
+    "aliases": [
+      "OP"
+    ],
+    "desc": "Mở hộp thoại cấu hình toàn diện các thiết lập hệ thống, hiển thị và đường dẫn tệp tin của AutoCAD",
+    "ribbon": "Application Menu > Options",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "UCS",
+    "aliases": [],
+    "desc": "Định nghĩa hệ toạ độ người dùng tuỳ biến trong không gian 3D",
+    "ribbon": "Visualize > Coordinates > UCS",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "VSCURRENT",
+    "aliases": [],
+    "desc": "Chuyển đổi kiểu hiển thị trực quan (Visual Style) 2D/3D trên màn hình",
+    "ribbon": "View > Visual Styles",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "EXTRUDE",
+    "aliases": [
+      "EXT"
+    ],
+    "desc": "Kéo đùn biên dạng 2D thành khối đặc hoặc bề mặt 3D theo phương vuông góc hoặc đường dẫn",
+    "ribbon": "Solid > Primitive > Extrude",
+    "editions": [
+      "full"
+    ]
+  },
+  {
+    "name": "PRESSPULL",
+    "aliases": [],
+    "desc": "Ấn hoặc kéo trực tiếp vùng diện tích khép kín thành khối 3D linh hoạt",
+    "ribbon": "Home > 3D Modeling > Presspull",
+    "editions": [
+      "full"
+    ]
+  },
+  {
+    "name": "REVOLVE",
+    "aliases": [
+      "REV"
+    ],
+    "desc": "Quay biên dạng 2D quanh một trục để tạo khối tròn xoay 3D",
+    "ribbon": "Solid > Primitive > Revolve",
+    "editions": [
+      "full"
+    ]
+  },
+  {
+    "name": "SWEEP",
+    "aliases": [],
+    "desc": "Quét biên dạng 2D trượt dọc theo một đường dẫn tự do để tạo khối 3D",
+    "ribbon": "Solid > Primitive > Sweep",
+    "editions": [
+      "full"
+    ]
+  },
+  {
+    "name": "LOFT",
+    "aliases": [],
+    "desc": "Nối chuyển tiếp mượt mà qua các mặt cắt tiết diện khác nhau thành khối 3D",
+    "ribbon": "Solid > Primitive > Loft",
+    "editions": [
+      "full"
+    ]
+  },
+  {
+    "name": "UNION",
+    "aliases": [
+      "UNI"
+    ],
+    "desc": "Hợp nhất hai hoặc nhiều khối đặc 3D thành một khối duy nhất",
+    "ribbon": "Solid Editing > Union",
+    "editions": [
+      "full"
+    ]
+  },
+  {
+    "name": "SUBTRACT",
+    "aliases": [
+      "SU"
+    ],
+    "desc": "Trừ thể tích của khối 3D này ra khỏi khối 3D khác để khoét lỗ rỗng",
+    "ribbon": "Solid Editing > Subtract",
+    "editions": [
+      "full"
+    ]
+  },
+  {
+    "name": "INTERSECT",
+    "aliases": [
+      "IN"
+    ],
+    "desc": "Giữ lại phần thể tích giao nhau chung giữa các khối đặc 3D",
+    "ribbon": "Solid Editing > Intersect",
+    "editions": [
+      "full"
+    ]
+  },
+  {
+    "name": "3DMOVE",
+    "aliases": [],
+    "desc": "Di chuyển đối tượng trong không gian 3 chiều với gizmo trục toạ độ",
+    "ribbon": "Home > Modify > 3D Move",
+    "editions": [
+      "full"
+    ]
+  },
+  {
+    "name": "3DROTATE",
+    "aliases": [],
+    "desc": "Xoay đối tượng quanh các vòng tròn trục X, Y, Z trong không gian 3D",
+    "ribbon": "Home > Modify > 3D Rotate",
+    "editions": [
+      "full"
+    ]
+  },
+  {
+    "name": "3DALIGN",
+    "aliases": [],
+    "desc": "Căn gióng mặt phẳng và điểm tiếp xúc giữa hai vật thể 3D",
+    "ribbon": "Home > Modify > 3D Align",
+    "editions": [
+      "full"
+    ]
+  },
+  {
+    "name": "FILLETEDGE",
+    "aliases": [],
+    "desc": "Bo tròn cạnh của khối đặc 3D với bán kính cong mượt mà",
+    "ribbon": "Solid Editing > Fillet Edge",
+    "editions": [
+      "full"
+    ]
+  },
+  {
+    "name": "CHAMFEREDGE",
+    "aliases": [],
+    "desc": "Vát mép cạnh sắc của khối đặc 3D theo khoảng cách hoặc góc nghiêng",
+    "ribbon": "Solid Editing > Chamfer Edge",
+    "editions": [
+      "full"
+    ]
+  },
+  {
+    "name": "SECTIONPLANE",
+    "aliases": [],
+    "desc": "Tạo mặt phẳng cắt xuyên qua mô hình 3D để quan sát mặt cắt bên trong",
+    "ribbon": "Section > Section Plane",
+    "editions": [
+      "full"
+    ]
+  },
+  {
+    "name": "FLATSHOT",
+    "aliases": [],
+    "desc": "Trích xuất hình chiếu 2D dạng khối Block từ mô hình 3D hiện hành",
+    "ribbon": "Section > Flatshot",
+    "editions": [
+      "full"
+    ]
+  },
+  {
+    "name": "BOX",
+    "aliases": [],
+    "desc": "Tạo nhanh khối hộp chữ nhật 3D đặc",
+    "ribbon": "Solid > Primitive > Box",
+    "editions": [
+      "full"
+    ]
+  },
+  {
+    "name": "CYLINDER",
+    "aliases": [],
+    "desc": "Tạo nhanh khối hình trụ tròn 3D đặc",
+    "ribbon": "Solid > Primitive > Cylinder",
+    "editions": [
+      "full"
+    ]
+  },
+  {
+    "name": "GEOMCONSTRAINT",
+    "aliases": [],
+    "desc": "Gán các ràng buộc hình học (trùng điểm, song song, vuông góc, đồng tâm, tiếp xúc)",
+    "ribbon": "Parametric > Geometric",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "DIMCONSTRAINT",
+    "aliases": [],
+    "desc": "Gán các ràng buộc kích thước đại số điều khiển hình học",
+    "ribbon": "Parametric > Dimensional",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "PARAMETERS",
+    "aliases": [],
+    "desc": "Mở bảng quản lý tham số và phương trình toán học Parameters Manager",
+    "ribbon": "Parametric > Manage > Parameters Manager",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "DATALINK",
+    "aliases": [],
+    "desc": "Thiết lập liên kết hai chiều với bảng tính Microsoft Excel",
+    "ribbon": "Annotate > Tables > Link Data",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "DATALINKUPDATE",
+    "aliases": [],
+    "desc": "Cập nhật dữ liệu hai chiều giữa AutoCAD Table và file Excel",
+    "ribbon": "Annotate > Tables > Download from Source / Upload to Source",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "APPLOAD",
+    "aliases": [],
+    "desc": "Nạp ứng dụng phần mềm mở rộng và tệp mã nguồn AutoLISP (.lsp / .vlx)",
+    "ribbon": "Manage > Applications > Load Application",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  },
+  {
+    "name": "VLIDE",
+    "aliases": [],
+    "desc": "Mở môi trường phát triển tích hợp Visual LISP IDE để viết và gỡ lỗi code AutoLISP",
+    "ribbon": "Manage > Applications > Visual LISP Editor",
+    "editions": [
+      "full"
+    ]
+  },
+  {
+    "name": "MASSPROP",
+    "aliases": [
+      "MP"
+    ],
+    "desc": "Tính toán và tra cứu toàn bộ các đặc tính thể tích, khối lượng, trọng tâm và mô men quán tính của khối 3D Solid",
+    "ribbon": "Home > Utilities > Mass Properties",
+    "editions": [
+      "full"
+    ]
+  },
+  {
+    "name": "ETRANSMIT",
+    "aliases": [],
+    "desc": "Đóng gói toàn bộ tập hợp bản vẽ kèm tệp tham chiếu ngoài (Xref), phông chữ, bảng nét in và ảnh thành tệp nén ZIP để chia sẻ",
+    "ribbon": "Application Menu > Publish > eTransmit",
+    "editions": [
+      "full",
+      "lt"
+    ]
+  }
+]

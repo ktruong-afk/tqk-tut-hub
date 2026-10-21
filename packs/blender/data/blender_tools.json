@@ -1,0 +1,170 @@
+{
+  "builtin.select_box": {
+    "name": "Select Box (Hộp chọn)",
+    "shortcut": "B hoặc Chuột trái kéo thả",
+    "purpose": "Kéo chuột tạo hình chữ nhật để chọn nhanh nhiều đỉnh, cạnh, mặt hoặc vật thể cùng lúc.",
+    "tips": "Giữ Shift để chọn thêm vào vùng đã chọn. Giữ Ctrl để bỏ chọn vùng được kéo."
+  },
+  "builtin.cursor": {
+    "name": "3D Cursor (Con trỏ 3D)",
+    "shortcut": "Shift + Chuột phải",
+    "purpose": "Điểm neo không gian dùng để xác định tâm xoay, điểm sinh ra vật thể mới hoặc tâm phóng to/thu nhỏ.",
+    "tips": "Nhấn Shift + C để đặt con trỏ 3D về lại chính giữa gốc tọa độ thế giới (0, 0, 0)."
+  },
+  "builtin.move": {
+    "name": "Move (Di chuyển vật thể)",
+    "shortcut": "G (Grab)",
+    "purpose": "Tịnh tiến dịch chuyển vị trí trong không gian 3D.",
+    "tips": "Nhấn G rồi bấm tiếp X, Y hoặc Z để khóa di chuyển theo 1 trục duy nhất. Giữ Shift để di chuyển chậm siêu mịn."
+  },
+  "builtin.rotate": {
+    "name": "Rotate (Xoay vật thể)",
+    "shortcut": "R",
+    "purpose": "Xoay vật thể quanh tâm.",
+    "tips": "Nhấn R hai lần liên tiếp (R + R) để xoay tự do theo kiểu con lăn bóng (Trackball)."
+  },
+  "builtin.scale": {
+    "name": "Scale (Thu phóng kích thước)",
+    "shortcut": "S",
+    "purpose": "Phóng to hoặc thu nhỏ vật thể.",
+    "tips": "⚠️ Lưu ý sống còn: Nếu scale ở Object Mode, BẮT BUỘC nhấn Ctrl + A > Apply Scale trước khi dùng Modifier/Bevel!"
+  },
+  "builtin.extrude_region": {
+    "name": "Extrude Region (Đẩy trồi vùng)",
+    "shortcut": "E",
+    "purpose": "Kéo các đỉnh, cạnh hoặc mặt được chọn đùn dài ra để tạo thêm thể tích mới.",
+    "tips": "Bấm Alt + E để mở menu đùn nâng cao: 'Along Normals' (đùn nở đều) hoặc 'Individual Faces' (đùn từng mặt riêng biệt)."
+  },
+  "builtin.inset": {
+    "name": "Inset Faces (Chèn mặt vào trong)",
+    "shortcut": "I",
+    "purpose": "Tạo một viền mặt phẳng đồng dạng thụt vào trong lòng các mặt được chọn.",
+    "tips": "Luôn Inset một lần trước khi đục lỗ hoặc dùng Subsurf để tạo đường viền bảo vệ (Holding Edge) giúp mép không bị nhăn."
+  },
+  "builtin.bevel": {
+    "name": "Bevel Tool (Bo tròn mép / Vát cạnh)",
+    "shortcut": "Ctrl + B (cạnh) / Ctrl + Shift + B (đỉnh)",
+    "purpose": "Làm mềm các cạnh sắc nhọn để tạo phản xạ viền ánh sáng chân thực như đồ vật ngoài đời.",
+    "tips": "Lăn con lăn chuột giữa để tăng số phân đoạn bo tròn. Nhớ Apply Scale trước khi vát!"
+  },
+  "builtin.loop_cut": {
+    "name": "Loop Cut (Cắt vòng lặp)",
+    "shortcut": "Ctrl + R",
+    "purpose": "Cắt thêm các vòng cạnh song song bao quanh toàn bộ lưới vật thể.",
+    "tips": "Lăn con lăn chuột giữa để tăng số đường cắt. Click chuột trái để xác nhận, chuột phải để đặt đường cắt về chính giữa."
+  },
+  "builtin.knife": {
+    "name": "Knife Tool (Dao cắt tự do)",
+    "shortcut": "K",
+    "purpose": "Dùng dao cắt các đường nối tự do trên bề mặt lưới theo bất kỳ hình dạng nào.",
+    "tips": "Nhấn phím C để cắt xuyên qua cả mặt sau. Nhấn Space hoặc Enter để hoàn thành đường cắt."
+  },
+  "builtin.poly_build": {
+    "name": "Poly Build (Dựng từng mặt Quad)",
+    "shortcut": "Click chuột kéo đỉnh/cạnh",
+    "purpose": "Công cụ thần thánh để đi lại lưới (Retopology) cho mô hình điêu khắc hoặc game asset.",
+    "tips": "Kéo cạnh để đùn mặt mới. Giữ Ctrl để xóa mặt. Giữ Shift để trượt đỉnh."
+  },
+  "builtin.spin": {
+    "name": "Spin (Xoay đùn tròn)",
+    "shortcut": "Alt + E > Spin",
+    "purpose": "Đùn lưới quay quanh tâm 3D Cursor để tạo hình cốc chén, lò xo hoặc đường ống uốn cong.",
+    "tips": "Hãy đặt 3D Cursor vào đúng tâm quay bằng Shift + Chuột phải trước khi bấm Spin."
+  },
+  "builtin.smooth": {
+    "name": "Smooth Vertex (Làm mượt đỉnh lưới)",
+    "shortcut": "Alt + O hoặc Shift + W",
+    "purpose": "Thư giãn các đỉnh lưới bị xô lệch, giúp bề mặt phẳng mịn đều mà không làm thay đổi hình dáng tổng thể.",
+    "tips": "Kéo thanh trượt Factor ở hộp thoại góc dưới để điều chỉnh độ giãn nở mượt mà."
+  },
+  "builtin.brush": {
+    "name": "Sculpt Brush (Cọ điêu khắc)",
+    "shortcut": "Chuột trái / Bút vẽ cảm ứng",
+    "purpose": "Bộ cọ điêu khắc chính trong Sculpt Mode (Clay, Draw, Crease, Inflate, Grab...).",
+    "tips": "Nhấn F để đổi bán kính cọ, Shift + F để đổi lực nhấn. Giữ Ctrl để khoét âm, giữ Shift để làm mịn tức thì."
+  },
+  "builtin.mesh_filter": {
+    "name": "Mesh Filter (Bộ lọc biến dạng toàn thể)",
+    "shortcut": "Click & Kéo chuột trái ngang màn hình",
+    "purpose": "Áp dụng biến dạng đồng loạt lên toàn bộ vật thể hoặc vùng không bị che bởi mặt nạ (Inflate, Smooth, Scale, Relax).",
+    "tips": "Kết hợp với Mask để chỉ lọc một phần của lưới nhân vật (ví dụ làm mịn nhanh toàn bộ cánh tay)."
+  },
+  "builtin.cloth_filter": {
+    "name": "Cloth Filter (Bộ lọc nếp nhăn vải vóc)",
+    "shortcut": "Click & Kéo chuột trái",
+    "purpose": "Tạo nếp nhăn mô phỏng vật lý vải (Gravity, Pinch, Inflate, Expand) lên toàn bộ bề mặt lưới.",
+    "tips": "Rất hữu ích khi tạo nếp áo quần cho nhân vật game mà không cần chạy mô phỏng vải phức tạp."
+  },
+  "builtin.box_mask": {
+    "name": "Box Mask (Mặt nạ hộp chữ nhật)",
+    "shortcut": "B (trong Sculpt Mode)",
+    "purpose": "Kéo khung hộp để che chắn một vùng rộng lớn của mô hình, ngăn không cho cọ làm biến dạng.",
+    "tips": "Giữ Ctrl khi kéo để xóa mặt nạ khỏi vùng chọn. Nhấn Alt + M để xóa sạch mặt nạ."
+  },
+  "builtin.lasso_mask": {
+    "name": "Lasso Mask (Mặt nạ dây thòng lọng)",
+    "shortcut": "Shift + Ctrl + Chuột trái kéo tự do",
+    "purpose": "Vẽ đường tự do bao quanh vùng hình học bất quy tắc để tạo mặt nạ bảo vệ nhanh chóng.",
+    "tips": "Thích hợp khi cô lập các ngón tay, vành tai hoặc chi tiết nhân vật phức tạp."
+  },
+  "builtin.box_face_set": {
+    "name": "Box Face Set (Tạo tập hợp mặt dạng hộp)",
+    "shortcut": "Ctrl + W > Box Face Set",
+    "purpose": "Phân chia mô hình thành các mảng màu khác nhau (Face Sets) bằng khung quét hình chữ nhật.",
+    "tips": "Giúp cô lập từng bộ phận nhân vật (đầu, thân, giáp) để ẩn/hiện nhanh bằng phím H."
+  },
+  "builtin.lasso_trim": {
+    "name": "Lasso Trim (Cắt gọt bằng dây thòng lọng)",
+    "shortcut": "Click & Vẽ vòng cắt",
+    "purpose": "Cắt tỉa và loại bỏ hình học bằng nét vẽ tự do, tự động vá kín vết cắt phẳng phiu.",
+    "tips": "Cực kỳ hiệu quả trong giai đoạn chặn dáng thô (Blockout) cho vũ khí, giáp trụ hoặc cơ bắp nhân vật."
+  },
+  "builtin.line_project": {
+    "name": "Line Project (Chiếu phẳng theo đường thẳng)",
+    "shortcut": "Kéo một đường thẳng qua lưới",
+    "purpose": "Chiếu phẳng toàn bộ các đỉnh nằm về một phía của đường kẻ, tạo mặt phẳng cắt dứt khoát.",
+    "tips": "Lý tưởng để tạo các bề mặt cắt phẳng cứng cáp (Hard Surface) trên khối hữu cơ."
+  },
+  "builtin.face_set_edit": {
+    "name": "Face Set Edit (Chỉnh sửa tập hợp mặt)",
+    "shortcut": "W (Face Sets Pie Menu)",
+    "purpose": "Mở rộng, thu hẹp hoặc làm mịn ranh giới giữa các Face Sets trên mô hình.",
+    "tips": "Dùng để tinh chỉnh ranh giới giữa các mảng cơ hoặc chi tiết trước khi chạy Auto-Masking."
+  },
+  "builtin.mask_by_color": {
+    "name": "Mask by Color (Mặt nạ theo màu sắc)",
+    "shortcut": "Click lên vùng có màu Vertex Color",
+    "purpose": "Tự động tạo mặt nạ dựa trên màu sắc thuộc tính đỉnh (Color Attributes) trên bề mặt lưới.",
+    "tips": "Cho phép điêu khắc chỉ trên các vùng họa tiết đã tô màu trước đó."
+  },
+  "MESH_OT_subdivide": {
+    "name": "Subdivide (Chia nhỏ lưới)",
+    "shortcut": "Chuột phải trong Edit Mode > Subdivide",
+    "purpose": "Tăng mật độ polygon bằng cách chia mỗi mặt vuông thành 4 ô nhỏ hơn.",
+    "tips": "Đừng chia nhỏ quá nhiều ở bước dựng hình thô (Blockout) để tránh nặng máy và khó chỉnh sửa."
+  },
+  "MESH_OT_merge": {
+    "name": "Merge Vertices (Gộp đỉnh)",
+    "shortcut": "M",
+    "purpose": "Hợp nhất nhiều đỉnh lại với nhau (Tại tâm, tại con trỏ hoặc theo khoảng cách).",
+    "tips": "Chọn 'By Distance' để quét sạch các đỉnh bị đè trùng nhau do lỡ tay Extrude thừa."
+  },
+  "MESH_OT_normals_make_consistent": {
+    "name": "Recalculate Normals (Tính lại hướng mặt)",
+    "shortcut": "Shift + N",
+    "purpose": "Sửa lỗi các mặt polygon bị quay ngược vào trong khiến mô hình bị đen xì hoặc rách mặt.",
+    "tips": "Mở Overlays > Face Orientation để kiểm tra: Màu xanh dương là mặt đúng, màu đỏ là mặt bị lộn."
+  },
+  "OBJECT_OT_shade_smooth": {
+    "name": "Shade Smooth by Angle (Làm mượt tự động theo góc)",
+    "shortcut": "Chuột phải ở Object Mode > Shade Smooth by Angle",
+    "purpose": "Trong Blender 5.2, áp dụng bộ điều chỉnh 'Smooth by Angle' để làm mượt mặt cong mà vẫn giữ sắc nét các góc cạnh cứng (thay thế tính năng Auto Smooth cũ).",
+    "tips": "Điều chỉnh thông số Angle trong mục Modifiers (mặc định 30 độ) để kiểm soát độ sắc cạnh."
+  },
+  "OBJECT_OT_transform_apply": {
+    "name": "Apply Transform (Khóa biến đổi)",
+    "shortcut": "Ctrl + A",
+    "purpose": "Đưa Scale về (1.0, 1.0, 1.0) và Rotation về 0 để vật thể nhận diện đúng kích thước vật lý.",
+    "tips": "Đây là thao tác quan trọng số 1 trong Blender. Luôn thực hiện trước khi gắn Modifier hoặc xuất file sang Unity."
+  }
+}

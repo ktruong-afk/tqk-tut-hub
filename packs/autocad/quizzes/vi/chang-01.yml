@@ -1,0 +1,132 @@
+- id: q-ac-chang-01-01
+  type: single
+  question: Khi thanh dòng lệnh (Command Line) bị mất, bạn dùng tổ hợp phím nào để hiển thị lại?
+  options:
+    - text: Ctrl + 9
+      correct: true
+      why: Ctrl + 9 là phím tắt mặc định để bật tắt dòng lệnh
+    - text: Ctrl + 0
+      why: Ctrl + 0 dùng cho chế độ Clean Screen ẩn hiện Ribbon
+    - text: Ctrl + 1
+      why: Ctrl + 1 dùng để bật bảng Properties
+    - text: F2
+      why: F2 mở bảng lịch sử dòng lệnh
+  explain: Tổ hợp phím [Ctrl + 9] là phím bật tắt nhanh cửa sổ dòng lệnh trong AutoCAD.
+  tags: [chang-01, giao-dien]
+
+- id: q-ac-chang-01-02
+  type: single
+  question: File mẫu bản vẽ tiêu chuẩn nào được cấu hình sẵn theo hệ mét (milimet) cho người dùng Việt Nam?
+  options:
+    - text: acadiso.dwt
+      correct: true
+      why: acadiso.dwt là template chuẩn quốc tế hệ mét ISO
+    - text: acad.dwt
+      why: acad.dwt là template chuẩn hệ inch của Mỹ
+    - text: standard.dwg
+      why: standard.dwg không phải là file template mặc định
+    - text: metric.dxf
+      why: DXF là định dạng trao đổi dữ liệu, không phải file template
+  explain: File mẫu acadiso.dwt thiết lập sẵn các thông số đường nét và kích thước theo đơn vị milimet chuẩn ISO.
+  tags: [chang-01, template]
+
+- id: q-ac-chang-01-03
+  type: single
+  question: Thao tác nào trên chuột dùng để phóng to toàn bộ hình vẽ vừa khít màn hình (Zoom Extents)?
+  options:
+    - text: Nhấp đúp bánh xe chuột giữa hai lần
+      correct: true
+      why: Nhấp đúp chuột giữa là thao tác nhanh nhất của Zoom Extents
+    - text: Lăn chuột giữa về phía trước
+      why: Lăn về trước là phóng to Zoom In cục bộ
+    - text: Đè giữ chuột giữa và rê chuột
+      why: Đè giữ chuột giữa dùng cho thao tác Pan
+    - text: Nhấp đúp chuột phải
+      why: Chuột phải không thực hiện chức năng Zoom Extents
+  explain: Nhấp đúp nhanh hai lần bánh xe chuột giữa sẽ tự động thu gọn hoặc mở rộng khung nhìn để hiển thị trọn vẹn toàn bộ bản vẽ.
+  tags: [chang-01, dieu-huong]
+
+- id: q-ac-chang-01-04
+  type: single
+  question: Để vẽ đoạn thẳng dài 150mm nghiêng 30 độ so với phương ngang, bạn nhập cú pháp toạ độ cực tương đối nào?
+  options:
+    - text: "@150<30"
+      correct: true
+      why: Cú pháp chuẩn toạ độ cực là @khoảng_cách<góc
+    - text: "#150,30"
+      why: Ký hiệu # dùng cho toạ độ tuyệt đối Descartes
+    - text: "@150,30"
+      why: Dấu phẩy ngăn cách toạ độ X và Y thay vì góc
+    - text: "150<30"
+      why: Thiếu ký tự @ khi chưa bật Dynamic Input
+  explain: Cú pháp toạ độ cực tương đối trong AutoCAD có dạng @d<a, trong đó d là khoảng cách và a là góc nghiêng tính bằng độ.
+  tags: [chang-01, toa-do]
+
+- id: q-ac-chang-01-05
+  type: single
+  question: Phím chức năng nào điều khiển bật hoặc tắt chế độ vẽ vuông góc Ortho Mode?
+  options:
+    - text: F8
+      correct: true
+      why: F8 khoá chuyển động con trỏ theo phương ngang và dọc
+    - text: F3
+      why: F3 điều khiển chế độ Osnap
+    - text: F10
+      why: F10 điều khiển chế độ Polar Tracking
+    - text: F12
+      why: F12 điều khiển Dynamic Input
+  explain: Phím [F8] giúp bật hoặc tắt tức thì chế độ Ortho, hỗ trợ vẽ chính xác các đoạn thẳng song song với trục toạ độ.
+  tags: [chang-01, ortho]
+
+- id: q-ac-chang-01-06
+  type: single
+  question: Ký hiệu đồ hoạ nào đại diện cho điểm bắt đối tượng tâm đường tròn (Center)?
+  options:
+    - text: Vòng tròn có dấu cộng ở giữa
+      correct: true
+      why: Center marker là hình tròn kèm dấu chữ thập
+    - text: Hình vuông
+      why: Hình vuông là ký hiệu Endpoint
+    - text: Hình tam giác
+      why: Hình tam giác là ký hiệu Midpoint
+    - text: Hai hình vuông lồng nhau
+      why: Không phải ký hiệu tâm tròn
+  explain: Ký hiệu Center xuất hiện dưới dạng vòng tròn nhỏ có tâm chữ thập khi rê con trỏ chuột vào chu vi đường tròn hoặc cung tròn.
+  tags: [chang-01, osnap]
+
+- id: q-ac-chang-01-07
+  type: single
+  question: Phương pháp quét chọn từ Phải sang Trái (Crossing Selection) có đặc điểm nào dưới đây?
+  options:
+    - text: Khung màu xanh lá viền nét đứt, chọn mọi vật thể nằm trong hoặc bị chạm qua
+      correct: true
+      why: Crossing Selection chọn cả đối tượng bên trong lẫn đối tượng bị cắt qua
+    - text: Khung màu xanh dương viền liền, chỉ chọn vật thể nằm hoàn toàn bên trong
+      why: Đó là đặc điểm của Window Selection
+    - text: Chỉ chọn các đối tượng cùng một layer
+      why: Khung chọn không tự động lọc theo layer
+    - text: Chỉ chọn duy nhất một đối tượng
+      why: Khung chọn có thể chọn không giới hạn số lượng đối tượng
+  explain: Crossing Selection (quét Phải sang Trái) có màu xanh lá cây viền nét đứt, cho phép chọn nhanh mọi đối tượng mà khung chạm tới.
+  tags: [chang-01, selection]
+
+- id: q-ac-chang-01-08
+  type: truefalse
+  question: Muốn chuyển đổi file sao lưu dự phòng .bak thành file bản vẽ bình thường, bạn chỉ cần đổi phần mở rộng thành .dwg.
+  answer: true
+  explain: File .bak là bản sao lưu nguyên trạng của file .dwg trước lần lưu gần nhất, do đó chỉ cần đổi tên đuôi mở rộng là mở được.
+  tags: [chang-01, bak]
+
+- id: q-ac-chang-01-09
+  type: truefalse
+  question: Lệnh REGEN chỉ có tác dụng đổi màu nền của vùng vẽ AutoCAD.
+  answer: false
+  explain: Lệnh REGEN tính toán lại dữ liệu hiển thị vector, làm mịn các cung tròn bị gãy khúc và giải phóng giới hạn zoom màn hình.
+  tags: [chang-01, regen]
+
+- id: q-ac-chang-01-10
+  type: short
+  question: Lệnh nào dùng để mở hộp thoại cài đặt đơn vị đo độ dài và góc cho bản vẽ?
+  answer: ["UNITS", "UN"]
+  explain: Lệnh UNITS (gõ tắt UN) mở bảng Drawing Units để cấu hình định dạng số thập phân, độ chính xác và đơn vị bản vẽ.
+  tags: [chang-01, units]

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 440" width="100%" height="100%">
+  <defs>
+    <pattern id="hatch-ansi31" width="12" height="12" patternTransform="rotate(45 0 0)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="12" stroke="#61afef" stroke-width="1.5" />
+    </pattern>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2c3e50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3498db;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="760" height="440" fill="#1b1d22" rx="8"/>
+  <rect x="20" y="20" width="720" height="400" fill="#14161a" stroke="#323640" stroke-width="1.5" rx="6"/>
+
+  <!-- Left: Hatch Pattern ANSI31 -->
+  <g transform="translate(60, 50)">
+    <rect width="280" height="320" fill="#1e222b" stroke="#2d3340" stroke-width="1" rx="4"/>
+    <text x="140" y="30" fill="#61afef" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle">Mặt cắt Hatch (ANSI31)</text>
+
+    <!-- Hatch shape -->
+    <rect x="40" y="70" width="200" height="150" fill="url(#hatch-ansi31)" stroke="#e5c07b" stroke-width="2"/>
+    <circle cx="140" cy="145" r="30" fill="#1e222b" stroke="#e5c07b" stroke-width="2"/>
+
+    <circle cx="90" cy="110" r="4" fill="#e06c75"/>
+    <text x="100" y="115" fill="#ffffff" font-family="sans-serif" font-size="11">Pick Point (Chọn điểm trong)</text>
+
+    <text x="140" y="270" fill="#abb2bf" font-family="sans-serif" font-size="12" text-anchor="middle">Tự động nhận diện đường biên kín</text>
+    <text x="140" y="295" fill="#e5c07b" font-family="sans-serif" font-size="12" text-anchor="middle">Tự trừ lỗ rỗng ở giữa (Island)</text>
+  </g>
+
+  <!-- Right: Gradient Fill -->
+  <g transform="translate(400, 50)">
+    <rect width="280" height="320" fill="#1e222b" stroke="#2d3340" stroke-width="1" rx="4"/>
+    <text x="140" y="30" fill="#98c379" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle">Tô màu Gradient</text>
+
+    <!-- Gradient shape -->
+    <rect x="40" y="70" width="200" height="150" fill="url(#grad1)" stroke="#98c379" stroke-width="2" rx="6"/>
+
+    <text x="140" y="270" fill="#abb2bf" font-family="sans-serif" font-size="12" text-anchor="middle">Chuyển tiếp mượt giữa 2 màu</text>
+    <text x="140" y="295" fill="#98c379" font-family="sans-serif" font-size="12" text-anchor="middle">Thường dùng bản vẽ phối cảnh 2D</text>
+  </g>
+</svg>

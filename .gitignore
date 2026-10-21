@@ -1,0 +1,6 @@
+# Chỉ đưa dữ liệu bài học; không đưa mã nguồn / công cụ dựng / ghi chú nội bộ
+tools/
+*.bak*
+packs/*/GHI-CHU-*.md
+packs/*/TODO-*.md
+node_modules/

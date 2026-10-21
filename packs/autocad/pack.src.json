@@ -1,0 +1,69 @@
+{
+  "id": "autocad",
+  "name": "AutoCAD",
+  "description": "Từ làm quen giao diện đến vẽ 2D, ghi kích thước, block, in ấn, 3D cơ bản và AutoLISP — bài học tiếng Việt có hình tương tác, câu hỏi tự kiểm tra và bài tập tự động ghi nhận khi dùng plugin.",
+  "icon": "grid-3x3",
+  "version": "0.1.0",
+  "status": "coming-soon",
+  "kind": "app",
+  "order": 30,
+  "languages": [
+    "vi"
+  ],
+  "app": {
+    "name": "AutoCAD",
+    "bridge": "autocad",
+    "minVersion": "2024",
+    "versions": [
+      {
+        "id": "2026",
+        "label": "AutoCAD 2026",
+        "match": "25.1",
+        "note": "R25.1 · .NET 8"
+      },
+      {
+        "id": "2025",
+        "label": "AutoCAD 2025",
+        "match": "25.0",
+        "note": "R25.0 · .NET 8"
+      },
+      {
+        "id": "2024",
+        "label": "AutoCAD 2024",
+        "match": "24.",
+        "note": "R24.3 · .NET Framework 4.8"
+      }
+    ]
+  },
+  "connectors": [
+    {
+      "type": "plugin",
+      "id": "autocad"
+    },
+    {
+      "type": "manual"
+    }
+  ],
+  "datasets": [
+    {
+      "id": "commands",
+      "title": "Bảng tra lệnh AutoCAD",
+      "file": "data/commands.json",
+      "view": "table",
+      "columns": [
+        {
+          "key": "name",
+          "label": "Lệnh chuẩn",
+          "type": "text",
+          "search": true
+        },
+        {
+          "key": "desc",
+          "label": "Mô tả chức năng",
+          "type": "text",
+          "search": true
+        }
+      ]
+    }
+  ]
+}

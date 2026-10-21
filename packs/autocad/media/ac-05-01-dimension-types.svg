@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 440" width="100%" height="100%">
+  <rect width="760" height="440" fill="#1b1d22" rx="8"/>
+  <rect x="20" y="20" width="720" height="400" fill="#14161a" stroke="#323640" stroke-width="1.5" rx="6"/>
+
+  <text x="380" y="50" fill="#e5c07b" font-family="sans-serif" font-size="18" font-weight="bold" text-anchor="middle">Các loại kích thước cơ bản trong AutoCAD (Dimension Types)</text>
+
+  <!-- 1. Linear Dimension -->
+  <g transform="translate(40, 80)">
+    <rect width="210" height="150" fill="#1e222b" stroke="#2d3340" stroke-width="1" rx="4"/>
+    <text x="105" y="25" fill="#61afef" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle">Linear (Thẳng đứng/ngang)</text>
+    <rect x="40" y="55" width="130" height="50" stroke="#98c379" stroke-width="2" fill="none"/>
+    <!-- Linear dim line -->
+    <line x1="40" y1="125" x2="170" y2="125" stroke="#61afef" stroke-width="1.5"/>
+    <line x1="40" y1="105" x2="40" y2="135" stroke="#61afef" stroke-width="1"/>
+    <line x1="170" y1="105" x2="170" y2="135" stroke="#61afef" stroke-width="1"/>
+    <polygon points="40,125 50,122 50,128" fill="#61afef"/>
+    <polygon points="170,125 160,122 160,128" fill="#61afef"/>
+    <text x="105" y="120" fill="#ffffff" font-family="monospace" font-size="11" text-anchor="middle">130.00</text>
+  </g>
+
+  <!-- 2. Aligned Dimension -->
+  <g transform="translate(275, 80)">
+    <rect width="210" height="150" fill="#1e222b" stroke="#2d3340" stroke-width="1" rx="4"/>
+    <text x="105" y="25" fill="#98c379" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle">Aligned (Song song nghiêng)</text>
+    <line x1="40" y1="110" x2="160" y2="50" stroke="#98c379" stroke-width="2.5"/>
+    <!-- Aligned dim line -->
+    <line x1="50" y1="130" x2="170" y2="70" stroke="#98c379" stroke-width="1.5"/>
+    <line x1="40" y1="110" x2="55" y2="140" stroke="#98c379" stroke-width="1"/>
+    <line x1="160" y1="50" x2="175" y2="80" stroke="#98c379" stroke-width="1"/>
+    <text x="115" y="95" fill="#ffffff" font-family="monospace" font-size="11" transform="rotate(-26.5 115 95)">134.16</text>
+  </g>
+
+  <!-- 3. Angular Dimension -->
+  <g transform="translate(510, 80)">
+    <rect width="210" height="150" fill="#1e222b" stroke="#2d3340" stroke-width="1" rx="4"/>
+    <text x="105" y="25" fill="#e5c07b" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle">Angular (Góc đo °)</text>
+    <line x1="50" y1="120" x2="170" y2="120" stroke="#abb2bf" stroke-width="2"/>
+    <line x1="50" y1="120" x2="140" y2="50" stroke="#abb2bf" stroke-width="2"/>
+    <path d="M 100 120 A 50 50 0 0 0 86 92" stroke="#e5c07b" stroke-width="1.5" fill="none"/>
+    <text x="110" y="105" fill="#ffffff" font-family="monospace" font-size="11">45°</text>
+  </g>
+
+  <!-- 4. Radius & Diameter -->
+  <g transform="translate(160, 250)">
+    <rect width="440" height="150" fill="#1e222b" stroke="#2d3340" stroke-width="1" rx="4"/>
+    <text x="220" y="25" fill="#c678dd" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle">Radius (R) &amp; Diameter (Ø)</text>
+    
+    <!-- Circle with Radius -->
+    <circle cx="110" cy="85" r="45" stroke="#98c379" stroke-width="2" fill="none"/>
+    <circle cx="110" cy="85" r="3" fill="#e06c75"/>
+    <line x1="110" y1="85" x2="145" y2="55" stroke="#c678dd" stroke-width="1.5"/>
+    <polygon points="145,55 137,60 142,66" fill="#c678dd"/>
+    <text x="155" y="55" fill="#ffffff" font-family="monospace" font-size="11">R45</text>
+
+    <!-- Circle with Diameter -->
+    <circle cx="310" cy="85" r="45" stroke="#61afef" stroke-width="2" fill="none"/>
+    <line x1="278" y1="117" x2="342" y2="53" stroke="#61afef" stroke-width="1.5"/>
+    <polygon points="278,117 286,112 281,106" fill="#61afef"/>
+    <polygon points="342,53 334,58 339,64" fill="#61afef"/>
+    <text x="350" y="50" fill="#ffffff" font-family="monospace" font-size="11">Ø90</text>
+  </g>
+</svg>

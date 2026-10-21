@@ -1,0 +1,159 @@
+- id: q-ac-chang-07-01
+  type: single
+  question: "Tôn chỉ cơ bản về tỉ lệ khi dựng hình trong không gian Model Space của AutoCAD là gì?"
+  options:
+    - text: "Luôn luôn vẽ với tỉ lệ kích thước thật 1:1 theo đơn vị thực tế (milimet)"
+      correct: true
+      why: "Mọi đối tượng trong Model phải vẽ đúng 100% kích thước thực tế."
+    - text: "Thu nhỏ đối tượng 100 lần ngay khi vẽ để vừa màn hình"
+      why: "Thu nhỏ ngay khi vẽ sẽ làm sai lệch kích thước hình học."
+    - text: "Phóng to khung tên lên 100 lần để bao quanh công trình"
+      why: "Đây là cách vẽ cũ không chuẩn tiêu chuẩn CAD hiện đại."
+    - text: "Vẽ theo tỉ lệ ngẫu nhiên tùy mắt nhìn"
+      why: "Vẽ kỹ thuật đòi hỏi sự chính xác tuyệt đối."
+  explain: "Vẽ 1:1 trong Model và bố cục tỉ lệ trong Viewport của Layout là chuẩn mực thiết kế quốc tế."
+  tags: [chang-07, model]
+
+- id: q-ac-chang-07-02
+  type: single
+  question: "Không gian Layout trong AutoCAD đại diện cho điều gì?"
+  options:
+    - text: "Mặt phẳng tờ giấy in thực tế ngoài đời (A4, A3, A1...)"
+      correct: true
+      why: "Layout mô phỏng trực tiếp trang giấy in với đường biên mép giấy và khung tên."
+    - text: "Không gian 3D vũ trụ vô hạn"
+      why: "Không gian 3D vô hạn là Model Space."
+    - text: "Bảng mạch điện tử bên trong máy tính"
+      why: "Không liên quan đến phần cứng máy tính."
+    - text: "Hệ điều hành Windows"
+      why: "Layout là không gian đồ họa trong AutoCAD."
+  explain: "Layout là không gian giấy in nơi bạn đặt khung tên, ghi chú và các khung nhìn trích xuất hình vẽ."
+  tags: [chang-07, layout]
+
+- id: q-ac-chang-07-03
+  type: single
+  question: "Lệnh nào dùng để tạo khung nhìn Viewport mới trên không gian giấy Layout?"
+  options:
+    - text: "MVIEW (lệnh tắt MV)"
+      correct: true
+      why: "MVIEW là lệnh chính thức để tạo các ô cửa sổ khung nhìn trên Layout."
+    - text: "VIEW"
+      why: "VIEW dùng để quản lý các góc nhìn đã lưu (Named Views)."
+    - text: "WINDOW"
+      why: "WINDOW không phải lệnh tạo khung nhìn."
+    - text: "ZOOM"
+      why: "ZOOM dùng để thu phóng màn hình hiển thị."
+  explain: "Sử dụng lệnh MVIEW (lệnh tắt MV) để mở các ô cửa sổ nhìn vào mô hình Model."
+  tags: [chang-07, mview]
+
+- id: q-ac-chang-07-04
+  type: single
+  question: "Cặp lệnh nào dùng để chuyển đổi qua lại giữa việc chỉnh sửa mô hình bên trong Viewport và trở về mặt phẳng giấy Layout?"
+  options:
+    - text: "MSPACE (MS) và PSPACE (PS)"
+      correct: true
+      why: "MS chui vào trong mô hình, PS thoát ra ngoài mặt giấy."
+    - text: "IN và OUT"
+      why: "Không có lệnh IN và OUT trong AutoCAD."
+    - text: "OPEN và CLOSE"
+      why: "OPEN/CLOSE dùng để mở và đóng file bản vẽ."
+    - text: "UP và DOWN"
+      why: "Không phải lệnh điều khiển không gian."
+  explain: "MSPACE (Model Space) và PSPACE (Paper Space) là cặp lệnh kinh điển điều khiển khung nhìn."
+  tags: [chang-07, mspace-pspace]
+
+- id: q-ac-chang-07-05
+  type: single
+  question: "Tính năng 'Display Locked' (Ổ khóa) của khung nhìn Viewport có vai trò gì quan trọng nhất?"
+  options:
+    - text: "Cố định tỉ lệ xích, ngăn không cho việc lăn chuột vô tình làm thay đổi tỉ lệ bản vẽ"
+      correct: true
+      why: "Khóa khung nhìn giúp bảo vệ tính chính xác của tỉ lệ đã gán."
+    - text: "Ngăn không cho người khác xem bản vẽ"
+      why: "Display Locked không có tính năng bảo mật mật khẩu."
+    - text: "Khóa không cho phép in bản vẽ"
+      why: "Bản vẽ vẫn in ra bình thường."
+    - text: "Tự động tắt máy tính khi vẽ xong"
+      why: "Không liên quan đến tắt nguồn máy tính."
+  explain: "Luôn bấm khóa ổ khóa Viewport ngay sau khi chỉnh xong tỉ lệ để bảo vệ bản vẽ."
+  tags: [chang-07, display-locked]
+
+- id: q-ac-chang-07-06
+  type: single
+  question: "Định dạng file cấu hình bảng phong cách nét in theo màu trong AutoCAD là gì?"
+  options:
+    - text: ".ctb"
+      correct: true
+      why: "CTB là Color-dependent Plot Style Table."
+    - text: ".stb"
+      why: "STB là Named Plot Style."
+    - text: ".dwt"
+      why: "DWT là file mẫu bản vẽ."
+    - text: ".dwg"
+      why: "DWG là file bản vẽ đồ họa."
+  explain: "Tệp .ctb quy định màu sắc trên màn hình in ra màu gì và độ dày nét in bao nhiêu mm."
+  tags: [chang-07, ctb]
+
+- id: q-ac-chang-07-07
+  type: single
+  question: "Lệnh nào trong AutoCAD mở ngay cửa sổ thư mục lưu trữ các tệp nét in .ctb của máy tính?"
+  options:
+    - text: "STYLESMANAGER"
+      correct: true
+      why: "STYLESMANAGER mở thư mục Plot Styles trong ổ đĩa hệ thống."
+    - text: "LAYER"
+      why: "LAYER mở trình quản lý layer nội bộ."
+    - text: "PLOTTERMANAGER"
+      why: "PLOTTERMANAGER mở thư mục chứa driver máy in .pc3."
+    - text: "OPTIONS"
+      why: "OPTIONS mở bảng cài đặt chung của phần mềm."
+  explain: "Dùng STYLESMANAGER để sao chép thêm bảng nét in hoặc gửi file CTB cho đối tác."
+  tags: [chang-07, stylesmanager]
+
+- id: q-ac-chang-07-08
+  type: single
+  question: "Theo tiêu chuẩn TCVN, mép lề bên trái của khung bản vẽ thường được chừa khoảng cách bao nhiêu mm để đóng tập hồ sơ?"
+  options:
+    - text: "20 mm"
+      correct: true
+      why: "Lề trái 20mm chừa khoảng trống đóng gáy còng hồ sơ mà không che mất hình vẽ."
+    - text: "5 mm"
+      why: "5mm là khoảng cách của các lề trên, dưới, phải."
+    - text: "0 mm"
+      why: "0mm sẽ bị gáy kẹp đè lên nét vẽ."
+    - text: "50 mm"
+      why: "50mm quá rộng lãng phí diện tích trang in."
+  explain: "Quy tắc lề trái 20mm và các lề còn lại 5mm là tiêu chuẩn bắt buộc của hồ sơ thiết kế."
+  tags: [chang-07, khung-ten]
+
+- id: q-ac-chang-07-09
+  type: single
+  question: "Tính năng nào cho phép ẩn/hiện một layer ở riêng khung nhìn này mà không ảnh hưởng tới các khung nhìn khác trên Layout?"
+  options:
+    - text: "VP Freeze (Viewport Freeze)"
+      correct: true
+      why: "VP Freeze đóng băng layer riêng biệt theo từng Viewport cụ thể."
+    - text: "Tắt bóng đèn Layer thông thường"
+      why: "Tắt bóng đèn sẽ làm ẩn layer trên toàn bộ bản vẽ ở mọi nơi."
+    - text: "Lệnh ERASE"
+      why: "ERASE xóa mất đối tượng khỏi bản vẽ."
+    - text: "Lệnh PURGE"
+      why: "PURGE xóa định nghĩa đối tượng rác."
+  explain: "Cột VP Freeze trong bảng Layer giúp trình bày đa bộ môn (kiến trúc, kết cấu) từ cùng một mặt bằng."
+  tags: [chang-07, vp-freeze]
+
+- id: q-ac-chang-07-10
+  type: single
+  question: "Công cụ nào trong AutoCAD giúp xuất hàng chục trang bản vẽ từ nhiều tệp DWG khác nhau thành một file PDF duy nhất ở chế độ chạy ngầm?"
+  options:
+    - text: "Lệnh PUBLISH kết hợp với Sheet Set Manager (SSM)"
+      correct: true
+      why: "PUBLISH hỗ trợ in ấn hàng loạt đa tệp (Batch Plot) tự động ghép thành tệp PDF duy nhất."
+    - text: "Lệnh LINE"
+      why: "LINE là lệnh vẽ đường thẳng cơ bản."
+    - text: "Lệnh COPY"
+      why: "COPY dùng để nhân bản đối tượng đồ họa."
+    - text: "Lệnh REGEN"
+      why: "REGEN chỉ làm mới hiển thị màn hình."
+  explain: "Lệnh PUBLISH là công cụ đắc lực nhất giúp xuất xưởng toàn bộ hồ sơ dự án chỉ trong 1 thao tác."
+  tags: [chang-07, publish]

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 460" width="100%" height="100%">
+  <rect width="760" height="460" fill="#1b1d22" rx="8"/>
+  <rect x="20" y="20" width="720" height="420" fill="#14161a" stroke="#323640" stroke-width="1.5" rx="6"/>
+
+  <!-- Geometry with Osnap markers -->
+  <line x1="80" y1="200" x2="380" y2="200" stroke="#61afef" stroke-width="3"/>
+  <circle cx="230" cy="200" r="4" fill="#61afef"/>
+  
+  <!-- Endpoint marker (Square) -->
+  <rect x="70" y="190" width="20" height="20" stroke="#98c379" stroke-width="2.5" fill="none"/>
+  <text x="65" y="175" fill="#98c379" font-family="monospace" font-size="12" font-weight="bold">Endpoint (Điểm đầu/cuối)</text>
+
+  <!-- Midpoint marker (Triangle) -->
+  <polygon points="230,178 242,198 218,198" stroke="#98c379" stroke-width="2.5" fill="none"/>
+  <text x="200" y="165" fill="#98c379" font-family="monospace" font-size="12" font-weight="bold">Midpoint (Trung điểm)</text>
+
+  <!-- Center marker on circle -->
+  <circle cx="530" cy="200" r="70" stroke="#e5c07b" stroke-width="2" fill="none"/>
+  <circle cx="530" cy="200" r="4" stroke="#98c379" stroke-width="2" fill="none"/>
+  <line x1="522" y1="200" x2="538" y2="200" stroke="#98c379" stroke-width="2"/>
+  <line x1="530" y1="192" x2="530" y2="208" stroke="#98c379" stroke-width="2"/>
+  <text x="480" y="165" fill="#98c379" font-family="monospace" font-size="12" font-weight="bold">Center (Tâm đường tròn)</text>
+
+  <!-- Intersection marker (X) -->
+  <line x1="80" y1="120" x2="200" y2="280" stroke="#e06c75" stroke-width="2"/>
+  <g stroke="#98c379" stroke-width="2.5">
+    <line x1="133" y1="193" x2="147" y2="207"/>
+    <line x1="147" y1="193" x2="133" y2="207"/>
+  </g>
+  <text x="110" y="240" fill="#98c379" font-family="monospace" font-size="12" font-weight="bold">Intersection (Giao điểm)</text>
+
+  <!-- Status Bar HUD Buttons at Bottom -->
+  <g transform="translate(30, 360)">
+    <rect width="700" height="50" fill="#22252c" stroke="#3e4451" stroke-width="1.5" rx="5"/>
+    <rect x="20" y="10" width="100" height="30" fill="#2d5e8a" rx="3"/>
+    <text x="35" y="30" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="bold">ORTHO (F8)</text>
+    <rect x="140" y="10" width="110" height="30" fill="#363c48" rx="3"/>
+    <text x="150" y="30" fill="#abb2bf" font-family="sans-serif" font-size="12">POLAR (F10)</text>
+    <rect x="270" y="10" width="105" height="30" fill="#2d5e8a" rx="3"/>
+    <text x="282" y="30" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="bold">OSNAP (F3)</text>
+    <rect x="395" y="10" width="115" height="30" fill="#2d5e8a" rx="3"/>
+    <text x="405" y="30" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="bold">OTRACK (F11)</text>
+    <rect x="530" y="10" width="150" height="30" fill="#2d5e8a" rx="3"/>
+    <text x="540" y="30" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="bold">DYNAMIC INPUT (F12)</text>
+  </g>
+</svg>

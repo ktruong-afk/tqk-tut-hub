@@ -1,0 +1,10 @@
+{
+  "id": "blender",
+  "name": "Blender",
+  "description": "Dựng hình, điêu khắc, rig, animation và xuất nhân vật sang Unity — 16 bài cho người mới, Blender 5.2 LTS.",
+  "icon": "box",
+  "version": "1.0.0",
+  "status": "ready",
+  "app": { "name": "Blender", "bridge": "blender", "minVersion": "4.2" },
+  "plugin": { "file": "plugin/blender_companion-1.2.0.zip", "type": "blender-extension", "version": "1.2.0" }
+}

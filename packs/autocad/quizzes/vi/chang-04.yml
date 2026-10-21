@@ -1,0 +1,141 @@
+- id: q-ac-chang-04-01
+  type: single
+  question: Phím tắt tiêu chuẩn nào dùng để mở nhanh bảng Layer Properties Manager trong AutoCAD?
+  options:
+    - text: LA
+      correct: true
+      why: LA là phím tắt chính thức của lệnh LAYER
+    - text: L
+      why: L là phím tắt của lệnh vẽ đoạn thẳng LINE
+    - text: LY
+      why: LY không phải phím tắt chuẩn của AutoCAD
+    - text: LR
+      why: LR không phải phím tắt chuẩn
+  explain: "Gõ LA rồi nhấn Spacebar hoặc Enter là cách mở nhanh nhất bảng quản lý lớp Layer Properties Manager."
+  tags: [chang-04, layer, phim-tat]
+
+- id: q-ac-chang-04-02
+  type: single
+  question: Khi một layer bị khoá bằng biểu tượng ổ khoá (Lock), các đối tượng thuộc layer đó có trạng thái thế nào?
+  options:
+    - text: Vẫn nhìn thấy trên màn hình nhưng không thể bị xoá, di chuyển hay chỉnh sửa nhầm
+      correct: true
+      why: Lock bảo vệ an toàn đối tượng khỏi các thao tác sửa đổi vô tình
+    - text: Biến mất hoàn toàn khỏi màn hình
+      why: Biến mất là tính năng của bóng đèn Turn Off hoặc Freeze
+    - text: Bị xoá vĩnh viễn khỏi bản vẽ
+      why: Khoá layer hoàn toàn không làm mất dữ liệu
+    - text: Tự động đổi màu sang màu đen
+      why: Đối tượng chỉ bị mờ nhẹ để báo hiệu đang bị khoá
+  explain: "Trạng thái Lock (Khoá layer) giúp bảo vệ các đối tượng nền quan trọng (tim trục, khung tên) không bị xoá nhầm khi bạn thao tác quét chọn các đối tượng khác."
+  tags: [chang-04, layer, lock]
+
+- id: q-ac-chang-04-03
+  type: single
+  question: Kiểu đường nét nào trong AutoCAD được quy ước thể hiện đường tâm và trục đối xứng của các chi tiết tròn?
+  options:
+    - text: CENTER
+      correct: true
+      why: CENTER là kiểu đường nét gạch chấm mảnh thể hiện đường tâm
+    - text: HIDDEN
+      why: HIDDEN là nét đứt thể hiện cạnh khuất
+    - text: Continuous
+      why: Continuous là nét liền thể hiện đường bao thấy
+    - text: PHANTOM
+      why: PHANTOM là nét hai chấm gạch thể hiện vị trí giới hạn
+  explain: "Theo tiêu chuẩn kỹ thuật quốc tế (ISO) và Việt Nam (TCVN), kiểu đường CENTER (nét gạch chấm mảnh) luôn được dùng cho trục đối xứng và tâm đường tròn."
+  tags: [chang-04, linetype, center]
+
+- id: q-ac-chang-04-04
+  type: single
+  question: Tại sao các kỹ sư CAD luôn yêu cầu thuộc tính Màu sắc, Kiểu đường và Độ dày của đối tượng phải đặt là "ByLayer"?
+  options:
+    - text: Để quản lý đồng bộ tập trung, khi thay đổi thuộc tính của Layer thì toàn bộ đối tượng tự động đổi theo
+      correct: true
+      why: ByLayer đảm bảo tính nhất quán và dễ dàng chỉnh sửa bản vẽ quy mô lớn
+    - text: Để bản vẽ có dung lượng file nặng hơn
+      why: ByLayer giúp bản vẽ gọn nhẹ hơn
+    - text: Vì AutoCAD không cho phép đặt màu khác
+      why: AutoCAD cho phép đặt màu chết nhưng đó là thói quen xấu
+    - text: Để không in được bản vẽ
+      why: ByLayer là tiêu chuẩn bắt buộc để in ấn chuẩn xác
+  explain: "Nguyên tắc ByLayer (Theo lớp) đảm bảo toàn bộ đối tượng được quản lý tập trung từ bảng Layer Properties Manager, giúp đổi màu hoặc đổi nét hàng vạn đối tượng chỉ trong 1 cú nhấp chuột."
+  tags: [chang-04, bylayer, tieu-chuan]
+
+- id: q-ac-chang-04-05
+  type: single
+  question: Khi đường nét đứt HIDDEN bị hiển thị liền tù tì như nét thẳng thông thường trên không gian Model, lệnh nào giúp điều chỉnh kích thước mắt gạch phù hợp?
+  options:
+    - text: LTSCALE (phím tắt LTS)
+      correct: true
+      why: LTSCALE điều chỉnh hệ số tỷ lệ hiển thị kiểu đường toàn cục
+    - text: UNITS
+      why: UNITS chỉ cài đặt đơn vị đo lường
+    - text: ERASE
+      why: ERASE là lệnh xoá đối tượng
+    - text: EXPLODE
+      why: EXPLODE là phá vỡ đối tượng
+  explain: "Lệnh LTSCALE (gõ tắt LTS) thay đổi hệ số tỷ lệ hiển thị toàn cục cho tất cả các kiểu đường nét đứt và gạch chấm, giúp mắt gạch co giãn vừa vặn tầm mắt nhìn."
+  tags: [chang-04, ltscale, linetype]
+
+- id: q-ac-chang-04-06
+  type: single
+  question: Sau khi dùng lệnh LAYISO để cô lập một layer làm việc, bạn dùng lệnh nào để khôi phục lại hiển thị cho toàn bộ các layer khác?
+  options:
+    - text: LAYUNISO
+      correct: true
+      why: LAYUNISO là lệnh giải phóng trạng thái cô lập của LAYISO
+    - text: LAYON
+      why: LAYON chỉ bật lại các layer bị tắt bởi LAYOFF
+    - text: LAYTHW
+      why: LAYTHW làm tan băng các layer bị đóng băng bởi LAYFRZ
+    - text: REGEN
+      why: REGEN chỉ làm mới màn hình đồ hoạ
+  explain: "Lệnh LAYUNISO là cặp lệnh đối xứng với LAYISO, giúp đưa tất cả các layer vừa bị ẩn hoặc khoá trở về trạng thái hiển thị bình thường trước đó."
+  tags: [chang-04, layiso, layuniso]
+
+- id: q-ac-chang-04-07
+  type: single
+  question: Lệnh nào dưới đây cho phép bạn chuyển toàn bộ đối tượng từ một layer rác sang layer chuẩn và tự động xoá bỏ layer rác đó khỏi bản vẽ?
+  options:
+    - text: LAYMRG (Layer Merge)
+      correct: true
+      why: LAYMRG gộp layer nguồn vào layer đích và tự động xoá sạch layer nguồn
+    - text: MATCHPROP
+      why: MATCHPROP chỉ sao chép thuộc tính từng đối tượng
+    - text: LAYOFF
+      why: LAYOFF chỉ tắt tạm thời hiển thị
+    - text: ERASE
+      why: ERASE xoá đối tượng nhưng không xoá được layer
+  explain: "Lệnh LAYMRG (Layer Merge) là công cụ chuyên nghiệp để dọn dẹp bản vẽ: gộp toàn bộ thực thể của layer cũ vào layer mới và triệt tiêu vĩnh viễn layer thừa."
+  tags: [chang-04, laymrg, don-dep]
+
+- id: q-ac-chang-04-08
+  type: single
+  question: Đặc tính kỹ thuật đặc biệt nào dưới đây thuộc về layer "Defpoints" trong AutoCAD?
+  options:
+    - text: Mọi đối tượng vẽ trên layer Defpoints sẽ không bao giờ được in ra giấy (Non-printable)
+      correct: true
+      why: Defpoints là layer cố định không in của hệ thống kích thước AutoCAD
+    - text: Tự động đổi màu sau mỗi 10 phút
+      why: Defpoints không tự đổi màu
+    - text: Luôn luôn có màu đỏ
+      why: Màu của Defpoints có thể đổi được
+    - text: Tự động xoá đối tượng khi lưu file
+      why: Defpoints lưu giữ đối tượng bình thường
+  explain: "Layer Defpoints (Definition Points) là layer hệ thống tự sinh ra cùng với kích thước Dimension, có đặc tính cố định là không bao giờ xuất hiện khi in ấn hay xuất PDF."
+  tags: [chang-04, defpoints, in-an]
+
+- id: q-ac-chang-04-09
+  type: truefalse
+  question: Layer 0 là lớp mặc định có sẵn trong mọi bản vẽ AutoCAD và không thể bị xoá bỏ hay đổi tên.
+  answer: true
+  explain: "Layer 0 là lớp hệ thống đặc thù gắn liền với nhân đồ hoạ của AutoCAD, không thể xoá bỏ, không thể đổi tên và có các tính chất đặc biệt khi tạo khối Block."
+  tags: [chang-04, layer-0]
+
+- id: q-ac-chang-04-10
+  type: truefalse
+  question: Trong chế độ vẽ kỹ thuật, tỷ lệ độ dày nét in giữa nét bao thấy (nét đậm) và nét kích thước / nét gióng (nét mảnh) thường được quy ước là khoảng 2:1.
+  answer: true
+  explain: "Theo tiêu chuẩn ISO 128 và TCVN, tỷ lệ độ rộng giữa nét đậm và nét mảnh luôn là 2:1 (ví dụ nét thấy chọn 0.35mm thì nét kích thước và đường tâm chọn 0.15 - 0.18mm) để tạo độ tương phản rõ ràng."
+  tags: [chang-04, lineweight, tieu-chuan]

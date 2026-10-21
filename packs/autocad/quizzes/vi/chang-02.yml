@@ -1,0 +1,141 @@
+- id: q-ac-chang-02-01
+  type: single
+  question: Khi sử dụng lệnh LINE, tuỳ chọn "Close" (gõ chữ C) có tác dụng gì?
+  options:
+    - text: Nối một đoạn thẳng từ vị trí hiện tại về điểm đầu tiên và kết thúc lệnh
+      correct: true
+      why: Tuỳ chọn Close tự động nối khép kín chuỗi đường thẳng về điểm xuất phát ban đầu
+    - text: Đóng file bản vẽ đang mở
+      why: Đóng file dùng lệnh CLOSE
+    - text: Huỷ bỏ toàn bộ các đoạn thẳng vừa vẽ
+      why: Huỷ bỏ dùng phím Esc
+    - text: Chuyển các đoạn thẳng thành đường cong
+      why: Lệnh LINE không tự chuyển thành đường cong
+  explain: "Trong lệnh LINE, tuỳ chọn Close (phím tắt C) tự động vẽ phân đoạn khép kín về điểm mút đầu tiên của chuỗi lệnh và thoát lệnh."
+  tags: [chang-02, line]
+
+- id: q-ac-chang-02-02
+  type: single
+  question: Khi thực hiện lệnh CIRCLE, muốn nhập đường kính (Diameter) thay vì bán kính mặc định, bạn gõ phím tắt nào?
+  options:
+    - text: D
+      correct: true
+      why: Phím D là chữ cái viết tắt của tuỳ chọn Diameter
+    - text: R
+      why: R là bán kính Radius
+    - text: C
+      why: C là phím tắt của lệnh Circle
+    - text: P
+      why: P là tuỳ chọn điểm Point
+  explain: "Sau khi chọn tâm đường tròn, gõ chữ D (Diameter) rồi nhấn Enter để chuyển sang chế độ nhập đường kính."
+  tags: [chang-02, circle]
+
+- id: q-ac-chang-02-03
+  type: single
+  question: Theo quy ước toán học của AutoCAD, cung tròn tạo bởi lệnh ARC luôn được vẽ theo chiều nào từ điểm Start đến điểm End?
+  options:
+    - text: Ngược chiều kim đồng hồ (Counter-Clockwise)
+      correct: true
+      why: AutoCAD luôn tính chiều quay góc dương là ngược chiều kim đồng hồ
+    - text: Cùng chiều kim đồng hồ (Clockwise)
+      why: Muốn cùng chiều kim đồng hồ cần đè giữ phím Ctrl
+    - text: Tự do ngẫu nhiên
+      why: Hướng cong tuân theo quy tắc toán học xác định
+    - text: Luôn quay sang bên phải
+      why: Chiều quay phụ thuộc vào thứ tự hai điểm đầu cuối
+  explain: "Quy ước chuẩn của AutoCAD là góc mở và cung tròn luôn phát triển theo chiều ngược chiều kim đồng hồ từ điểm bắt đầu đến điểm kết thúc."
+  tags: [chang-02, arc]
+
+- id: q-ac-chang-02-04
+  type: single
+  question: Hình chữ nhật tạo bởi lệnh RECTANG và đa giác đều tạo bởi lệnh POLYGON thuộc loại đối tượng hình học nào trong AutoCAD?
+  options:
+    - text: Đường đa tuyến khép kín (Polyline)
+      correct: true
+      why: Cả hai lệnh đều sinh ra đối tượng Polyline liền khối
+    - text: Tập hợp các đoạn thẳng LINE rời rạc
+      why: Chỉ khi dùng lệnh EXPLODE thì mới bị phá thành các đoạn LINE rời
+    - text: Đối tượng khối Block
+      why: RECTANG và POLYGON không phải là Block
+    - text: Đối tượng Spline
+      why: Spline là đường cong tham số mượt
+  explain: "Cả RECTANG và POLYGON đều tạo ra một đường Polyline kín duy nhất, cho phép chọn cả hình chỉ bằng 1 cú nhấp chuột và tra cứu nhanh diện tích."
+  tags: [chang-02, rectang, polygon]
+
+- id: q-ac-chang-02-05
+  type: single
+  question: Lệnh nào dưới đây cho phép vừa vẽ đoạn thẳng, vừa vẽ cung tròn tiếp tuyến và gán bề dày nét vẽ (Width) trong cùng một đối tượng duy nhất?
+  options:
+    - text: PLINE
+      correct: true
+      why: PLINE là lệnh đa tuyến linh hoạt hỗ trợ cả cung cong và bề dày nét
+    - text: LINE
+      why: LINE chỉ vẽ được các đoạn thẳng rời rạc không có bề dày
+    - text: SPLINE
+      why: SPLINE chỉ vẽ đường cong trơn NURBS
+    - text: ARC
+      why: ARC chỉ vẽ cung tròn đơn lẻ
+  explain: "Lệnh PLINE (Polyline) là công cụ duy nhất kết hợp được đoạn thẳng, cung cong và thuộc tính bề dày Width trong một thực thể liền khối."
+  tags: [chang-02, pline]
+
+- id: q-ac-chang-02-06
+  type: single
+  question: Lệnh DIVIDE khác lệnh MEASURE ở điểm nào khi phân chia một đối tượng hình học?
+  options:
+    - text: DIVIDE chia theo số phần bằng nhau, MEASURE chia theo cự ly khoảng cách cố định
+      correct: true
+      why: DIVIDE yêu cầu nhập số phần N, MEASURE yêu cầu nhập độ dài mỗi bước
+    - text: DIVIDE cắt đứt đối tượng, MEASURE không cắt
+      why: Cả hai đều không làm đứt đối tượng gốc
+    - text: DIVIDE chỉ dùng cho đường thẳng, MEASURE chỉ dùng cho đường cong
+      why: Cả hai đều áp dụng được cho mọi đường thẳng và đường cong
+    - text: DIVIDE chỉ vẽ được điểm màu trắng
+      why: Màu sắc của điểm phụ thuộc vào layer hiện hành
+  explain: "Lệnh DIVIDE phân chia đối tượng thành N đoạn có độ dài bằng nhau, trong khi MEASURE rải các mốc điểm cách nhau một khoảng cách cố định cho trước."
+  tags: [chang-02, divide, measure]
+
+- id: q-ac-chang-02-07
+  type: single
+  question: Mẫu hoa văn mặt cắt nào trong lệnh HATCH là tiêu chuẩn quy ước cho vật liệu kim loại (gang, thép) gia công cơ khí?
+  options:
+    - text: ANSI31
+      correct: true
+      why: ANSI31 là mẫu gạch chéo 45 độ tiêu chuẩn thể hiện kim loại
+    - text: SOLID
+      why: SOLID là mảng màu đặc kín
+    - text: AR-CONC
+      why: AR-CONC thể hiện bê tông xây dựng
+    - text: ANSI37
+      why: ANSI37 là mẫu gạch chéo đan lưới
+  explain: "Hoa văn ANSI31 gồm các đường nét song song nghiêng 45 độ là ký hiệu tiêu chuẩn kỹ thuật để biểu diễn mặt cắt các chi tiết kim loại."
+  tags: [chang-02, hatch]
+
+- id: q-ac-chang-02-08
+  type: single
+  question: Để hiển thị ký hiệu đường kính phi (Ø) khi gõ văn bản bằng lệnh TEXT hoặc MTEXT, bạn gõ mã tắt nào?
+  options:
+    - text: "%%c"
+      correct: true
+      why: "Mã %%c tự động chuyển thành ký hiệu đường kính Ø"
+    - text: "%%d"
+      why: "Mã %%d chuyển thành ký hiệu độ °"
+    - text: "%%p"
+      why: "Mã %%p chuyển thành ký hiệu dung sai ±"
+    - text: "%%u"
+      why: "Mã %%u dùng để gạch chân chữ"
+  explain: "Mã điều khiển %%c (circle) là quy ước chuẩn của AutoCAD để chèn ký hiệu đường kính Ø trong mọi phông chữ kỹ thuật."
+  tags: [chang-02, text]
+
+- id: q-ac-chang-02-09
+  type: truefalse
+  question: Một hình elip vẽ bằng lệnh ELLIPSE có độ dài trục lớn bằng độ dài trục nhỏ chính là một đường tròn.
+  answer: true
+  explain: "Theo định nghĩa hình học, khi hai bán trục của elip bằng nhau thì tâm sai bằng 0 và elip trở thành đường tròn hoàn hảo."
+  tags: [chang-02, ellipse]
+
+- id: q-ac-chang-02-10
+  type: short
+  question: Lệnh nào dùng để mở hộp thoại tuỳ chỉnh kiểu dáng hiển thị và kích thước của các đối tượng điểm (Point Style)?
+  answer: ["PTYPE", "DDPTYPE"]
+  explain: "Lệnh PTYPE (hoặc DDPTYPE) mở hộp thoại Point Style cho phép đổi dấu chấm điểm thành hình dấu nhân, dấu cộng tròn to rõ."
+  tags: [chang-02, ptype]
