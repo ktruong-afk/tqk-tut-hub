@@ -33,7 +33,7 @@ Gói có nhiều phiên bản phần mềm (ví dụ AutoCAD 2024 / 2025 / 2026)
 | Phần mềm | Trạng thái |
 |---|---|
 | Blender | Sẵn sàng, 16 bài |
-| AutoCAD | Đang soạn |
+| AutoCAD | Sẵn sàng, 89 bài (từ cơ bản đến nâng cao, nhiều phiên bản 2024 – 2026) |
 | Photoshop | Sắp có |
 
 ## Hỏi nhanh
