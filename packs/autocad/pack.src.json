@@ -3,8 +3,8 @@
   "name": "AutoCAD",
   "description": "Từ làm quen giao diện đến vẽ 2D, ghi kích thước, block, in ấn, 3D cơ bản và AutoLISP — bài học tiếng Việt có hình tương tác, câu hỏi tự kiểm tra và bài tập tự động ghi nhận khi dùng plugin.",
   "icon": "grid-3x3",
-  "version": "0.1.0",
-  "status": "coming-soon",
+  "version": "1.0.0",
+  "status": "ready",
   "kind": "app",
   "order": 30,
   "languages": [

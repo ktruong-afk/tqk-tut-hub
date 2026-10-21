@@ -1,14 +1,14 @@
 {
   "schema": 1,
-  "updated": "2026-10-21T09:09:26.919Z",
+  "updated": "2026-10-21T12:41:03.224Z",
   "packs": [
     {
       "id": "autocad",
       "name": "AutoCAD",
       "description": "Từ làm quen giao diện đến vẽ 2D, ghi kích thước, block, in ấn, 3D cơ bản và AutoLISP — bài học tiếng Việt có hình tương tác, câu hỏi tự kiểm tra và bài tập tự động ghi nhận khi dùng plugin.",
       "icon": "grid-3x3",
-      "version": "0.1.0",
-      "status": "coming-soon",
+      "version": "1.0.0",
+      "status": "ready",
       "app": {
         "name": "AutoCAD",
         "bridge": "autocad",
@@ -37,8 +37,8 @@
       "languages": [
         "vi"
       ],
-      "lessonCount": 0,
-      "size": 0,
+      "lessonCount": 89,
+      "size": 1116954,
       "manifest": "packs/autocad/pack.json"
     },
     {
